@@ -10,7 +10,7 @@
 
 			.entry-meta{
 				border-top: none;				
-				border-bottom: 1px solid $gray;				
+				border-bottom: 1px solid $crem;				
 			}			
 			
 			.entry-featured-image{
@@ -60,6 +60,43 @@
 
 					&:hover{
 						color: $green;
+					}
+				}
+			}
+
+			.entry-original-link{
+				a{
+					display: block;
+					padding: 10px 20px 10px 40px;
+					font: .8em $montserrat;
+					text-transform: lowercase;
+					border-bottom: 1px solid $crem;
+					background: #fafafa;
+					color: $black;
+					position: relative;
+
+					&:hover{
+						background: $green;
+						color: white;
+
+						&:before{
+							@include sprites-sprite( entry-original-link-icon-hover );
+						}
+					}
+
+					&:active{
+						background: $green_dark;
+					}
+
+					&:before{
+						content: '';
+						text-indent: -99999em;
+						width: 15px;
+						height: 15px;
+						@include sprites-sprite( entry-original-link-icon );
+						position: absolute;
+						top: 12px;
+						left: 20px;
 					}
 				}
 			}

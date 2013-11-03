@@ -28,8 +28,8 @@
  * 9.0 - Print
  * ----------------------------------------------------------------------------
  */
-.sprites-sprite, #top-nav #top-nav-toggle, #nav-below .nav-next a:after, #nav-below .nav-previous a:after {
-  background: url('../images/sprites-s6a5e39deaa.png') no-repeat;
+.sprites-sprite, #top-nav #top-nav-toggle, #content article .entry-header .entry-original-link a:hover:before, #content article .entry-header .entry-original-link a:before, #nav-below .nav-next a:after, #nav-below .nav-previous a:after {
+  background: url('../images/sprites-s6f8a73793f.png') no-repeat;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -172,7 +172,7 @@ a {
   float: right;
   display: inline-block;
   text-indent: -999999em;
-  background-position: 0 -40px;
+  background-position: 0 -70px;
   width: 22px;
   height: 15px;
   content: '';
@@ -204,7 +204,7 @@ a {
 }
 #content article .entry-header .entry-meta {
   border-top: none;
-  border-bottom: 1px solid #c1c1c1;
+  border-bottom: 1px solid #ebe7df;
 }
 #content article .entry-header .entry-featured-image {
   display: block;
@@ -247,6 +247,36 @@ a {
 }
 #content article .entry-header .entry-title a:hover {
   color: #1f7f5c;
+}
+#content article .entry-header .entry-original-link a {
+  display: block;
+  padding: 10px 20px 10px 40px;
+  font: 0.8em "Montserrat", sans-serif;
+  text-transform: lowercase;
+  border-bottom: 1px solid #ebe7df;
+  background: #fafafa;
+  color: #232323;
+  position: relative;
+}
+#content article .entry-header .entry-original-link a:hover {
+  background: #1f7f5c;
+  color: white;
+}
+#content article .entry-header .entry-original-link a:hover:before {
+  background-position: 0 -15px;
+}
+#content article .entry-header .entry-original-link a:active {
+  background: #19664a;
+}
+#content article .entry-header .entry-original-link a:before {
+  content: '';
+  text-indent: -99999em;
+  width: 15px;
+  height: 15px;
+  background-position: 0 0;
+  position: absolute;
+  top: 12px;
+  left: 20px;
 }
 #content article .entry-meta {
   display: block;
@@ -384,7 +414,7 @@ a {
 #nav-below .nav-next a:after {
   display: inline-block;
   text-indent: -999999em;
-  background-position: 0 -20px;
+  background-position: 0 -50px;
   width: 11px;
   height: 20px;
   content: '';
@@ -405,7 +435,7 @@ a {
 #nav-below .nav-previous a:after {
   display: inline-block;
   text-indent: -999999em;
-  background-position: 0 0;
+  background-position: 0 -30px;
   width: 11px;
   height: 20px;
   content: '';

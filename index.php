@@ -135,6 +135,34 @@
 				</footer> 
 			</article>
 
+			<article id="post-3446" class="post-3443 post type-post status-publish format-standard hentry category-lesson-learned tag-advice tag-airbnb tag-artist tag-attention tag-craftmanship tag-great-artist tag-love tag-the-great-discontent">
+				<header class="entry-header">
+					<div class="entry-meta">
+					<ul class="entry-category">
+						<li><a href="http://fikrirasyid.com/category/lesson-learned/" title="View all posts in Lesson Learned" rel="category tag">Education</a></li>
+					</ul>
+
+					<div class="entry-posted-on">
+						<span class="author vcard">
+							<span class="entry-date" style="width: 92px;"><span class="human-time">three months ago</span>
+							<span class="conventional-time">October 28, 2013</span>
+						</span>
+					</div>
+
+					</div>					
+					<h1 class="entry-original-link">
+						<a href="http://fikrirasyid.com/attention-to-details/" rel="bookmark">A Link To theverge.com</a>
+					</h1>
+				</header> 
+				<div class="entry-content">
+					<p>I wonder if an illustration to describe what being Ph.D. is all about could be better than this: Prof. Matt Might’s illustrated guide to a Ph.D. </p>
+					<p>Also, hat tip to Xiao Ma for sharing the “PhD or No PhD” advice on Medium. A great reading for anyone who considers pursuing academic degree, including me.</p>
+				</div> 
+				<footer class="entry-footer">
+					<span class="icon-wrap"><span class="icon"></span></span>
+					<span class="comments-link"><a href="http://fikrirasyid.com/attention-to-details/#respond" title="Comment on Attention To Details">No Response Yet. <strong>Add Yours</strong></a></span>
+				</footer> 
+			</article>
 
 			<nav role="navigation" id="nav-below" class="navigation-paging">
 				<h2 class="screen-reader-text">Post navigation</h2>
