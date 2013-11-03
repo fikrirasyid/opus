@@ -108,58 +108,27 @@
 				</footer> 
 			</article>
 
-			<article id="post-3439" class="post-3439 post type-post status-publish format-standard hentry category-tech tag-apple tag-macbook-pro tag-mavericks tag-mountain-lion tag-os-x tag-upgrade">
+			<article id="post-3439" class="post-3439 post type-post status-publish format-photo hentry category-tech tag-apple tag-macbook-pro tag-mavericks tag-mountain-lion tag-os-x tag-upgrade">
 				<header class="entry-header">
-					<div class="entry-meta">
-						<ul class="entry-category">
-							<li><a href="http://fikrirasyid.com/category/tech/" title="View all posts in Tech" rel="category tag">Tech</a></li>
-						</ul>
-						<div class="entry-posted-on">
-							<span class="entry-date">
-								<span class="human-time">three days ago</span>
-								<span class="conventional-time">October 28, 2013</span>
-							</span>
-						</div>
-					</div>
 					<a href="http://fikrirasyid.com/upgrade-ke-os-x-10-9-mavericks/" class="entry-featured-image" rel="bookmark">
 					<img src="http://fikrirasyid.com/wp-content/uploads/2013/10/Upgrade-ke-OS-X-Mavericks-1024x746.jpeg" class="attachment-large wp-post-image" alt="Upgrade ke OS X Mavericks"> </a>
-					<h1 class="entry-title">
-						<a href="http://fikrirasyid.com/upgrade-ke-os-x-10-9-mavericks/" rel="bookmark">Upgrade Ke OS X 10.9 Mavericks</a>
-					</h1>
 				</header> 
-				<div class="entry-content">
-					<p>Akhir pekan lalu gue memutuskan untuk melakukan&nbsp;<em>clean install&nbsp;</em>sekalian meng-<em>upgrade</em> OS X di MacBook Pro gue. Alasan gue melakukan&nbsp;<em>clean install&nbsp;</em>sederhana: Macbook gue udah&nbsp;<em>bloated&nbsp;</em>banget rasanya. Sebagai perbandingan, MBP gue yang RAM-nya 8 GB masih terasa lebih&nbsp;<em>laggy&nbsp;</em>daripada iMac kantor yang RAM-nya “cuma” 4 GB. Gue pikir, udah terlalu banyak hal yang gue mampatin ke MBP ini. Karena beli MacBook Air baru masih jauh budget-nya, yaudah <em>let’s start fresh by clean-installing the MBP</em>. Resikonya punya&nbsp;<em>device&nbsp;</em>yang lambat ini terlalu berat buat gue: kalo lambat, jadi males ngapa-ngapain. Kalo males ngapa-ngapain, gue jadi ngga ngebuat apa-apa. <em>Damn scary.</em>&nbsp;<em>Fast and responsive machine is an investment</em>.</p>
-					<p>Setelah nanya-nanya di twitter dan kebantu banget dengan jawaban @<a href="https://twitter.com/fikrirasyid/status/393581973173596160" target="_blank">adhams</a>, gue memutuskan untuk mengikuti <a href="http://mashable.com/2013/10/23/clean-install-os-x-mavericks/">tutorial yang dipublikasikan oleh Mashable</a>. Caranya sederhana:</p>
-					<ol>
-					<li>Backup data penting ke HD eksternal</li>
-					<li>Download installer-nya dari App Store</li>
-					<li>Buat jadi bootable USB pake Diskmaker X</li>
-					<li>Restart, command + R, masuk ke disk utility.</li>
-					<li>Erase partisi OS X</li>
-					<li>Balik ke menu di disk utility, install new OS X</li>
-					<li>Balikin data yang penting ke HD</li>
-					</ol>
-					<p><em>Sounds pretty easy, right? Unfortunately, shit happened.</em> Semuanya lancar sampe langkah ke 4, tapi pas langkah ke 5 gue ngga nemu opsi install new OS X Mavericks. Adanya restore OS X Mountain Lion.</p>
-					<p>Ah, gue pikir belum kebaca nih bootable USB-nya. Dengan bloonnya gue nge-restart MBP + tahan <em>option</em>, ternyata bootable USB-nya ngga kebaca dan satu-satunya partisi yang bisa kebaca cuman partisi bootcamp yang ada Windowsnya. Partisi Machintosh HD udah kosong, dan partisi restore OS X 10.8 juga udah keapus.&nbsp;Wah sial iki -_-</p>
-					<p>Gue restart lagi, dan tahan command + R. Malah langsung masuk ke recovery online yang nge-download disk utility temporer (karena partisi Machintosh HD-nya udah kosong) buat nge-download dan nge-install ulang Mountain Lion.&nbsp;Gue pikir, kalo kudu nge-download Mountain Lion dulu kapan beresnya. Akhirnya gue kepikiran opsi yang relatif lebih cepet:</p>
-					<ol>
-					<li>Install ulang OS X 10.6 Snow Leopard dari DVD bawaan MBP – berhasil.</li>
-					<li>Copy installer OS X 10.9 Mavericks ke MBP terus install biasa – ternyata untuk nge-install Mavericks kudu upgrade dulu ke SL terbaru yang udah ada App Store-nya. Upgrade SL (file-nya sekitar 1 GB-an) lalu install Mavericks, berhasil</li>
-					<li>Download ulang semua App di app store. Not to mention, yang ngga terlalu penting jangan dimasukin lagi :))</li>
-					</ol>
-					<p><em>That’s how I rolled.</em> Setelah gue pikir-pikir, sebenarnya tahapannya bisa dibuat lebih efisien andaikan setelah nge-erase isi partisi, gue langsung restore si Mountain Lion yang ada di partisi hardisk. Dari situ tinggal upgrade ke Mavericks. Tapi ya sudahlah, ini jadi catatan kalau nanti lagi mau nge-<em>clean install</em>:</p>
-					<ol>
-					<li>Download installer dan copy ke desktop</li>
-					<li>Backup seluruh file ke HDD eksternal</li>
-					<li>Restart + ( Command + R), masuk disk utility, erase partisi</li>
-					<li>Restore current OS X</li>
-					<li>Upgrade ke OS X terbaru</li>
-					<li>Balikin data ke HD</li>
-					</ol>
-					<p>Omong-omong gue ngga menjamin langkah-langkah diatas bakal&nbsp;<em>problem-free&nbsp;</em>ya.&nbsp;<em>Use it at your own risk</em>.&nbsp;Gue ngga ikut bertanggung jawab jika ada yang ngikutin langkah ini dan malah jadi bermasalah. Ini sih kesimpulan hasil pengalaman gue aja.</p>
-					<p><em>Anyway</em>, hal menarik setelah upgrade: gue dari dulu belum nge-upgrade iLife karena versi bawaannya MBP ini versi yang sebelum masuk App Store. Setelah upgrade ke Mavericks, gue masuk ke App Store dan label di tombol download-nya aplikasi-aplikasi iLife ini cuman “install” alih-alih “149ribu”. Pas gue coba download + install, tetep ada popup “<em>Are you sure you want to buy?”</em>-nya sih. Ntar akhir bulan liat aja deh tagihan <em>credit card</em>-nya :))</p>
-					<p>Jadi, udah pada update OS X?</p>
+				<div class="entry-content entry-caption">
+					<p>Akhirnya bisa upgrade ke Mavericks juga setelah terpaksa downgrade ke Snow Leopard dulu.</p>
 				</div> 
+
+				<div class="entry-meta">
+					<ul class="entry-category">
+						<li><a href="http://fikrirasyid.com/category/tech/" title="View all posts in Tech" rel="category tag">Tech</a></li>
+					</ul>
+					<div class="entry-posted-on">
+						<span class="entry-date">
+							<span class="human-time">three days ago</span>
+							<span class="conventional-time">October 28, 2013</span>
+						</span>
+					</div>
+				</div>
+
 				<footer class="entry-footer">
 					<span class="icon-wrap"><span class="icon"></span></span>
 					<span class="comments-link"><a href="http://fikrirasyid.com/upgrade-ke-os-x-10-9-mavericks/#respond" title="Comment on Upgrade Ke OS X 10.9 Mavericks">No Response Yet. <strong>Add Yours</strong></a></span>

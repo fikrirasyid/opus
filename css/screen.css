@@ -203,36 +203,8 @@ a {
   position: relative;
 }
 #content article .entry-header .entry-meta {
-  display: block;
-  padding: 10px 10px;
-  line-height: 1;
-  position: relative;
-  z-index: 200;
+  border-top: none;
   border-bottom: 1px solid #c1c1c1;
-}
-#content article .entry-header .entry-meta:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-#content article .entry-header .entry-meta .entry-category {
-  font: bold 0.8em "Montserrat", sans-serif;
-  text-transform: uppercase;
-  float: left;
-}
-#content article .entry-header .entry-meta .entry-category a {
-  color: #232323;
-}
-#content article .entry-header .entry-meta .entry-posted-on {
-  float: right;
-  color: #c1c1c1;
-  font-size: .6em;
-  padding: 3px 0;
-}
-#content article .entry-header .entry-meta .entry-posted-on .conventional-time {
-  display: none;
 }
 #content article .entry-header .entry-featured-image {
   display: block;
@@ -276,10 +248,50 @@ a {
 #content article .entry-header .entry-title a:hover {
   color: #1f7f5c;
 }
+#content article .entry-meta {
+  display: block;
+  padding: 10px 10px;
+  line-height: 1;
+  position: relative;
+  z-index: 200;
+  border-top: 1px solid #ebe7df;
+}
+#content article .entry-meta:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#content article .entry-meta .entry-category {
+  font: bold 0.8em "Montserrat", sans-serif;
+  text-transform: uppercase;
+  float: left;
+}
+#content article .entry-meta .entry-category a {
+  color: #232323;
+}
+#content article .entry-meta .entry-posted-on {
+  float: right;
+  color: #c1c1c1;
+  font-size: .6em;
+  padding: 3px 0;
+}
+#content article .entry-meta .entry-posted-on .conventional-time {
+  display: none;
+}
 #content article .entry-content {
   position: relative;
   z-index: 200;
   padding: 20px;
+}
+#content article .entry-content.entry-caption {
+  padding: 10px;
+  font-size: .7em;
+  line-height: 1.7;
+}
+#content article .entry-content.entry-caption p:last-child {
+  margin-bottom: 0;
 }
 #content article .entry-footer {
   display: black;
