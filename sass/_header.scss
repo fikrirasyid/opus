@@ -1,0 +1,74 @@
+// Header
+#header{
+	display: block;
+	width: 100%;
+	height: 210px;
+	@include clearfix;
+	position: relative;
+	z-index: 200;
+
+	.wrap{
+		padding:70px 0 0;
+	}
+}
+
+#site-name{
+	font: 25px $montserrat;
+	text-transform: uppercase;
+	margin-left: 10px;
+
+	a{
+		color: white;
+		text-decoration: none;		
+	}
+}
+
+#site-desc{
+	font: italic 13px $opensans;
+	color: white;
+	margin-left: 10px;
+
+	a{
+		color: white;
+	}
+}
+
+// Navigation
+#top-nav{
+	display: block;
+	position: fixed;
+	z-index: 500;
+	// background: $green;
+	color: white;
+	opacity: .98;
+
+	.wrap{
+		padding: 10px 0;
+
+		@include clearfix;
+	}
+
+	#top-nav-toggle{
+		float: right;
+		@include sprite_replace_text( top-nav-toggle-open, 22, 15 );
+	}
+
+	.top-nav-container{
+		display: none;
+	}
+}
+
+// Page Cover
+#page-cover{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 210px;
+	overflow: hidden;
+	z-index: 100;
+
+	img{
+		width: 100%;
+	}
+}

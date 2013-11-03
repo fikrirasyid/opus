@@ -1,0 +1,41 @@
+#colophon{
+	background: $crem_dark;
+	// color: $crem_darkest;
+	text-align: center;
+	font-size: .7em;
+	@include montserrat;
+
+	.wrap{
+		padding: 20px 0;
+	}
+
+	.widget-title{
+		font: bold 1.1em $montserrat;
+		margin-bottom: 15px;
+	}
+
+	ul{
+		li{
+			margin-bottom: 5px;
+		}
+	}
+	
+	.site-info{
+		border-top: 1px solid $gray;
+		font-size: .85em;
+	}
+
+	a{
+		color: $crem_darkest;
+
+		&:hover{
+			color: $green;
+		}
+	}
+}
+
+#secondary{
+	.wrap{
+		padding-top: 30px;
+	}
+}

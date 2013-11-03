@@ -1,0 +1,39 @@
+// Variables
+$crem: #ebe7df;
+$crem_dark: #e2dfd8;
+$crem_darkest: #888888;
+$green_dark: #19664a;
+$green: #1f7f5c;
+$text: #666666;
+$black: #232323;
+$gray: #c1c1c1;
+
+// Mixins
+@mixin clearfix{
+	&:after{
+		content:".";
+		display:block; 
+		height:0; 
+		clear:both; 
+		visibility:hidden;
+	}
+}
+
+@mixin clearfix1{
+	&:after{
+		content:".";
+		display:block; 
+		height:0; 
+		clear:both; 
+		visibility:hidden;
+	}
+}
+
+@mixin sprite_replace_text( $name, $width, $height ){
+	display: inline-block;
+	text-indent: -999999em;
+	@include sprites-sprite( $name );
+	width: $width+px;
+	height: $height+px;
+	content: '';
+}
