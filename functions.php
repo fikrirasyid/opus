@@ -1,5 +1,26 @@
 <?php
 /**
+ * Theme setup
+ */
+function opus_setup(){
+	/**
+	 * Add theme supports
+	 */
+	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+
+	/**
+	 * Register menu location
+	 */
+	register_nav_menus( array(
+		'top_nav' => __( 'Top Navigation', 'opus' ),
+		'bottom_nav' => __( 'Bottom Navigation', 'opus' )
+	) );
+}
+add_action( 'after_setup_theme', 'opus_setup' );
+
+/**
  * Enqueue scripts and styles
  */
 function opus_scripts(){
