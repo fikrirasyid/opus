@@ -1,42 +1,12 @@
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Opus</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:300,400,700' rel='stylesheet' type='text/css'>
-	<link rel='stylesheet' href='<?php echo get_bloginfo('stylesheet_directory'); ?>/css/screen.css' type='text/css' media='all'/>
-	<!-- <link rel='stylesheet' href='http://10.0.1.212/fikrirasyid/wp-content/themes/opus/css/screen.css' type='text/css' media='all'/> -->
-	<script type="text/javascript" src="<?php echo get_bloginfo('stylesheet_directory'); ?>/js/live.js"></script>
-</head>
-<body>
-	<nav id="top-nav" class="wrap-outer" role="navigation">
-		<div class="wrap">
-			<h2 id="top-nav-toggle" class="menu-toggle" title="Show Menu">Show Menu</h2>
-			<div class="top-nav-container">
-				<div class="menu-top-nav-container">
-					<ul id="menu-top-nav" class="menu">
-						<li id="menu-item-955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-955"><a href="http://fikrirasyid.com/about/">About Me</a></li>
-						<li id="menu-item-1071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1071"><a href="http://fikrirasyid.com/contact/">Contact</a></li>
-					</ul>
-				</div>				
-			</div>
-		</div>
-	</nav>
-
-	<header id="header" class="wrap-outer">
-		<div class="wrap">
-			<h1 id="site-name"><a href="#">Fikri Rasyid</a></h1>
-			<h2 id="site-desc">I type things, therefore I am. <br>Let's get to know <a href="#">each other more</a></h2>			
-		</div>
-	</header>
-
-	<div id="page-cover">
-		<img src="<?php echo get_bloginfo('template_directory'); ?>/images/dummy/cover-photo-1.jpg" alt="">
-	</div>				
+<?php get_header(); ?>
 
 	<div id="main" class="site-main">
 		<div id="primary" class="content-area">
+		
+			<div id="page-cover">
+				<img src="<?php echo get_bloginfo('template_directory'); ?>/images/dummy/cover-photo-1.jpg" alt="">
+			</div>				
+
 			<div id="content" class="site-content" role="main">
 				<article id="post-3448" class="post-3448 post type-post status-publish format-quote hentry category-lesson-learned tag-gtd tag-productivity">
 					<header class="entry-header">
@@ -187,30 +157,4 @@
 		</div><!-- #primary.content-area -->
 	</div><!-- #main.site-main -->
 
-	<footer id="colophon" class="site-footer wrap-outer" role="contentinfo">
-		<div id="secondary" class="widget-area" role="complementary">
-			<div class="wrap">
-				<aside id="nav_menu-3" class="widget widget_nav_menu">
-					<h2 class="widget-title">MY PRESENCES ELSEWHERE</h2>
-					<div class="menu-top-container">
-						<ul id="menu-top" class="menu">
-							<li id="menu-item-1821" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1821"><a href="http://twitter.com/fikrirasyid">On Twitter</a></li>
-							<li id="menu-item-1822" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1822"><a href="http://www.linkedin.com/in/fikrirasyid">On LinkedIn</a></li>
-							<li id="menu-item-1823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1823"><a href="https://github.com/fikrirasyid">On GitHub</a></li>
-							<li id="menu-item-1830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1830"><a href="http://soundcloud.com/fikrirasyid">On Soundcloud</a></li>
-							<li id="menu-item-1824" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1824"><a href="http://fikrirasyid.tumblr.com">On Tumblr</a></li>
-							<li id="menu-item-3121" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3121"><a href="https://www.google.com/search?q=fikri+rasyid&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t">Need More? Google My Name Here</a></li>
-							</ul>
-						</div>
-				</aside>
-			</div> 
-		</div> 
-
-		<div class="site-info">
-			<div class="wrap">
-			Powered by <a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform">WordPress</a>. This blog is written, <a href="http://fikrirasyid.com/flucid/">designed, and developed</a> by Fikri Rasyid 
-			</div> 
-		</div> 
-	</footer><!-- #colophon.site-footer -->
-</body>
-</html>
+<?php get_footer(); ?>
