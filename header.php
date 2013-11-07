@@ -26,7 +26,7 @@
 
 	<header id="header" class="wrap-outer">
 		<div class="wrap">
-			<h1 id="site-name"><a href="#">Fikri Rasyid</a></h1>
-			<h2 id="site-desc">I type things, therefore I am. <br>Let's get to know <a href="#">each other more</a></h2>			
+			<h1 id="site-name" class="page-theme"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+			<h2 id="site-desc" class="page-theme-description"><?php bloginfo('description'); ?></h2>			
 		</div>
 	</header>

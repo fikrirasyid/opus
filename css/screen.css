@@ -132,22 +132,22 @@ a {
   padding: 70px 0 0;
 }
 
-#site-name {
+.page-theme {
   font: 25px "Montserrat", sans-serif;
   text-transform: uppercase;
   margin-left: 10px;
 }
-#site-name a {
+.page-theme a {
   color: white;
   text-decoration: none;
 }
 
-#site-desc {
+.page-theme-description {
   font: italic 13px "Open Sans", sans-serif;
   color: white;
   margin-left: 10px;
 }
-#site-desc a {
+.page-theme-description a {
   color: white;
 }
 
