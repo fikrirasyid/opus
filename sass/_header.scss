@@ -38,13 +38,26 @@
 	display: block;
 	position: fixed;
 	z-index: 500;
-	// background: $green;
 	color: white;
-	opacity: .98;
+	opacity: .95;
+
+	&.scrolled{
+		background: $green;		
+	}
+
+	&.expanded{
+		.top-nav-container{
+			display: block;				
+		}
+
+		#top-nav-toggle{
+			@include sprite_replace_text( top-nav-toggle-close, 11, 11 );
+			margin: 3px 2px 1px;
+		}
+	}
 
 	.wrap{
 		padding: 10px 0;
-
 		@include clearfix;
 	}
 
@@ -55,6 +68,36 @@
 
 	.top-nav-container{
 		display: none;
+		background: white;
+		position: fixed;
+		top: 35px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		.menu{
+			font: 1.1em $montserrat;
+			text-transform: uppercase;
+		}
+
+		ul{
+			margin: 0 0 0 20px;
+
+			li{
+				a{
+					display: block;
+					border-top: 1px solid $crem;
+					padding: 13px 0;
+					font-weight: 300;
+				}
+
+				&:first-child{
+					a{
+						border-top: none;
+					}
+				}
+			}
+		}		
 	}
 }
 
