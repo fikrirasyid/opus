@@ -121,6 +121,15 @@
 				}
 			}
 
+			.entry-author{
+				font-weight: bold;
+			}
+
+			.entry-author,
+			.entry-author-action{
+				display: none;
+			}
+
 			.entry-posted-on{
 				float: right;
 				color: $gray;

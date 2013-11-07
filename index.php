@@ -45,6 +45,8 @@
 						</ul>
 
 						<div class="entry-posted-on">
+							<span class="entry-author">Fikri Rasyid</span> 
+							<span class="entry-author-action">published this</span> 
 							<span class="entry-date">
 								<span class="human-time">two days ago</span>
 								<span class="conventional-time">October 30, 2013</span>
@@ -76,9 +78,11 @@
 					</ul>
 
 					<div class="entry-posted-on">
-						<span class="author vcard">
-							<span class="entry-date" style="width: 92px;"><span class="human-time">three days ago</span>
-							<span class="conventional-time">October 28, 2013</span>
+						<span class="entry-author">Fikri Rasyid</span> 
+						<span class="entry-author-action">published this</span> 
+						<span class="entry-date">
+							<span class="human-time">two days ago</span>
+							<span class="conventional-time">October 30, 2013</span>
 						</span>
 					</div>
 
@@ -122,9 +126,11 @@
 						<li><a href="http://fikrirasyid.com/category/tech/" title="View all posts in Tech" rel="category tag">Tech</a></li>
 					</ul>
 					<div class="entry-posted-on">
+						<span class="entry-author">Fikri Rasyid</span> 
+						<span class="entry-author-action">published this</span> 
 						<span class="entry-date">
-							<span class="human-time">three days ago</span>
-							<span class="conventional-time">October 28, 2013</span>
+							<span class="human-time">two days ago</span>
+							<span class="conventional-time">October 30, 2013</span>
 						</span>
 					</div>
 				</div>
@@ -143,9 +149,11 @@
 					</ul>
 
 					<div class="entry-posted-on">
-						<span class="author vcard">
-							<span class="entry-date" style="width: 92px;"><span class="human-time">three months ago</span>
-							<span class="conventional-time">October 28, 2013</span>
+						<span class="entry-author">Fikri Rasyid</span> 
+						<span class="entry-author-action">published this</span> 
+						<span class="entry-date">
+							<span class="human-time">two days ago</span>
+							<span class="conventional-time">October 30, 2013</span>
 						</span>
 					</div>
 

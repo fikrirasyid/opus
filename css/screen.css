@@ -338,6 +338,13 @@ a {
 #content article .entry-meta .entry-category a {
   color: #232323;
 }
+#content article .entry-meta .entry-author {
+  font-weight: bold;
+}
+#content article .entry-meta .entry-author,
+#content article .entry-meta .entry-author-action {
+  display: none;
+}
 #content article .entry-meta .entry-posted-on {
   float: right;
   color: #c1c1c1;
