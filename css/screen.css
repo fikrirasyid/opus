@@ -238,6 +238,7 @@ a {
   background: white;
   margin: 0 0 10px;
   position: relative;
+  z-index: 100;
 }
 #content article .entry-header .entry-meta {
   border-top: none;
