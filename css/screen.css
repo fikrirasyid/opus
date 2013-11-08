@@ -161,6 +161,9 @@ a {
 #top-nav.scrolled {
   background: #1f7f5c;
 }
+#top-nav.expanded {
+  background: #1f7f5c;
+}
 #top-nav.expanded .top-nav-container {
   display: block;
 }
@@ -191,6 +194,7 @@ a {
   width: 22px;
   height: 15px;
   content: '';
+  cursor: pointer;
 }
 #top-nav .top-nav-container {
   display: none;

@@ -46,6 +46,8 @@
 	}
 
 	&.expanded{
+		background: $green;
+		
 		.top-nav-container{
 			display: block;				
 		}
@@ -64,6 +66,7 @@
 	#top-nav-toggle{
 		float: right;
 		@include sprite_replace_text( top-nav-toggle-open, 22, 15 );
+		cursor: pointer;
 	}
 
 	.top-nav-container{

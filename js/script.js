@@ -26,4 +26,8 @@ jQuery(document).ready(function($) {
 			$('#top-nav').removeClass('scrolled');
 		}
 	});
+
+	$('#top-nav-toggle').click(function(){
+		$('#top-nav').toggleClass('expanded');
+	});
 });
