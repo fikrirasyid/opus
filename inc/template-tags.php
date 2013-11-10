@@ -321,3 +321,108 @@ function opus_content_nav( $nav_id ) {
 	</nav><!-- #<?php echo esc_html( $nav_id ); ?> -->
 	<?php
 }
+
+/**
+ * Display the comments section
+ */
+function opus_comment($comment, $args, $depth) {
+	$GLOBALS['comment'] = $comment; ?>
+	<li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">	
+		<div id="div-comment-<?php comment_ID() ?>" class="comment-wrap">
+			<div class="comment-wrap-inside">
+				<div class="comment-avatar">
+					<span class="comment-tail"></span>
+					<?php echo get_avatar($comment, 60, ''); ?>
+				</div>
+				<div class="comment-content">
+					<div class="tail"></div>
+					
+					<div class="comment-meta">						
+						<div class="comment-author"><?php comment_author_link(); ?></div>
+					</div>
+
+					<div class="entry-content">
+						<?php if ($comment->comment_approved == '0') : ?>
+						<p><em><?php _e('comment will appear after being approved by admin.', 'opus') ?></em> </p>
+						<?php endif; ?>						
+						<?php comment_text() ?>
+					</div>
+				</div>
+				<div class="comment-action">
+					<?php comment_reply_link(array_merge( $args, array('reply_text' => __('<span class="label">Reply</span>', 'opus'), 'add_below' => 'div-comment', 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+
+					<div class="comment-date">
+						<span class="human-time"><?php echo opus_get_the_human_time( strtotime( get_comment_time('c') ) ); ?></span>
+						<span class="conventional-time"><?php printf( get_comment_time('F d, Y')) ?></span>
+					</div>						
+				</div>				
+			</div>
+		</div><!-- .comment-wrap -->
+	<?php
+}
+
+/**
+ * Display the comment form
+ */
+function opus_comment_form(){
+	global $user_identity, $id;
+
+	if ( ! comments_open() ) : ?>
+	<div id="respond">
+		<div id="comment-closed">
+			<h3 id="reply-title"><?php _e("Comment is Closed", "opus"); ?></h3>
+			<p><?php _e('<a href="'. get_bloginfo("url") .'/contact/">Contact us</a> if you have something important to say about this topic.', "opus"); ?></p>
+		</div>
+	</div>
+	<?php elseif (comments_open()) : ?>
+
+	<!-- Comment Form -->
+	<div id="respond" class="comment-form">
+		<header id="respond-header">
+			<h2 id="respond-title"><?php _e( 'What Do You Think?', 'opus' ); ?></h2>
+		</header>
+
+		<div class="cancel-comment-reply"> 
+			<?php cancel_comment_reply_link(); ?>
+		</div>
+
+		<?php if ( get_option('comment_registration') && !$user_ID ) : ?>
+			<p class="comment-loggedin">
+				You have to be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>">logged in</a> to be able to comment.
+			</p>
+		<?php else : ?>
+			<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="comment-form">
+			
+
+				<div class="submit-comment-avatar">
+					<span class="comment-tail"></span>
+					<?php if ( is_user_logged_in() ) : ?>
+					<div class="comment-logged-in info left-info">
+						<?php echo get_avatar( wp_get_current_user()->ID, 82, get_bloginfo('template_directory') . '/images/default-avatar.jpg' ); ?>
+					</div>						
+					<div class="comment-logged-in info right-info">
+						<p class="logged-in-as"><span class="subtitle">Logged in as</span> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></p>	
+						<p><a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out</a></p>
+					</div>
+					<?php else : ?>
+					<input type="text" name="author" class="comment-input author info left-info" placeholder="Name" id="author" size="22" tabindex="1" <?php if (isset($req)) echo "aria-required='true'"; ?> />
+					<input type="text" name="email"  class="comment-input email info right-info" placeholder="Email" id="email" size="22" tabindex="2" <?php if (isset($req)) echo "aria-required='true'"; ?> />
+					<input type="text" name="url"  class="comment-input url info right-info" placeholder="URL" id="url" size="22" tabindex="2" <?php if (isset($req)) echo "aria-required='true'"; ?> />
+					<?php endif; ?>						
+				</div>
+				<div class="submit-comment-content clearfix">
+					<textarea name="comment" id="comment" rows="10" tabindex="4" placeholder="Type your comment here..." class="the-content"></textarea>
+					<div id="submit-wrap">
+							<span class="icon"></span>
+							<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+					</div>						
+					<?php comment_id_fields(); ?>
+					<?php do_action('comment_form', isset($post->ID)); ?>							
+				</div>
+			
+
+			</form>
+		<?php endif; // If registration required and not logged in ?>
+	</div>
+	<?php endif;
+}

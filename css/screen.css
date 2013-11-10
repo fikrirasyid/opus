@@ -28,8 +28,8 @@
  * 9.0 - Print
  * ----------------------------------------------------------------------------
  */
-.sprites-sprite, #top-nav.expanded #top-nav-toggle, #top-nav #top-nav-toggle, #content article .entry-header .entry-original-link a:hover:before, #content article .entry-header .entry-original-link a:before, #nav-below .nav-next a:after, #nav-below .nav-previous a:after {
-  background: url('../images/sprites-s867d02418e.png') no-repeat;
+.sprites-sprite, #top-nav.expanded #top-nav-toggle, #top-nav #top-nav-toggle, #content article .entry-header .entry-original-link a:hover:before, #content article .entry-header .entry-original-link a:before, #nav-below .nav-next a:after, #nav-below .nav-previous a:after, #comments .comment .comment-wrap .comment-reply-link, #comments .comment .comment-wrap .comment-reply-link:hover, #comments .comment .comment-wrap .comment-reply-link:active {
+  background: url('../images/sprites-s5e6e2a3f66.png') no-repeat;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -170,7 +170,7 @@ a {
 #top-nav.expanded #top-nav-toggle {
   display: inline-block;
   text-indent: -999999em;
-  background-position: 0 -50px;
+  background-position: 0 -86px;
   width: 11px;
   height: 11px;
   content: '';
@@ -190,7 +190,7 @@ a {
   float: right;
   display: inline-block;
   text-indent: -999999em;
-  background-position: 0 -81px;
+  background-position: 0 -117px;
   width: 22px;
   height: 15px;
   content: '';
@@ -431,6 +431,41 @@ a {
   font-weight: bold;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  border: none;
+  width: 100%;
+  padding: 6px 10px;
+  font: 0.7em "Open Sans", sans-serif;
+  border: 3px solid #e2dfd8;
+  outline: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #888888;
+}
+
+input[type="submit"],
+button,
+.button {
+  border: 0;
+  background: #1f7f5c;
+  font: 0.7em "Montserrat", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-bottom: 3px solid #19664a;
+  cursor: pointer;
+}
+input[type="submit"]:active,
+button:active,
+.button:active {
+  background: #19664a;
+}
+
 #nav-below {
   margin: 30px 0;
 }
@@ -463,7 +498,7 @@ a {
 #nav-below .nav-next a:after {
   display: inline-block;
   text-indent: -999999em;
-  background-position: 0 -61px;
+  background-position: 0 -97px;
   width: 11px;
   height: 20px;
   content: '';
@@ -484,7 +519,7 @@ a {
 #nav-below .nav-previous a:after {
   display: inline-block;
   text-indent: -999999em;
-  background-position: 0 -30px;
+  background-position: 0 -66px;
   width: 11px;
   height: 20px;
   content: '';
@@ -495,6 +530,106 @@ a {
 }
 #nav-below .nav-previous a:active {
   background: #333;
+}
+
+#comments {
+  margin: 0 0 10px;
+}
+#comments .comments-title {
+  font: 0.8em "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #232323;
+  margin: 0 0 20px;
+}
+#comments .comment {
+  margin-bottom: 10px;
+}
+#comments .comment .children {
+  margin: 10px 0 0 40px;
+}
+#comments .comment .comment-wrap {
+  position: relative;
+  background: white;
+}
+#comments .comment .comment-wrap .comment-avatar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+}
+#comments .comment .comment-wrap .comment-avatar img {
+  width: 100%;
+  height: 100%;
+}
+#comments .comment .comment-wrap .comment-content {
+  display: block;
+  padding: 5px 10px 10px 60px;
+  font-size: .8em;
+}
+#comments .comment .comment-wrap .comment-action {
+  font-size: .8em;
+  border-top: 1px solid #ebe7df;
+  background: #f6f4f2;
+}
+#comments .comment .comment-wrap .comment-action:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#comments .comment .comment-wrap .comment-action .comment-date {
+  float: left;
+  border-left: 1px solid #ebe7df;
+  padding: 10px 15px 8px;
+  font: 0.7em "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+#comments .comment .comment-wrap .comment-action .comment-date .conventional-time {
+  display: none;
+}
+#comments .comment .comment-wrap .comment-reply-link {
+  float: left;
+  display: inline-block;
+  text-indent: -999999em;
+  background-position: 0 -42px;
+  width: 16px;
+  height: 12px;
+  content: '';
+  margin: 10px 12px;
+}
+#comments .comment .comment-wrap .comment-reply-link:hover {
+  background-position: 0 -30px;
+}
+#comments .comment .comment-wrap .comment-reply-link:active {
+  background-position: 0 -54px;
+}
+
+#respond {
+  margin: 40px 0 0;
+}
+#respond input[type="text"] {
+  margin: 0 0 10px;
+}
+#respond textarea {
+  resize: none;
+  height: 150px;
+  margin-bottom: 10px;
+}
+#respond .comment-input.email {
+  width: 48%;
+}
+#respond .comment-input.author {
+  width: 49%;
+  margin-right: 1%;
+}
+
+#respond-title {
+  font: 0.8em "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 10px 10px;
+  color: #232323;
 }
 
 #colophon {
