@@ -530,6 +530,8 @@ button:active,
 
 #nav-below {
   margin: 10px 0 40px;
+  position: relative;
+  z-index: 200;
 }
 #nav-below:after {
   content: ".";
@@ -596,6 +598,8 @@ button:active,
 
 #comments {
   margin: 0 0 10px;
+  position: relative;
+  z-index: 200;
 }
 #comments .comments-title {
   font: 0.8em "Montserrat", sans-serif;
@@ -699,6 +703,8 @@ button:active,
   text-align: center;
   font-size: .7em;
   font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 200;
 }
 #colophon .wrap {
   padding: 20px 0;

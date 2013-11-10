@@ -319,6 +319,8 @@ button,
 #nav-below{
 	margin: 10px 0 40px;
 	@include clearfix;
+	position: relative;
+	z-index: 200; // should be above #page-cover 100
 
 	div{
 		float: right;
@@ -382,6 +384,8 @@ button,
 
 #comments{
 	margin: 0 0 10px;
+	position: relative;
+	z-index: 200; // should be above #page-cover 100
 
 	.comments-title{
 		font: .8em $montserrat;

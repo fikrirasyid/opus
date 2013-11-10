@@ -7,7 +7,7 @@
 	<!-- <link rel='stylesheet' href='http://10.0.1.212/fikrirasyid/wp-content/themes/opus/css/screen.css' type='text/css' media='all'/> -->
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 	<nav id="top-nav" class="wrap-outer" role="navigation">
 		<div class="wrap">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="home" title="<?php printf( __( 'Back to %1$s', 'opus' ), get_bloginfo('name') ); ?>"><?php echo get_avatar( get_bloginfo( 'admin_email' ), 75 ); ?></a>

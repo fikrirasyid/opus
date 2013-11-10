@@ -49,4 +49,31 @@ jQuery(document).ready(function($) {
 			);
 		}
 	});
+
+	/**
+	 * For Post Formated by Quote and Having Featured Image
+	 */
+	if( $('body').is('.single-format-quote') && $('#page-cover img').length > 0 ){
+		var body_height = $('body').outerHeight();
+
+		$('#page-cover').css({ 'height' : body_height });
+		$('#page-cover img').css({ 
+			'height' : '100%',
+			'width' : 'auto',
+		});
+		$('#page-cover').append('<span class="shadow"></span>');
+		$('#page-cover .shadow').css({
+			'display' : 'block',
+			'width' : '100%',
+			'height' : '100%',
+			'position' : 'absolute',
+			'top' : '0',
+			'left' : '0',
+			'background-color' : 'white',
+			'opacity' : .8
+		});
+		$('#content article').css({
+			'background-color' : 'transparent'
+		});
+	}
 });
