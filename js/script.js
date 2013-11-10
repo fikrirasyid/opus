@@ -19,8 +19,7 @@ jQuery(document).ready(function($) {
 	 */
 	$(window).scroll(function(){
 		var window_offset = $(window).scrollTop();
-		var main_offset = $('#main').offset();
-		if( window_offset > main_offset.top ){
+		if( window_offset > 0 ){
 			$('#top-nav').addClass('scrolled');
 		} else {
 			$('#top-nav').removeClass('scrolled');

@@ -54,12 +54,31 @@
 	color: white;
 	opacity: .95;
 
+	#home{
+		float: left;
+		display: none;
+
+		img{
+			float: left;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			margin: 0;
+		}
+	}
+
 	&.scrolled{
 		background: $green;		
+
+		#home{
+			display: block;
+		}
 	}
 
 	&.expanded{
 		background: $green;
+
+		display: block;
 		
 		.top-nav-container{
 			display: block;				

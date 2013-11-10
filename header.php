@@ -10,6 +10,8 @@
 <body>
 	<nav id="top-nav" class="wrap-outer" role="navigation">
 		<div class="wrap">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="home" title="<?php printf( __( 'Back to %1$s', 'opus' ), get_bloginfo('name') ); ?>"><?php echo get_avatar( get_bloginfo( 'admin_email' ), 75 ); ?></a>
+
 			<h2 id="top-nav-toggle" class="menu-toggle" title="Show Menu">Show Menu</h2>
 			<div class="top-nav-container">
 				<?php wp_nav_menu( array( 'theme_location' => 'top_nav' ) ); ?>
