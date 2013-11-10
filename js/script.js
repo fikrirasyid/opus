@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 		if( item_width > content_width ){
 			item.removeAttr('width').css({'width' : '100%'});
 
-			if( item.is('img div') ){
+			if( item.is('img, div') ){
 				item.removeAttr('height');
 			}
 		}
