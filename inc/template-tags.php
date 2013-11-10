@@ -302,9 +302,9 @@ function opus_content_nav( $nav_id ) {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'opus' ); ?></h1>
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
-
-		<?php next_post_link( '<div class="nav-next">%link</div>', '<span class="label">%title</span> <span class="meta-nav">' . _x( '', 'Next post link', 'opus' ) . '</span>' ); ?>
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '', 'Previous post link', 'opus' ) . '</span> <span class="label">%title</span>' ); ?>
+	
+		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '', 'Previous post link', 'opus' ) . '</span> <span class="label">Older</span>' ); ?>
+		<?php next_post_link( '<div class="nav-next">%link</div>', '<span class="label">Newer</span> <span class="meta-nav">' . _x( '', 'Next post link', 'opus' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
