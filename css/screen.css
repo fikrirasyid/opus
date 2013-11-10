@@ -396,6 +396,30 @@ a {
   font-size: .8em;
   line-height: 1.9;
 }
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.entry-content h1 {
+  font: 1.4em "Montserrat", sans-serif;
+  color: #232323;
+  border-bottom: 1px solid #ebe7df;
+  padding-bottom: 5px;
+}
+.entry-content h2 {
+  font: 1.25em "Montserrat", sans-serif;
+  color: #1f7f5c;
+  border-bottom: 1px solid #ebe7df;
+  padding-bottom: 5px;
+}
+.entry-content h3 {
+  font-weight: bold;
+  font: 1.1em;
+}
+.entry-content h4 {
+  font-size: .9em;
+  text-transform: uppercase;
+}
 .entry-content a {
   color: #1f7f5c;
   text-decoration: underline;
@@ -429,6 +453,11 @@ a {
 }
 .entry-content strong {
   font-weight: bold;
+}
+.entry-content .wp-caption-text {
+  font-size: .7em;
+  padding: 5px 10px 0;
+  color: #afafaf;
 }
 
 input[type="text"],

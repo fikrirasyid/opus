@@ -188,6 +188,35 @@
 .entry-content{
 	font-size: .8em;
 	line-height: 1.9;
+	
+	h1, h2, h3, h4, h5, h6{
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
+	h1{
+		font: 1.4em $montserrat;
+		color: $black;
+		border-bottom: 1px solid $crem;
+		padding-bottom: 5px;
+	}
+
+	h2{
+		font: 1.25em $montserrat;
+		color: $green;
+		border-bottom: 1px solid $crem;
+		padding-bottom: 5px;
+	}
+
+	h3{
+		font-weight: bold;
+		font: 1.1em;
+	}
+
+	h4{
+		font-size: .9em;
+		text-transform: uppercase;
+	}
 
 	a{
 		color: $green;
@@ -234,6 +263,12 @@
 
 	strong{
 		font-weight: bold;
+	}
+
+	.wp-caption-text{
+		font-size: .7em;
+		padding: 5px 10px 0;
+		color: #afafaf;
 	}
 }
 
