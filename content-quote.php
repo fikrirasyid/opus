@@ -14,7 +14,7 @@
 		<?php endif; ?>
 	</header> 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<?php the_content( __( 'Continue Reading &rarr;', 'opus' ) ); ?>
 	</div> 
 	<footer class="entry-footer">
 		<span class="icon-wrap"><span class="icon"></span></span>

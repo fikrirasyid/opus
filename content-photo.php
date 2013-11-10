@@ -8,7 +8,7 @@
 	<?php endif(); ?>
 
 	<div class="entry-content entry-caption">
-		<?php the_content(); ?>
+		<?php the_content( __( 'Continue Reading &rarr;', 'opus' ) ); ?>
 	</div> 
 
 	<div class="entry-meta">
