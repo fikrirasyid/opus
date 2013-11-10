@@ -429,6 +429,9 @@ a {
 }
 .entry-content h3 {
   font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #232323;
   font: 1.1em;
 }
 .entry-content h4 {
