@@ -30,4 +30,24 @@ jQuery(document).ready(function($) {
 	$('#top-nav-toggle').click(function(){
 		$('#top-nav').toggleClass('expanded');
 	});
+
+	/**
+	 * For Posts which have more than one category
+	 */
+	$('.entry-category').each(function(){
+		var cat = $(this);
+		if( cat.find('li').size() > 1 ){
+			cat.find('li:first a').append('<sup>+</sup>');
+			cat.find('li:gt(0)').hide();
+
+			cat.hover(
+				function(){
+					cat.find('li:gt(0)').show();
+				},
+				function(){
+					cat.find('li:gt(0)').hide();
+				}
+			);
+		}
+	});
 });

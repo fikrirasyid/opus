@@ -347,6 +347,7 @@ a {
   font: bold 0.8em "Montserrat", sans-serif;
   text-transform: uppercase;
   float: left;
+  height: 16px;
 }
 #content article .entry-meta .entry-category a {
   color: #232323;
