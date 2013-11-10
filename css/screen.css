@@ -487,10 +487,26 @@ a {
 .entry-content strong {
   font-weight: bold;
 }
+.entry-content sup {
+  font-size: .6em;
+  vertical-align: super;
+}
+.entry-content sub {
+  font-size: .6em;
+  vertical-align: sub;
+}
 .entry-content .wp-caption-text {
   font-size: .7em;
   padding: 5px 10px 0;
   color: #afafaf;
+}
+.entry-content .alignleft {
+  float: left;
+  margin: 0 20px 20px -0;
+}
+.entry-content .alignright {
+  float: right;
+  margin: 0 -0 20px 20px;
 }
 
 input[type="text"],

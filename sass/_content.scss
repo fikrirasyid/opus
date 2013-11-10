@@ -277,11 +277,31 @@
 		font-weight: bold;
 	}
 
+	sup{
+		font-size: .6em;
+		vertical-align: super;
+	}
+
+	sub{
+		font-size: .6em;
+		vertical-align: sub;
+	}
+
 	.wp-caption-text{
 		font-size: .7em;
 		padding: 5px 10px 0;
 		color: #afafaf;
 	}
+
+	.alignleft{
+		float: left;
+		margin: 0 20px 20px -0;
+	}
+
+	.alignright{
+		float: right;
+		margin: 0 0 20px 20px;
+	}	
 }
 
 input[type="text"],
