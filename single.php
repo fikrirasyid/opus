@@ -45,7 +45,7 @@
 ?>
 <header id="header" class="wrap-outer single <?php echo $color_scheme; ?>">
 	<div class="wrap">
-		<h1 id="site-name" class="page-theme"><a href="<?php echo esc_url( get_category_link( $categories[0]->cat_ID ) ); ?>" rel="home"><?php echo $categories[0]->name; ?></a></h1>
+		<h1 id="site-name" class="page-theme"><a href="<?php echo esc_url( get_category_link( $categories[0]->cat_ID ) ); ?>" title="<?php printf( __( 'View all %1$s Posts', 'opus' ), $categories[0]->name ); ?>" rel="home"><?php echo $categories[0]->name; ?></a></h1>
 		<h2 id="site-desc" class="page-theme-description"><?php echo $categories[0]->description; ?></h2>			
 	</div>
 </header>
