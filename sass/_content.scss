@@ -141,6 +141,14 @@
 					display: none;
 				}
 			}
+
+			&.single{
+				text-align: center;
+				
+				.entry-posted-on{
+					float: none;
+				}
+			}
 		}		
 		
 		.entry-content{

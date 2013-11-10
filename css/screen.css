@@ -120,6 +120,7 @@ a {
   height: 210px;
   position: relative;
   z-index: 200;
+  color: white;
 }
 #header:after {
   content: ".";
@@ -131,6 +132,18 @@ a {
 #header .wrap {
   padding: 70px 0 0;
 }
+#header a {
+  color: white;
+}
+#header.dark {
+  color: #232323;
+}
+#header.dark a {
+  color: #232323;
+}
+#header.single .page-theme {
+  font-size: 16px;
+}
 
 .page-theme {
   font: 25px "Montserrat", sans-serif;
@@ -138,17 +151,12 @@ a {
   margin-left: 10px;
 }
 .page-theme a {
-  color: white;
   text-decoration: none;
 }
 
 .page-theme-description {
   font: italic 13px "Open Sans", sans-serif;
-  color: white;
   margin-left: 10px;
-}
-.page-theme-description a {
-  color: white;
 }
 
 #top-nav {
@@ -358,6 +366,12 @@ a {
 }
 #content article .entry-meta .entry-posted-on .conventional-time {
   display: none;
+}
+#content article .entry-meta.single {
+  text-align: center;
+}
+#content article .entry-meta.single .entry-posted-on {
+  float: none;
 }
 #content article .entry-content {
   position: relative;

@@ -6,9 +6,28 @@
 	@include clearfix;
 	position: relative;
 	z-index: 200;
+	color: white;
 
 	.wrap{
 		padding:70px 0 0;
+	}
+
+	a{
+		color: white;
+	}
+
+	&.dark{
+		color: $black;
+
+		a{
+			color: $black;			
+		}
+	}
+
+	&.single{
+		.page-theme{
+			font-size: 16px;
+		}
 	}
 }
 
@@ -18,19 +37,13 @@
 	margin-left: 10px;
 
 	a{
-		color: white;
 		text-decoration: none;		
 	}
 }
 
 .page-theme-description{
 	font: italic 13px $opensans;
-	color: white;
 	margin-left: 10px;
-
-	a{
-		color: white;
-	}
 }
 
 // Navigation
