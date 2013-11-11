@@ -6,9 +6,19 @@ function opus_setup(){
 	/**
 	 * Add theme supports
 	 */
+    $default_custom_header = array(
+        'uploads' => true,
+        'default-image' => get_template_directory_uri() . '/images/default/three-men.jpg',
+        'flex-width' => true,
+        'width' => 960,
+        'flex-height' => true,
+        'height' => 720
+    );
+
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+    add_theme_support( 'custom-header', $default_custom_header );
 
 	/**
 	 * Register menu location

@@ -3,7 +3,7 @@
 	<div id="main" class="site-main">
 		<div id="primary" class="content-area">
 			<div id="page-cover">
-				<img src="<?php echo get_bloginfo('template_directory'); ?>/images/dummy/cover-photo-1.jpg" alt="">
+				<img src="<?php header_image(); ?>" alt="<?php bloginfo('title'); ?>">
 			</div>				
 			<div id="content" class="site-content" role="main">
 				<?php 
