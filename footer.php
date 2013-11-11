@@ -1,10 +1,10 @@
 	<footer id="colophon" class="site-footer wrap-outer" role="contentinfo">
 		<div id="secondary" class="widget-area" role="complementary">
 			<div class="wrap">
-				<aside id="nav_menu-3" class="widget widget_nav_menu">
-					<h2 class="widget-title">MY PRESENCES ELSEWHERE</h2>
-
-					<?php wp_nav_menu( array( 'theme_location' => 'bottom_nav' ) ); ?>
+				<aside id="nav_menu-3" class="widget widget_nav_menu">					
+					<ul>
+						<?php dynamic_sidebar( 'footer-widgets' ); ?>
+					</ul>
 				</aside>
 			</div> 
 		</div> 

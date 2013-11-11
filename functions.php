@@ -24,9 +24,17 @@ function opus_setup(){
 	 * Register menu location
 	 */
 	register_nav_menus( array(
-		'top_nav' => __( 'Top Navigation', 'opus' ),
-		'bottom_nav' => __( 'Bottom Navigation', 'opus' )
+		'top_nav' => __( 'Top Navigation', 'opus' )
 	) );
+
+    /**
+    * Register widget area
+    */
+    register_sidebar( array(
+        'name' => __( 'Footer Widgets', 'opus' ),
+        'id' => 'footer-widgets',
+        'description' => __( 'Widgets in this area will be shown on Footer Area', 'opus' ),
+    ) );
 }
 add_action( 'after_setup_theme', 'opus_setup' );
 

@@ -725,9 +725,13 @@ button:active,
 #colophon .wrap {
   padding: 20px 0;
 }
-#colophon .widget-title {
+#colophon .widgettitle {
   font: bold 1.1em "Montserrat", sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#colophon .widget {
+  margin-bottom: 40px;
 }
 #colophon ul li {
   margin-bottom: 5px;
@@ -745,6 +749,44 @@ button:active,
 
 #secondary .wrap {
   padding-top: 30px;
+}
+
+#wp-calendar {
+  margin: 0 auto;
+  width: 60%;
+}
+#wp-calendar caption {
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#wp-calendar thead tr th {
+  text-align: center;
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+#wp-calendar tbody {
+  font-family: 'Open Sans', sans-serif;
+}
+#wp-calendar tbody tr td {
+  text-align: center;
+  padding: 2px 0;
+  font-size: .85em;
+}
+#wp-calendar tbody tr td a {
+  font-weight: bold;
+  color: #1f7f5c;
+}
+
+.widget_search input[type="text"] {
+  width: 80%;
+  display: inline-block;
+  border-color: #888888;
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+.widget_search input {
+  vertical-align: middle;
 }
 
 @media all and (min-width: 680px) {
