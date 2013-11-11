@@ -1,10 +1,11 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Opus</title>
-
-	<!-- <link rel='stylesheet' href='http://10.0.1.212/fikrirasyid/wp-content/themes/opus/css/screen.css' type='text/css' media='all'/> -->
+	<title><?php bloginfo('name'); ?> | <?php is_home() ? bloginfo('description') : wp_title(''); ?></title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
