@@ -383,6 +383,9 @@ a {
 #content article .entry-meta .entry-posted-on .conventional-time {
   display: none;
 }
+#content article .entry-meta .entry-posted-on a {
+  color: #c1c1c1;
+}
 #content article .entry-meta.single {
   text-align: center;
 }
@@ -801,7 +804,113 @@ button:active,
     margin-right: auto;
   }
 
+  #header .wrap {
+    padding-top: 240px;
+  }
+  #header.single .wrap {
+    padding-top: 250px;
+  }
+  #header.single .page-theme {
+    font-size: 1.05em;
+  }
+
+  .page-theme {
+    font-size: 2em;
+  }
+
+  .page-theme-description {
+    font-size: .8em;
+  }
+
+  #header,
+  #page-cover {
+    height: 600px;
+  }
+
+  #content {
+    margin-top: -62px;
+  }
+  #content article {
+    margin-bottom: 60px;
+  }
+  #content article .entry-header .entry-meta {
+    padding: 20px;
+  }
+  #content article .entry-header .entry-meta .entry-author,
+  #content article .entry-header .entry-meta .entry-author-action {
+    display: inline-block;
+  }
+  #content article .entry-header .entry-title {
+    padding: 40px 80px;
+    font-size: 1.3em;
+    line-height: 1.2;
+  }
   #content article .entry-content {
     padding: 60px 80px;
+  }
+  #content article .entry-footer {
+    padding: 20px 20px 20px 75px;
+  }
+
+  .entry-content p, .entry-content ul, .entry-content ol {
+    margin-bottom: 25px;
+  }
+
+  #nav-below {
+    margin-bottom: 80px;
+  }
+  #nav-below a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #nav-below a:after {
+    top: 19px;
+  }
+  #nav-below .nav-previous a {
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  #nav-below .nav-next a {
+    padding-right: 30px;
+    padding-left: 40px;
+  }
+
+  #comments .comment {
+    margin-bottom: 20px;
+  }
+  #comments .comment .children {
+    margin-top: 20px;
+  }
+  #comments .comment .comment-wrap .comment-avatar {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+  }
+  #comments .comment .comment-wrap .comment-avatar img {
+    width: 100%;
+    height: 100%;
+  }
+  #comments .comment .comment-wrap .comment-content {
+    padding: 25px 40px 15px 110px;
+  }
+
+  #respond {
+    margin: 80px 0;
+  }
+  #respond .comment-input.email {
+    width: 49%;
+  }
+  #respond .comment-input.author {
+    width: 49%;
+    margin-right: 1%;
+  }
+  #respond input[type="submit"] {
+    padding: 15px 20px 13px;
+  }
+
+  #secondary .wrap {
+    padding-top: 60px;
   }
 }
