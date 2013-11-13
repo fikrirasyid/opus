@@ -44,6 +44,10 @@
 .page-theme-description{
 	font: italic 13px $opensans;
 	margin-left: 10px;
+
+	strong{
+		font-weight: bold;
+	}
 }
 
 // Navigation

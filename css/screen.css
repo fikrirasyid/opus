@@ -161,6 +161,9 @@ a {
   font: italic 13px "Open Sans", sans-serif;
   margin-left: 10px;
 }
+.page-theme-description strong {
+  font-weight: bold;
+}
 
 #top-nav {
   display: block;
