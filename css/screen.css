@@ -28,7 +28,10 @@
  * 9.0 - Print
  * ----------------------------------------------------------------------------
  */
-.sprites-sprite, #top-nav.expanded #top-nav-toggle, #top-nav #top-nav-toggle, #content article .entry-header .entry-original-link a:hover:before, #content article .entry-header .entry-original-link a:before, #nav-below .nav-next a:after, #nav-below .nav-previous a:after, #comments .comment .comment-wrap .comment-reply-link, #comments .comment .comment-wrap .comment-reply-link:hover, #comments .comment .comment-wrap .comment-reply-link:active {
+.sprites-sprite, #top-nav.expanded #top-nav-toggle, #top-nav #top-nav-toggle, #content article .entry-header .entry-original-link a:hover:before, #content article .entry-header .entry-original-link a:before, #nav-below .nav-next a:after, #nav-below .nav-previous a:after, #comments .pingback .comment-wrap .comment-reply-link,
+#comments .comment .comment-wrap .comment-reply-link, #comments .pingback .comment-wrap .comment-reply-link:hover,
+#comments .comment .comment-wrap .comment-reply-link:hover, #comments .pingback .comment-wrap .comment-reply-link:active,
+#comments .comment .comment-wrap .comment-reply-link:active {
   background: url('../images/sprites-s5e6e2a3f66.png') no-repeat;
 }
 
@@ -626,16 +629,20 @@ button:active,
   color: #232323;
   margin: 0 0 20px;
 }
+#comments .pingback,
 #comments .comment {
   margin-bottom: 10px;
 }
+#comments .pingback .children,
 #comments .comment .children {
   margin: 10px 0 0 40px;
 }
+#comments .pingback .comment-wrap,
 #comments .comment .comment-wrap {
   position: relative;
   background: white;
 }
+#comments .pingback .comment-wrap .comment-avatar,
 #comments .comment .comment-wrap .comment-avatar {
   position: absolute;
   top: 10px;
@@ -643,20 +650,24 @@ button:active,
   width: 40px;
   height: 40px;
 }
+#comments .pingback .comment-wrap .comment-avatar img,
 #comments .comment .comment-wrap .comment-avatar img {
   width: 100%;
   height: 100%;
 }
+#comments .pingback .comment-wrap .comment-content,
 #comments .comment .comment-wrap .comment-content {
   display: block;
   padding: 5px 10px 10px 60px;
   font-size: .8em;
 }
+#comments .pingback .comment-wrap .comment-action,
 #comments .comment .comment-wrap .comment-action {
   font-size: .8em;
   border-top: 1px solid #ebe7df;
   background: #f6f4f2;
 }
+#comments .pingback .comment-wrap .comment-action:after,
 #comments .comment .comment-wrap .comment-action:after {
   content: ".";
   display: block;
@@ -664,6 +675,7 @@ button:active,
   clear: both;
   visibility: hidden;
 }
+#comments .pingback .comment-wrap .comment-action .comment-date,
 #comments .comment .comment-wrap .comment-action .comment-date {
   float: left;
   border-left: 1px solid #ebe7df;
@@ -671,9 +683,11 @@ button:active,
   font: 0.7em "Montserrat", sans-serif;
   text-transform: uppercase;
 }
+#comments .pingback .comment-wrap .comment-action .comment-date .conventional-time,
 #comments .comment .comment-wrap .comment-action .comment-date .conventional-time {
   display: none;
 }
+#comments .pingback .comment-wrap .comment-reply-link,
 #comments .comment .comment-wrap .comment-reply-link {
   float: left;
   display: inline-block;
@@ -684,11 +698,16 @@ button:active,
   content: '';
   margin: 10px 12px;
 }
+#comments .pingback .comment-wrap .comment-reply-link:hover,
 #comments .comment .comment-wrap .comment-reply-link:hover {
   background-position: 0 -30px;
 }
+#comments .pingback .comment-wrap .comment-reply-link:active,
 #comments .comment .comment-wrap .comment-reply-link:active {
   background-position: 0 -54px;
+}
+#comments .pingback .comment-wrap .comment-content {
+  padding-left: 10px;
 }
 
 #respond {
@@ -894,6 +913,9 @@ button:active,
   }
   #comments .comment .comment-wrap .comment-content {
     padding: 25px 40px 15px 110px;
+  }
+  #comments .pingback .comment-wrap .comment-content {
+    padding: 25px 40px 15px 40px;
   }
 
   #respond {

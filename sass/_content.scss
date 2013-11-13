@@ -417,7 +417,8 @@ button,
 		color: $black;
 		margin: 0 0 20px;
 	}
-
+	
+	.pingback,
 	.comment{
 		margin-bottom: 10px;
 
@@ -486,6 +487,14 @@ button,
 				&:active{
 					@include sprites-sprite( comment-reply-active );
 				}
+			}
+		}
+	}
+
+	.pingback{
+		.comment-wrap{
+			.comment-content{
+				padding-left: 10px;
 			}
 		}
 	}
