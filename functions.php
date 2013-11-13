@@ -47,6 +47,10 @@ function opus_scripts(){
 
 	wp_enqueue_script( 'livejs', get_template_directory_uri() . '/js/live.js', array(), '20131106', true );
 	wp_enqueue_script( 'opus_script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20131106', true );
+
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }    
 }
 add_action( 'wp_enqueue_scripts', 'opus_scripts' );
 

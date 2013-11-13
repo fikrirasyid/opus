@@ -741,8 +741,17 @@ button:active,
   padding-left: 10px;
 }
 
+.cancel-comment-reply {
+  font-size: .6em;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+.cancel-comment-reply a:hover {
+  text-decoration: underline;
+}
+
 #respond {
-  margin: 40px 0 0;
+  margin: 40px 0;
 }
 #respond input[type="text"] {
   margin: 0 0 10px;
