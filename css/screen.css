@@ -629,6 +629,34 @@ button:active,
   color: #232323;
   margin: 0 0 20px;
 }
+#comments .navigation-comment {
+  padding-bottom: 10px;
+}
+#comments .navigation-comment:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#comments .navigation-comment .nav-previous {
+  float: left;
+}
+#comments .navigation-comment .nav-next {
+  float: right;
+}
+#comments .navigation-comment a {
+  float: left;
+  font-size: .7em;
+  font-style: italic;
+  padding: 5px 10px;
+}
+#comments .navigation-comment a:hover {
+  text-decoration: underline;
+}
+#comments .navigation-comment a:actove {
+  color: #19664a;
+}
 #comments .pingback,
 #comments .comment {
   margin-bottom: 10px;

@@ -417,6 +417,34 @@ button,
 		color: $black;
 		margin: 0 0 20px;
 	}
+
+	.navigation-comment{
+		@include clearfix;
+		padding-bottom: 10px;
+
+		.nav-previous{
+			float: left;
+		}
+
+		.nav-next{
+			float: right;
+		}
+
+		a{
+			float: left;
+			font-size: .7em;
+			font-style: italic;
+			padding: 5px 10px;
+
+			&:hover{
+				text-decoration: underline;
+			}
+
+			&:actove{
+				color: $green_dark;
+			}
+		}
+	}
 	
 	.pingback,
 	.comment{
