@@ -60,7 +60,7 @@
 
 	#home{
 		float: left;
-		display: none;
+		opacity: 0;
 
 		img{
 			float: left;
@@ -75,22 +75,7 @@
 		background: $green;		
 
 		#home{
-			display: block;
-		}
-	}
-
-	&.expanded{
-		background: $green;
-
-		display: block;
-		
-		.top-nav-container{
-			display: block;				
-		}
-
-		#top-nav-toggle{
-			@include sprite_replace_text( top-nav-toggle-close, 11, 11 );
-			margin: 3px 2px 1px;
+			opacity: 1;
 		}
 	}
 
@@ -120,7 +105,7 @@
 		}
 
 		ul{
-			margin: 0 0 0 20px;
+			margin: 0 0 35px 20px;
 
 			li{
 				a{
@@ -128,6 +113,10 @@
 					border-top: 1px solid $crem;
 					padding: 13px 0;
 					font-weight: 300;
+
+					&:hover{
+						color: $green_dark;
+					}
 				}
 
 				&:first-child{
@@ -137,6 +126,26 @@
 				}
 			}
 		}		
+	}
+}
+
+body.expanded{
+	overflow: hidden;
+
+	#top-nav{
+		background: $green;
+
+		display: block;
+		
+		.top-nav-container{
+			display: block;				
+			overflow-y: auto;
+		}
+
+		#top-nav-toggle{
+			@include sprite_replace_text( top-nav-toggle-close, 11, 11 );
+			margin: 3px 2px 1px;
+		}
 	}
 }
 

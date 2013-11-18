@@ -2,6 +2,25 @@
 @media all and (min-width: 680px){
 	body{
 		font-size: 25px;
+
+		&.expanded{
+			#top-nav{
+				#top-nav-toggle{
+					margin-top: 20px;
+				}
+
+				.top-nav-container{
+					ul{
+						width: 680px;
+						margin: 0 auto 70px;
+
+						li{
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	#content,
@@ -38,6 +57,31 @@
 	#header,
 	#page-cover{
 		height: 600px;
+	}
+
+	#top-nav{
+		background: $green;
+
+		#home{
+			opacity: 1;
+
+			img{
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		#top-nav-toggle{
+			margin-top: 17px;
+		}
+
+		.top-nav-container{
+			top: 70px;
+
+			ul{
+				margin-bottom: 70px;
+			}
+		}
 	}
 
 	#content{

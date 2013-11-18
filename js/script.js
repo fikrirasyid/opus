@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('#top-nav-toggle').click(function(){
-		$('#top-nav').toggleClass('expanded');
+		$('body').toggleClass('expanded');
 	});
 
 	/**
