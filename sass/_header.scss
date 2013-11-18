@@ -71,9 +71,19 @@
 		}
 	}
 
+	#home-name{
+		float: left;
+		color: white;
+		font: 300 .7em $montserrat;
+		text-transform: uppercase;
+		margin: 1px 0 0 10px;
+		opacity: 0;
+	}
+
 	&.scrolled{
 		background: $green;		
-
+		
+		#home-name,
 		#home{
 			opacity: 1;
 		}

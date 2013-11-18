@@ -2,25 +2,6 @@
 @media all and (min-width: 680px){
 	body{
 		font-size: 25px;
-
-		&.expanded{
-			#top-nav{
-				#top-nav-toggle{
-					margin-top: 20px;
-				}
-
-				.top-nav-container{
-					ul{
-						width: 680px;
-						margin: 0 auto 70px;
-
-						li{
-							margin-left: 20px;
-						}
-					}
-				}
-			}
-		}
 	}
 
 	#content,
@@ -58,7 +39,8 @@
 	#page-cover{
 		height: 600px;
 	}
-
+	
+	body.expanded #top-nav,
 	#top-nav{
 		background: $green;
 
@@ -71,15 +53,21 @@
 			}
 		}
 
+		#home-name{
+			font-size: 1em;
+			margin: 10px 0 0 15px;
+		}
+
 		#top-nav-toggle{
-			margin-top: 17px;
+			margin-top: 20px;
 		}
 
 		.top-nav-container{
 			top: 70px;
 
 			ul{
-				margin-bottom: 70px;
+				width: 680px;
+				margin: 0 auto 70px;
 			}
 		}
 	}

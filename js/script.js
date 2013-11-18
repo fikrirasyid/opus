@@ -27,7 +27,17 @@ jQuery(document).ready(function($) {
 	});
 
 	$('#top-nav-toggle').click(function(){
-		$('body').toggleClass('expanded');
+		if( $('body').is('.expanded') ){
+			$('#top-nav .top-nav-container').fadeOut(200, function(){
+				$('body').removeClass('expanded');
+				$(this).attr('style', '');
+			});
+		} else {
+			$('#top-nav .top-nav-container').fadeIn(200, function(){
+				$('body').addClass('expanded');
+				$(this).attr('style', '');
+			});
+		}
 	});
 
 	/**
