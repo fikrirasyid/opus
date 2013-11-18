@@ -78,6 +78,10 @@
 		text-transform: uppercase;
 		margin: 1px 0 0 10px;
 		opacity: 0;
+
+		&:hover{
+			color: $crem;
+		}
 	}
 
 	&.scrolled{
@@ -98,6 +102,10 @@
 		float: right;
 		@include sprite_replace_text( top-nav-toggle-open, 22, 15 );
 		cursor: pointer;
+
+		&:hover{
+			opacity: .7;
+		}
 	}
 
 	.top-nav-container{

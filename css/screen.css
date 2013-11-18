@@ -191,6 +191,9 @@ a {
   margin: 1px 0 0 10px;
   opacity: 0;
 }
+#top-nav #home-name:hover {
+  color: #ebe7df;
+}
 #top-nav.scrolled {
   background: #1f7f5c;
 }
@@ -217,6 +220,9 @@ a {
   height: 15px;
   content: '';
   cursor: pointer;
+}
+#top-nav #top-nav-toggle:hover {
+  opacity: .7;
 }
 #top-nav .top-nav-container {
   display: none;
