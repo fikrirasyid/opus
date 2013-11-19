@@ -295,6 +295,8 @@ body.admin-bar #top-nav .top-nav-container ul {
 
 #content {
   margin: -10px 10px 0;
+  position: relative;
+  z-index: 200;
 }
 #content article {
   background: white;

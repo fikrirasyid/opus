@@ -1,5 +1,7 @@
 #content{
 	margin: -10px 10px 0;
+	position: relative;
+	z-index: 200; // should be higher than #header's
 
 	article{
 		background: white;
