@@ -273,6 +273,12 @@ body.expanded #top-nav #top-nav-toggle {
   content: '';
   margin: 3px 2px 1px;
 }
+body.admin-bar #top-nav .top-nav-container {
+  top: 68px;
+}
+body.admin-bar #top-nav .top-nav-container ul {
+  margin-bottom: 68px;
+}
 
 #page-cover {
   position: absolute;
@@ -939,6 +945,13 @@ button:active,
   #top-nav .top-nav-container ul {
     width: 680px;
     margin: 0 auto 70px;
+  }
+
+  body.admin-bar #top-nav .top-nav-container {
+    top: 98px;
+  }
+  body.admin-bar #top-nav .top-nav-container ul {
+    margin-bottom: 98px;
   }
 
   #content {

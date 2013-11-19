@@ -72,6 +72,18 @@
 		}
 	}
 
+	body.admin-bar{
+		#top-nav{
+			.top-nav-container{
+				top: 98px;
+
+				ul{
+					margin-bottom: 98px;
+				}
+			}
+		}
+	}
+
 	#content{
 		margin-top: -62px;
 

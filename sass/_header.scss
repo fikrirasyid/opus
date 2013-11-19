@@ -147,22 +147,36 @@
 	}
 }
 
-body.expanded{
-	overflow: hidden;
+body{
+	&.expanded{
+		overflow: hidden;
 
-	#top-nav{
-		background: $green;
+		#top-nav{
+			background: $green;
 
-		display: block;
-		
-		.top-nav-container{
-			display: block;				
-			overflow-y: auto;
-		}
+			display: block;
+			
+			.top-nav-container{
+				display: block;				
+				overflow-y: auto;
+			}
 
-		#top-nav-toggle{
-			@include sprite_replace_text( top-nav-toggle-close, 11, 11 );
-			margin: 3px 2px 1px;
+			#top-nav-toggle{
+				@include sprite_replace_text( top-nav-toggle-close, 11, 11 );
+				margin: 3px 2px 1px;
+			}
+		}		
+	}
+
+	&.admin-bar{
+		#top-nav{
+			.top-nav-container{
+				top: 68px;	
+
+				ul{
+					margin-bottom: 68px;
+				}
+			}			
 		}
 	}
 }
