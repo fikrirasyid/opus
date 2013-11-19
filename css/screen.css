@@ -1031,3 +1031,15 @@ button:active,
     padding-top: 60px;
   }
 }
+@media all and (min-width: 501px) and (max-width: 679px) {
+  .gallery .gallery-item a img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media all and (max-width: 500px) {
+  .gallery .gallery-item a img {
+    width: 75px;
+    height: 75px;
+  }
+}

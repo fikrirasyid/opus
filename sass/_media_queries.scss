@@ -200,3 +200,33 @@
 		}
 	}
 }
+
+
+// Gallery requires specific styling for mobile view
+// Big Phones, Between 501px to 679px
+@media all and (min-width: 501px) and (max-width: 679px){
+	.gallery{
+		.gallery-item{
+			a{
+				img{
+					width: 120px;
+					height: 120px;
+				}
+			}
+		}
+	}
+}
+
+// Phones, Below 500px
+@media all and (max-width: 500px){
+	.gallery{
+		.gallery-item{
+			a{
+				img{
+					width: 75px;
+					height: 75px;
+				}
+			}
+		}
+	}
+}
