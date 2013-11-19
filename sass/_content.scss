@@ -532,7 +532,6 @@ button,
 
 .cancel-comment-reply{
 	font-size: .6em;
-	margin-left: 10px;
 	padding-bottom: 10px;
 
 	a{
@@ -565,11 +564,30 @@ button,
 			margin-right: 1%;
 		}
 	}
+
+	.submit-comment-avatar{
+		@include clearfix;
+		margin-bottom: 20px;
+
+		.left-info{
+			float: left;
+			margin-right: 15px;
+
+			img{
+				width: 60px;
+				height: 60px;
+			}
+		}
+
+		.right-info{
+			font-size: .7em;
+		}
+	}
 }
 
 #respond-title{
 	font: .8em $montserrat;
 	text-transform: uppercase;
-	margin: 0 0 10px 10px;
+	margin: 0 0 10px 0;
 	color: $black;
 }

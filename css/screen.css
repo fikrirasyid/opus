@@ -774,7 +774,6 @@ button:active,
 
 .cancel-comment-reply {
   font-size: .6em;
-  margin-left: 10px;
   padding-bottom: 10px;
 }
 .cancel-comment-reply a:hover {
@@ -799,11 +798,32 @@ button:active,
   width: 49%;
   margin-right: 1%;
 }
+#respond .submit-comment-avatar {
+  margin-bottom: 20px;
+}
+#respond .submit-comment-avatar:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#respond .submit-comment-avatar .left-info {
+  float: left;
+  margin-right: 15px;
+}
+#respond .submit-comment-avatar .left-info img {
+  width: 60px;
+  height: 60px;
+}
+#respond .submit-comment-avatar .right-info {
+  font-size: .7em;
+}
 
 #respond-title {
   font: 0.8em "Montserrat", sans-serif;
   text-transform: uppercase;
-  margin: 0 0 10px 10px;
+  margin: 0 0 10px 0;
   color: #232323;
 }
 
