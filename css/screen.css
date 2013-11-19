@@ -1058,3 +1058,6 @@ button:active,
     height: 75px;
   }
 }
+body.admin-bar #page-cover {
+  top: 27px;
+}
