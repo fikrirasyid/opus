@@ -293,6 +293,11 @@ body.admin-bar #top-nav .top-nav-container ul {
   width: 100%;
 }
 
+.single-attachment #header,
+.single-attachment #page-cover {
+  height: 50px;
+}
+
 #content {
   margin: -10px 10px 0;
 }
@@ -913,6 +918,11 @@ button:active,
   #header,
   #page-cover {
     height: 600px;
+  }
+
+  .single-attachment #header,
+  .single-attachment #page-cover {
+    height: 200px;
   }
 
   body.expanded #top-nav,
