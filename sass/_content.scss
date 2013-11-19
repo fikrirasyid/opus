@@ -1,13 +1,13 @@
 #content{
 	margin: -10px 10px 0;
 	position: relative;
-	z-index: 200; // should be higher than #header's
+	z-index: 60; // should be higher than #header's
 
 	article{
 		background: white;
 		margin: 0 0 10px;
 		position: relative;
-		z-index: 100;
+		z-index: 40;
 
 		.entry-header{
 
@@ -30,7 +30,7 @@
 				height: 100%;
 				top: 0;
 				left: 0;
-				z-index: 100;
+				z-index: 40;
 				overflow: hidden;
 				
 				.shadow{
@@ -110,7 +110,7 @@
 			padding: 10px 10px;
 			line-height: 1;
 			position: relative;
-			z-index: 200;
+			z-index: 50;
 			border-top: 1px solid $crem;
 			@include clearfix;
 
@@ -160,7 +160,7 @@
 		
 		.entry-content{
 			position: relative;
-			z-index: 200;
+			z-index: 50;
 
 			padding: 20px;
 
@@ -178,7 +178,7 @@
 		.entry-footer{
 			display: black;
 			position: relative;
-			z-index: 200;
+			z-index: 50;
 			background: $green;
 			color: white;
 			font: .6em $montserrat;
@@ -346,7 +346,7 @@ button,
 	margin: 10px 0 40px;
 	@include clearfix;
 	position: relative;
-	z-index: 200; // should be above #page-cover 100
+	z-index: 50; // should be above #page-cover 100
 
 	div{
 		float: right;
@@ -411,7 +411,7 @@ button,
 #comments{
 	margin: 0 0 10px;
 	position: relative;
-	z-index: 200; // should be above #page-cover 100
+	z-index: 50; // should be above #page-cover 100
 
 	.comments-title{
 		font: .8em $montserrat;

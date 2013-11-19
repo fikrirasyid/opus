@@ -122,7 +122,7 @@ a {
   width: 100%;
   height: 210px;
   position: relative;
-  z-index: 200;
+  z-index: 50;
   color: white;
 }
 #header:after {
@@ -168,7 +168,7 @@ a {
 #top-nav {
   display: block;
   position: fixed;
-  z-index: 500;
+  z-index: 200;
   color: white;
   opacity: .95;
 }
@@ -287,7 +287,7 @@ body.admin-bar #top-nav .top-nav-container ul {
   width: 100%;
   height: 210px;
   overflow: hidden;
-  z-index: 100;
+  z-index: 40;
 }
 #page-cover img {
   width: 100%;
@@ -296,13 +296,13 @@ body.admin-bar #top-nav .top-nav-container ul {
 #content {
   margin: -10px 10px 0;
   position: relative;
-  z-index: 200;
+  z-index: 60;
 }
 #content article {
   background: white;
   margin: 0 0 10px;
   position: relative;
-  z-index: 100;
+  z-index: 40;
 }
 #content article .entry-header .entry-meta {
   border-top: none;
@@ -320,7 +320,7 @@ body.admin-bar #top-nav .top-nav-container ul {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 40;
   overflow: hidden;
 }
 #content article .entry-header .entry-background .shadow {
@@ -385,7 +385,7 @@ body.admin-bar #top-nav .top-nav-container ul {
   padding: 10px 10px;
   line-height: 1;
   position: relative;
-  z-index: 200;
+  z-index: 50;
   border-top: 1px solid #ebe7df;
 }
 #content article .entry-meta:after {
@@ -431,7 +431,7 @@ body.admin-bar #top-nav .top-nav-container ul {
 }
 #content article .entry-content {
   position: relative;
-  z-index: 200;
+  z-index: 50;
   padding: 20px;
 }
 #content article .entry-content.entry-caption {
@@ -445,7 +445,7 @@ body.admin-bar #top-nav .top-nav-container ul {
 #content article .entry-footer {
   display: black;
   position: relative;
-  z-index: 200;
+  z-index: 50;
   background: #1f7f5c;
   color: white;
   font: 0.6em "Montserrat", sans-serif;
@@ -587,7 +587,7 @@ button:active,
 #nav-below {
   margin: 10px 0 40px;
   position: relative;
-  z-index: 200;
+  z-index: 50;
 }
 #nav-below:after {
   content: ".";
@@ -655,7 +655,7 @@ button:active,
 #comments {
   margin: 0 0 10px;
   position: relative;
-  z-index: 200;
+  z-index: 50;
 }
 #comments .comments-title {
   font: 0.8em "Montserrat", sans-serif;
