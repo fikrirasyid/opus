@@ -689,7 +689,7 @@ button:active,
 #comments .navigation-comment a:hover {
   text-decoration: underline;
 }
-#comments .navigation-comment a:actove {
+#comments .navigation-comment a:active {
   color: #19664a;
 }
 #comments .pingback,
