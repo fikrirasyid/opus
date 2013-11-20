@@ -4,4 +4,15 @@ body{
 			top: 27px;
 		}		
 	}
+
+	&.logged-in{
+		#respond{
+			.submit-comment-avatar{
+				background: #f6f4f2;
+				border: 1px solid $crem_dark;
+				border-bottom: none;
+				padding: 10px;				
+			}
+		}
+	}
 }

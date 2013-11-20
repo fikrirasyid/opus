@@ -329,7 +329,7 @@ textarea{
 	width: 100%;
 	padding: 6px 10px;
 	font: .7em $opensans;
-	border: 3px solid $crem_dark;
+	border: 1px solid $crem_dark;
 	outline: none;
 	
 	&:focus{
@@ -565,20 +565,8 @@ button,
 		margin-bottom: 10px;
 	}
 
-	.comment-input{
-		&.email{
-			width: 48%;
-		}
-
-		&.author{
-			width: 49%;
-			margin-right: 1%;
-		}
-	}
-
 	.submit-comment-avatar{
 		@include clearfix;
-		margin-bottom: 20px;
 
 		.left-info{
 			float: left;

@@ -2,6 +2,18 @@
 @media all and (min-width: 680px){
 	body{
 		font-size: 25px;
+
+		&.logged-in{
+			#respond{
+				.submit-comment-avatar{
+					padding: 25px !important;
+
+					.left-info{
+						margin-right: 25px;
+					}
+				}				
+			}
+		}
 	}
 
 	#content,
@@ -194,15 +206,21 @@
 	#respond{
 		margin: 80px 0;
 
-		.comment-input{
+		input.comment-input{
+			margin-bottom: 15px;
+
 			&.email{
 				width: 49%;
 			}
 
 			&.author{
 				width: 49%;
-				margin-right: 1%;
+				margin-right: 2%;
 			}
+		}
+
+		textarea{
+			margin-bottom: 15px;
 		}
 
 		input[type="submit"]{

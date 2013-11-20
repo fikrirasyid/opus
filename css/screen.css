@@ -580,7 +580,7 @@ textarea {
   width: 100%;
   padding: 6px 10px;
   font: 0.7em "Open Sans", sans-serif;
-  border: 3px solid #e2dfd8;
+  border: 1px solid #e2dfd8;
   outline: none;
 }
 input[type="text"]:focus,
@@ -814,16 +814,6 @@ button:active,
   height: 150px;
   margin-bottom: 10px;
 }
-#respond .comment-input.email {
-  width: 48%;
-}
-#respond .comment-input.author {
-  width: 49%;
-  margin-right: 1%;
-}
-#respond .submit-comment-avatar {
-  margin-bottom: 20px;
-}
 #respond .submit-comment-avatar:after {
   content: ".";
   display: block;
@@ -918,8 +908,8 @@ button:active,
   width: 80%;
   display: inline-block;
   border-color: #888888;
-  padding-top: 4px;
-  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-bottom: 7px;
 }
 .widget_search input {
   vertical-align: middle;
@@ -928,6 +918,12 @@ button:active,
 @media all and (min-width: 680px) {
   body {
     font-size: 25px;
+  }
+  body.logged-in #respond .submit-comment-avatar {
+    padding: 25px !important;
+  }
+  body.logged-in #respond .submit-comment-avatar .left-info {
+    margin-right: 25px;
   }
 
   #content,
@@ -1078,12 +1074,18 @@ button:active,
   #respond {
     margin: 80px 0;
   }
-  #respond .comment-input.email {
+  #respond input.comment-input {
+    margin-bottom: 15px;
+  }
+  #respond input.comment-input.email {
     width: 49%;
   }
-  #respond .comment-input.author {
+  #respond input.comment-input.author {
     width: 49%;
-    margin-right: 1%;
+    margin-right: 2%;
+  }
+  #respond textarea {
+    margin-bottom: 15px;
   }
   #respond input[type="submit"] {
     padding: 15px 20px 13px;
@@ -1107,4 +1109,10 @@ button:active,
 }
 body.admin-bar #page-cover {
   top: 27px;
+}
+body.logged-in #respond .submit-comment-avatar {
+  background: #f6f4f2;
+  border: 1px solid #e2dfd8;
+  border-bottom: none;
+  padding: 10px;
 }
