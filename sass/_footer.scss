@@ -5,7 +5,7 @@
 	font-size: .7em;
 	@include montserrat;
 	position: relative;
-	z-index: 200; // should be placed above #page-cover / 100
+	z-index: 60; // should be placed above #page-cover: 40
 
 	.wrap{
 		padding: 20px 0;

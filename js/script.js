@@ -27,14 +27,17 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	var top_nav_container_top_raw = $('.top-nav-container').css('top');
+	var top_nav_container_top = parseInt( top_nav_container_top_raw.replace( 'px', '' ) );
+
 	$('#top-nav-toggle').click(function(){
 		if( $('body').is('.expanded') ){
-			$('#top-nav .top-nav-container').fadeOut(200, function(){
+			$('#top-nav .top-nav-container').animate({ 'top' : '200%'}, 200, function(){
 				$('body').removeClass('expanded');
 				$(this).attr('style', '');
 			});
 		} else {
-			$('#top-nav .top-nav-container').fadeIn(200, function(){
+			$('#top-nav .top-nav-container').css({ 'top' : '200%', 'display' : 'block' }).animate({ 'top' : top_nav_container_top }, 200, function(){
 				$('body').addClass('expanded');
 				$(this).attr('style', '');
 			});

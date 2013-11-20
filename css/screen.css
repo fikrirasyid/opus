@@ -834,7 +834,7 @@ button:active,
   font-size: .7em;
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  z-index: 200;
+  z-index: 60;
 }
 #colophon .wrap {
   padding: 20px 0;
