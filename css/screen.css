@@ -110,7 +110,7 @@ a {
 
 .wrap {
   display: block;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .screen-reader-text {
@@ -238,7 +238,7 @@ a {
   text-transform: uppercase;
 }
 #top-nav .top-nav-container ul {
-  margin: 0 0 35px 20px;
+  margin: 0 0 35px 15px;
 }
 #top-nav .top-nav-container ul li a {
   display: block;
@@ -294,13 +294,13 @@ body.admin-bar #top-nav .top-nav-container ul {
 }
 
 #content {
-  margin: -10px 10px 0;
+  margin: -20px 15px 0;
   position: relative;
   z-index: 60;
 }
 #content article {
   background: white;
-  margin: 0 0 10px;
+  margin: 0 0 15px;
   position: relative;
   z-index: 40;
 }
