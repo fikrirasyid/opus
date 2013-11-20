@@ -120,12 +120,15 @@
 		.menu{
 			font: 1.1em $montserrat;
 			text-transform: uppercase;
+			overflow: hidden;
 		}
 
 		ul{
 			margin: 0 0 35px 15px;
 
 			li{
+				display: block;
+
 				a{
 					display: block;
 					border-top: 1px solid $crem;
@@ -140,6 +143,24 @@
 				&:first-child{
 					a{
 						border-top: none;
+					}
+				}
+
+				.sub-menu{
+					margin-left: 20px !important;
+					margin-bottom: 0 !important;
+
+					li{
+						&:first-child{
+							a{
+								border-top: 1px solid $crem;				
+							}
+						}
+
+						a{
+							font-size: .7em;
+							padding: 7px 0;
+						}
 					}
 				}
 			}
