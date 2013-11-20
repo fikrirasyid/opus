@@ -71,6 +71,11 @@ function opus_remove_width_attribute( $html ) {
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
+ * Customizer
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
  * Determine if a background image needs light or dark text
  * Source: http://stackoverflow.com/questions/5842440/background-image-dark-or-light
  * get average luminance, by sampling $num_samples times in both x,y directions
