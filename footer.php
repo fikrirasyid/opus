@@ -14,7 +14,7 @@
 			Powered by <a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform">WordPress</a>. This blog is written, <a href="http://fikrirasyid.com/flucid/">designed, and developed</a> by Fikri Rasyid 
 			</div> 
 		</div> 
-		<?php wp_footer(); ?>
 	</footer><!-- #colophon.site-footer -->
+	<?php wp_footer(); ?>
 </body>
 </html>
