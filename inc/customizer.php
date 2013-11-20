@@ -3,6 +3,11 @@
  * Register customizer
  */
 function opus_customizer_register( $wp_customize ){
+	// Remove unused Control
+	$wp_customize->remove_control( 'display_header_text' );
+	$wp_customize->remove_control( 'header_textcolor' );
+
+	// Add Custom Setting & Control
 	$wp_customize->add_setting( 
 		'site_color',
 		array(
