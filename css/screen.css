@@ -832,6 +832,9 @@ button:active,
 #respond .submit-comment-avatar .right-info {
   font-size: .7em;
 }
+#respond p {
+  font-size: .8em;
+}
 
 #respond-title {
   font: 0.8em "Montserrat", sans-serif;

@@ -368,11 +368,11 @@ function opus_comment_form(){
 	global $user_identity, $id;
 
 	if ( ! comments_open() ) : ?>
-	<div id="respond">
-		<div id="comment-closed">
-			<h3 id="reply-title"><?php _e("Comment is Closed", "opus"); ?></h3>
-			<p><?php _e('<a href="'. get_bloginfo("url") .'/contact/">Contact us</a> if you have something important to say about this topic.', "opus"); ?></p>
-		</div>
+	<div id="respond" class="closed-comment">
+		<header id="respond-header">
+			<h2 id="respond-title"><?php _e( 'Comment is closed.', 'opus' ); ?></h2>
+		</header>
+		<p><?php _e('Contact us if you have something important to say about this topic.', "opus"); ?></p>
 	</div>
 	<?php elseif (comments_open()) : ?>
 
