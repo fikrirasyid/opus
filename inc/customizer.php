@@ -78,6 +78,11 @@ function opus_customize_css(){
 		.button{
 			border-bottom-color: <?php echo $site_color_darker; ?>;
 		}
+
+		/* Sticky Post */
+		#content article.sticky{
+			box-shadow: 5px 5px 0 <?php echo $site_color_darker; ?>;
+		}
 	</style>
 	<?php
 }

@@ -319,6 +319,9 @@ body.admin-bar #top-nav .top-nav-container ul {
   position: relative;
   z-index: 40;
 }
+#content article.sticky {
+  box-shadow: 5px 5px 0 #19664a;
+}
 #content article .entry-header .entry-meta {
   border-top: none;
   border-bottom: 1px solid #ebe7df;

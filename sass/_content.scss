@@ -9,6 +9,10 @@
 		position: relative;
 		z-index: 40;
 
+		&.sticky{
+			box-shadow: 5px 5px 0 $green_dark;
+		}
+
 		.entry-header{
 
 			.entry-meta{
