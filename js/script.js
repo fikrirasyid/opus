@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 			}
 		}
 	}	
-	$('.entry-content img, .entry-content .wp-caption, .entry-content iframe').each(opus_normalize_media);
+	$('.entry-content img, .entry-content .wp-caption, .entry-content iframe, .entry-content embed').each(opus_normalize_media);
 	$('.entry-content .attachment img').removeAttr('width').removeAttr('height').css({ 'width' : '100%' });
 
 	/**

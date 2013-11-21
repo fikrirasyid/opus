@@ -134,7 +134,8 @@
 	}
 
 	.entry-content{
-		p, ul, ol{
+		p, ul, ol, address, pre, table,
+		input[type="text"], input[type="password"]{
 			margin-bottom: 25px;
 		}		
 	}
@@ -241,11 +242,9 @@
 @media all and (min-width: 501px) and (max-width: 679px){
 	.gallery{
 		.gallery-item{
-			a{
-				img{
-					width: 120px;
-					height: 120px;
-				}
+			img{
+				width: 120px;
+				height: 120px;
 			}
 		}
 	}
@@ -255,12 +254,19 @@
 @media all and (max-width: 500px){
 	.gallery{
 		.gallery-item{
-			a{
-				img{
-					width: 75px;
-					height: 75px;
-				}
+			img{
+				width: 75px;
+				height: 75px;
 			}
+		}
+
+		&.gallery-columns-4{
+			.gallery-item{
+				img{
+					width: 50px;
+					height: 50px;
+				}
+			}			
 		}
 	}
 }

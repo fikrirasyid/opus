@@ -358,6 +358,8 @@ body.admin-bar #top-nav .top-nav-container ul {
   padding: 20px;
   border-bottom: 1px solid #ebe7df;
   line-height: 1.6;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }
 #content article .entry-header .entry-title a {
   color: #232323;
@@ -438,6 +440,9 @@ body.admin-bar #top-nav .top-nav-container ul {
 #content article .entry-meta .entry-posted-on a {
   color: #c1c1c1;
 }
+#content article .entry-meta .entry-posted-on a:hover {
+  text-decoration: underline;
+}
 #content article .entry-meta.single {
   text-align: center;
 }
@@ -516,6 +521,16 @@ body.admin-bar #top-nav .top-nav-container ul {
   font-size: .9em;
   text-transform: uppercase;
 }
+.entry-content h5 {
+  font-size: .75em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.entry-content h6 {
+  font-size: .6em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .entry-content a {
   color: #1f7f5c;
   text-decoration: underline;
@@ -523,8 +538,12 @@ body.admin-bar #top-nav .top-nav-container ul {
 .entry-content a:hover {
   color: #19664a;
 }
-.entry-content p, .entry-content ul, .entry-content ol {
+.entry-content p, .entry-content ul, .entry-content ol, .entry-content address, .entry-content pre, .entry-content table,
+.entry-content input[type="text"], .entry-content input[type="password"] {
   margin-bottom: 15px;
+}
+.entry-content label {
+  font-weight: 300;
 }
 .entry-content ul li {
   list-style: disc;
@@ -534,12 +553,18 @@ body.admin-bar #top-nav .top-nav-container ul {
   list-style: decimal;
   margin-left: 20px;
 }
+.entry-content q,
 .entry-content blockquote {
   font-weight: 300;
   font-size: 1.5em;
   font-style: italic;
   line-height: 1.5;
   margin-bottom: 15px;
+}
+.entry-content cite {
+  font-size: .8em;
+  font-weight: bold;
+  margin-top: 10px;
 }
 .entry-content small {
   font-size: .6em;
@@ -558,18 +583,97 @@ body.admin-bar #top-nav .top-nav-container ul {
   font-size: .6em;
   vertical-align: sub;
 }
+.entry-content table {
+  width: 100%;
+}
+.entry-content table thead tr {
+  background: #cfcfcf;
+}
+.entry-content table thead tr th {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+.entry-content table tbody tr:nth-child(even) {
+  background: #efefef;
+}
+.entry-content table tbody tr th,
+.entry-content table tbody tr td {
+  padding: 5px 10px;
+  vertical-align: top;
+}
+.entry-content dl dt {
+  font-weight: bold;
+}
+.entry-content dl dd {
+  margin-left: 40px;
+  font-weight: 300;
+}
+.entry-content address {
+  font-weight: 300;
+  margin-left: 40px;
+}
+.entry-content acronym,
+.entry-content abbr {
+  font-weight: 300;
+}
+.entry-content big {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.entry-content var,
+.entry-content code,
+.entry-content kbd,
+.entry-content pre,
+.entry-content code {
+  font-family: monospace, serif;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+.entry-content pre {
+  font-size: .8em;
+  padding: 30px 40px;
+  border: 1px solid #dfdfdf;
+  background: #efefef;
+}
 .entry-content .wp-caption-text {
   font-size: .7em;
   padding: 5px 10px 0;
   color: #afafaf;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+.entry-content .aligncenter {
+  margin: 0 auto 10px;
+  display: block;
 }
 .entry-content .alignleft {
   float: left;
-  margin: 0 20px 20px -0;
+  margin: 0 20px 10px -0;
 }
 .entry-content .alignright {
   float: right;
-  margin: 0 0 20px 20px;
+  margin: 0 0 10px 20px;
+}
+
+.page-links {
+  border: 1px solid #ebe7df;
+  padding: 5px 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3;
+  font-size: .7em;
+}
+.page-links a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gallery.gallery-columns-4 .gallery-item img {
+  width: 100px;
+  height: 100px;
 }
 
 input[type="text"],
@@ -1027,7 +1131,8 @@ button:active,
     padding: 20px 20px 20px 75px;
   }
 
-  .entry-content p, .entry-content ul, .entry-content ol {
+  .entry-content p, .entry-content ul, .entry-content ol, .entry-content address, .entry-content pre, .entry-content table,
+  .entry-content input[type="text"], .entry-content input[type="password"] {
     margin-bottom: 25px;
   }
 
@@ -1099,15 +1204,19 @@ button:active,
   }
 }
 @media all and (min-width: 501px) and (max-width: 679px) {
-  .gallery .gallery-item a img {
+  .gallery .gallery-item img {
     width: 120px;
     height: 120px;
   }
 }
 @media all and (max-width: 500px) {
-  .gallery .gallery-item a img {
+  .gallery .gallery-item img {
     width: 75px;
     height: 75px;
+  }
+  .gallery.gallery-columns-4 .gallery-item img {
+    width: 50px;
+    height: 50px;
   }
 }
 body.admin-bar #page-cover {

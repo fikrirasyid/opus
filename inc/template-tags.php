@@ -15,17 +15,19 @@ function opus_posted_on() {
 	printf(
 		__( '
 			<div class="entry-posted-on">
-				<span class="entry-author author vcard"><a href="%1$s" class="url fn n" title="%2$s" rel="author">%3$s</a></span> 
+				<span class="entry-author author vcard"><a href="%1$s" class="url fn n" title="%2$s" rel="author">%3$s</a> </span> 
 				<span class="entry-author-action">published this</span> 
-				<span class="entry-date">
-					<span class="human-time">%4$s</span>
-					<span class="conventional-time">%5$s</span>
-				</span>
+				<a href="%4$s" title="%5$s" class="entry-date">
+					<span class="human-time">%6$s</span>
+					<span class="conventional-time">%7$s</span>
+				</a>
 			</div>
 		', 'opus' ),
 		esc_url( get_permalink() ),
 		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 		get_the_author(),
+		esc_url( get_permalink() ),
+		sanitize_text_field( get_the_title() ),
 		esc_html( opus_get_the_human_time( strtotime( get_the_date('c') ) ) ),
 		esc_html( get_the_date() )
 	);
