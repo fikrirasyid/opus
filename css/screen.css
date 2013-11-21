@@ -834,6 +834,10 @@ button:active,
   position: relative;
   background: white;
 }
+#comments .pingback .comment-wrap .comment-meta .comment-author a:hover,
+#comments .comment .comment-wrap .comment-meta .comment-author a:hover {
+  text-decoration: underline;
+}
 #comments .pingback .comment-wrap .comment-avatar,
 #comments .comment .comment-wrap .comment-avatar {
   position: absolute;
@@ -981,6 +985,7 @@ button:active,
 }
 #colophon a:hover {
   color: #1f7f5c;
+  text-decoration: underline;
 }
 
 #secondary .wrap {

@@ -618,7 +618,11 @@ button,
 
 			.comment-meta{
 				.comment-author{
-						
+					a{
+						&:hover{
+							text-decoration: underline;
+						}
+					}						
 				}	
 			}	
 
