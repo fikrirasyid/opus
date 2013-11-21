@@ -45,7 +45,6 @@ function opus_scripts(){
 	wp_enqueue_style( 'opus_google_fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:300,400,700' );
 	wp_enqueue_style( 'opus_style', get_template_directory_uri() . '/css/screen.css' );
 
-	wp_enqueue_script( 'livejs', get_template_directory_uri() . '/js/live.js', array(), '20131106', true );
 	wp_enqueue_script( 'opus_script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20131106', true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
