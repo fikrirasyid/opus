@@ -1,4 +1,19 @@
-// Variables
+/**
+ * Typography
+ */
+@mixin opensans{
+	font-family: 'Open Sans', sans-serif;
+}
+$opensans: 'Open Sans', sans-serif;
+
+@mixin montserrat{
+	font-family: 'Montserrat', sans-serif;
+}
+$montserrat: 'Montserrat', sans-serif;
+
+/**
+ * Variables
+ */
 $crem: #ebe7df;
 $crem_dark: #e2dfd8;
 $crem_darkest: #888888;
@@ -8,7 +23,9 @@ $text: #666666;
 $black: #232323;
 $gray: #c1c1c1;
 
-// Mixins
+/**
+ * Mixins
+ */
 @mixin clearfix{
 	&:after{
 		content:".";

@@ -1,3 +1,7 @@
+/** 
+ * 5.1
+ * Content Article
+ */
 #content{
 	margin: -20px 15px 0;
 	position: relative;
@@ -220,6 +224,10 @@
 	}
 }
 
+/** 
+ * 5.2
+ * Content Styling
+ */
 .entry-content{
 	font-size: .8em;
 	line-height: 1.9;
@@ -454,7 +462,10 @@
 	}
 }
 
-// WordPress Gallery
+/** 
+ * 5.3
+ * Content Galleries
+ */
 .gallery{
 	&.gallery-columns-4{
 		.gallery-item{
@@ -466,38 +477,10 @@
 	}
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea{
-	border: none;
-	width: 100%;
-	padding: 6px 10px;
-	font: .7em $opensans;
-	border: 1px solid $crem_dark;
-	outline: none;
-	
-	&:focus{
-		border-color: $crem_darkest;
-	}
-}
-
-input[type="submit"],
-button,
-.button{
-	border: 0;
-	background: $green;
-	font: .7em $montserrat;
-	color: white;
-	padding: 7px 10px;
-	border-bottom: 3px solid $green_dark;
-	cursor: pointer;
-
-	&:active{
-		background: $green_dark;
-	}
-}
-
+/** 
+ * 5.4
+ * Content Navigation
+ */
 #nav-below{
 	margin: 10px 0 40px;
 	@include clearfix;
@@ -564,6 +547,10 @@ button,
 	}
 }
 
+/** 
+ * 5.5
+ * Content Comment
+ */
 #comments{
 	margin: 0 0 10px;
 	position: relative;

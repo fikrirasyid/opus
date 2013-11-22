@@ -5,27 +5,25 @@
  * 2.0 - Repeatable Patterns
  * 3.0 - Basic Structure
  * 4.0 - Header
- *   4.1 - Site Header
+ *   4.1 - Header
  *   4.2 - Navigation
+ *   4.3 - Page Cover
  * 5.0 - Content
- *   5.1 - Entry Header
- *   5.2 - Entry Meta
- *   5.3 - Entry Content
- *   5.4 - Galleries
- *   5.5 - Post Formats
- *   5.6 - Attachments
- *   5.7 - Post/Paging Navigation
- *   5.8 - Author Bio
- *   5.9 - Archives
- *   5.10 - Search Results/No posts
- *   5.11 - 404
- *   5.12 - Comments
- *   5.13 - Multisite
- * 6.0 - Sidebar
- *   6.1 - Widgets
- * 7.0 - Footer
- * 8.0 - Media Queries
- * 9.0 - Print
+ *   5.1 - Content Article
+ *   5.2 - Content Styling
+ *   5.3 - Content Galleries
+ *   5.4 - Content Navigation
+ *   5.5 - Content Comment
+ * 6.0 - Footer
+ *   6.1 - Footer
+ *   6.2 - Widgets
+ *      6.2.1 - Widgets Calendar
+ *      6.2.2 - Widgets Search
+ * 7.0 - Media Queries & Conditionals
+ *   7.1 - Tablet & Desktop (Above 680px)
+ *   7.2 - Phablet / Big Phones ( 501px - 679px)
+ *   7.3 - Mobile (Below 500px)
+ *   7.4 - Logged in user
  * ----------------------------------------------------------------------------
  */
 .sprites-sprite, #top-nav #top-nav-toggle, body.expanded #top-nav #top-nav-toggle, #content article .entry-header .entry-original-link a:hover:before, #content article .entry-header .entry-original-link a:before, #nav-below .nav-next a:after, #nav-below .nav-previous a:after, #comments .pingback .comment-wrap .comment-reply-link,
@@ -91,6 +89,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/**
+ * Typography
+ */
+/**
+ * Variables
+ */
+/**
+ * Mixins
+ */
 body {
   font: 20px "Open Sans", sans-serif;
   line-height: 1.6;
@@ -117,6 +124,45 @@ a {
   display: none;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  border: none;
+  width: 100%;
+  padding: 6px 10px;
+  font: 0.7em "Open Sans", sans-serif;
+  border: 1px solid #e2dfd8;
+  outline: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #888888;
+}
+
+input[type="submit"],
+button,
+.button {
+  border: 0;
+  background: #1f7f5c;
+  font: 0.7em "Montserrat", sans-serif;
+  color: white;
+  padding: 7px 10px;
+  border-bottom: 3px solid #19664a;
+  cursor: pointer;
+}
+input[type="submit"]:active,
+button:active,
+.button:active {
+  background: #19664a;
+}
+
+/** 
+ * 4.1
+ * Header
+ */
 #header {
   display: block;
   width: 100%;
@@ -165,6 +211,10 @@ a {
   font-weight: bold;
 }
 
+/** 
+ * 4.2
+ * Navigation
+ */
 #top-nav {
   display: block;
   position: fixed;
@@ -295,6 +345,10 @@ body.admin-bar #top-nav .top-nav-container ul {
   margin-bottom: 68px;
 }
 
+/** 
+ * 4.3
+ * Page Cover
+ */
 #page-cover {
   position: absolute;
   top: 0;
@@ -308,6 +362,10 @@ body.admin-bar #top-nav .top-nav-container ul {
   width: 100%;
 }
 
+/** 
+ * 5.1
+ * Content Article
+ */
 #content {
   margin: -20px 15px 0;
   position: relative;
@@ -492,6 +550,10 @@ body.admin-bar #top-nav .top-nav-container ul {
   font-size: .7em;
 }
 
+/** 
+ * 5.2
+ * Content Styling
+ */
 .entry-content {
   font-size: .8em;
   line-height: 1.9;
@@ -674,46 +736,19 @@ body.admin-bar #top-nav .top-nav-container ul {
   font-weight: bold;
 }
 
+/** 
+ * 5.3
+ * Content Galleries
+ */
 .gallery.gallery-columns-4 .gallery-item img {
   width: 100px;
   height: 100px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
-  border: none;
-  width: 100%;
-  padding: 6px 10px;
-  font: 0.7em "Open Sans", sans-serif;
-  border: 1px solid #e2dfd8;
-  outline: none;
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-textarea:focus {
-  border-color: #888888;
-}
-
-input[type="submit"],
-button,
-.button {
-  border: 0;
-  background: #1f7f5c;
-  font: 0.7em "Montserrat", sans-serif;
-  color: white;
-  padding: 7px 10px;
-  border-bottom: 3px solid #19664a;
-  cursor: pointer;
-}
-input[type="submit"]:active,
-button:active,
-.button:active {
-  background: #19664a;
-}
-
+/** 
+ * 5.4
+ * Content Navigation
+ */
 #nav-below {
   margin: 10px 0 40px;
   position: relative;
@@ -782,6 +817,10 @@ button:active,
   background: #333;
 }
 
+/** 
+ * 5.5
+ * Content Comment
+ */
 #comments {
   margin: 0 0 10px;
   position: relative;
@@ -954,6 +993,10 @@ button:active,
   color: #232323;
 }
 
+/** 
+ * 6.1
+ * Footer
+ */
 #colophon {
   background: #e2dfd8;
   text-align: center;
@@ -988,10 +1031,18 @@ button:active,
   text-decoration: underline;
 }
 
+/** 
+ * 6.2
+ * Widgets
+ */
 #secondary .wrap {
   padding-top: 30px;
 }
 
+/** 
+ * 6.2.1
+ * Widget Calendar
+ */
 #wp-calendar {
   margin: 0 auto;
   width: 60%;
@@ -1019,6 +1070,10 @@ button:active,
   color: #1f7f5c;
 }
 
+/** 
+ * 6.2.2
+ * Widget Search
+ */
 .widget_search input[type="text"] {
   width: 80%;
   display: inline-block;
@@ -1030,6 +1085,10 @@ button:active,
   vertical-align: middle;
 }
 
+/** 
+ * 7.1.1
+ * Tablet & Desktop (Above 680px)
+ */
 @media all and (min-width: 680px) {
   body {
     font-size: 25px;
@@ -1211,12 +1270,21 @@ button:active,
     padding-top: 60px;
   }
 }
+/** 
+ * 7.1.2
+ * Phablet / Big Phones ( 501px - 679px)
+ * Gallery requires specific styling for mobile view
+ */
 @media all and (min-width: 501px) and (max-width: 679px) {
   .gallery .gallery-item img {
     width: 120px;
     height: 120px;
   }
 }
+/** 
+ * 7.1.3
+ * Mobile (Below 500px)
+ */
 @media all and (max-width: 500px) {
   .gallery .gallery-item img {
     width: 75px;
@@ -1227,6 +1295,10 @@ button:active,
     height: 50px;
   }
 }
+/** 
+ * 7.1.4
+ * Logged in user
+ */
 body.admin-bar #page-cover {
   top: 27px;
 }

@@ -1,0 +1,57 @@
+body{
+	font: 20px $opensans;
+	line-height: 1.6;
+	background: $crem;
+	color: $text;
+}
+
+a{
+	color: $green;
+	text-decoration: none;
+}
+
+.wrap-outer{
+	display: block;
+	width: 100%;
+}
+
+.wrap{
+	display: block;
+	margin: 0 15px;
+}
+
+.screen-reader-text{
+	display: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea{
+	border: none;
+	width: 100%;
+	padding: 6px 10px;
+	font: .7em $opensans;
+	border: 1px solid $crem_dark;
+	outline: none;
+	
+	&:focus{
+		border-color: $crem_darkest;
+	}
+}
+
+input[type="submit"],
+button,
+.button{
+	border: 0;
+	background: $green;
+	font: .7em $montserrat;
+	color: white;
+	padding: 7px 10px;
+	border-bottom: 3px solid $green_dark;
+	cursor: pointer;
+
+	&:active{
+		background: $green_dark;
+	}
+}

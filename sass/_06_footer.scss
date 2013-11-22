@@ -1,3 +1,7 @@
+/** 
+ * 6.1
+ * Footer
+ */
 #colophon{
 	background: $crem_dark;
 	// color: $crem_darkest;
@@ -42,13 +46,20 @@
 	}
 }
 
+/** 
+ * 6.2
+ * Widgets
+ */
 #secondary{
 	.wrap{
 		padding-top: 30px;
 	}
 }
 
-// Widget Calendar
+/** 
+ * 6.2.1
+ * Widget Calendar
+ */
 #wp-calendar{
 	margin: 0 auto;
 	width: 60%;
@@ -90,7 +101,10 @@
 	}
 }
 
-// Widget Search
+/** 
+ * 6.2.2
+ * Widget Search
+ */
 .widget_search{
 	input[type="text"]{
 		width: 80%;

@@ -5,37 +5,33 @@
  * 2.0 - Repeatable Patterns
  * 3.0 - Basic Structure
  * 4.0 - Header
- *   4.1 - Site Header
+ *   4.1 - Header
  *   4.2 - Navigation
+ *   4.3 - Page Cover
  * 5.0 - Content
- *   5.1 - Entry Header
- *   5.2 - Entry Meta
- *   5.3 - Entry Content
- *   5.4 - Galleries
- *   5.5 - Post Formats
- *   5.6 - Attachments
- *   5.7 - Post/Paging Navigation
- *   5.8 - Author Bio
- *   5.9 - Archives
- *   5.10 - Search Results/No posts
- *   5.11 - 404
- *   5.12 - Comments
- *   5.13 - Multisite
- * 6.0 - Sidebar
- *   6.1 - Widgets
- * 7.0 - Footer
- * 8.0 - Media Queries
- * 9.0 - Print
+ *   5.1 - Content Article
+ *   5.2 - Content Styling
+ *   5.3 - Content Galleries
+ *   5.4 - Content Navigation
+ *   5.5 - Content Comment
+ * 6.0 - Footer
+ *   6.1 - Footer
+ *   6.2 - Widgets
+ *      6.2.1 - Widgets Calendar
+ *      6.2.2 - Widgets Search
+ * 7.0 - Media Queries & Conditionals
+ *   7.1 - Tablet & Desktop (Above 680px)
+ *   7.2 - Phablet / Big Phones ( 501px - 679px)
+ *   7.3 - Mobile (Below 500px)
+ *   7.4 - Logged in user
  * ----------------------------------------------------------------------------
  */
 
 @import "sprites/*.png";
 @import "compass/reset";
-@import "__typography";
-@import "__repeatable";
-@import "__basics";
-@import "_header";
-@import "_content";
-@import "_footer";
-@import "_media_queries";
-@import "_conditionals";
+@import "_02_repeatable_patterns";
+@import "_03_basic_structure";
+@import "_04_header";
+@import "_05_content";
+@import "_06_footer";
+@import "_07_media_queries_conditionals";
