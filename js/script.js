@@ -45,6 +45,18 @@ jQuery(document).ready(function($) {
 	});
 
 	/**
+	 * Closing #top-nav using keyboard (escape) 
+	 */
+	$(document).keyup(function(e){
+		if ( e.keyCode == 27 && $('body.expanded').length > 0){
+			$('#top-nav .top-nav-container').animate({ 'top' : '200%'}, 200, function(){
+				$('body').removeClass('expanded');
+				$(this).attr('style', '');
+			});
+		}
+	});
+
+	/**
 	 * For Posts which have more than one category
 	 */
 	$('.entry-category').each(function(){
