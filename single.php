@@ -99,7 +99,13 @@
 					<?php 
 						the_content(); 
 						wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'opus' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); 
-					?>					
+					?>
+
+					<div class="entry-tags">
+						<?php 
+							the_tags();
+						?>
+					</div>					
 				</div> 
 				<footer class="entry-footer">
 					<span class="icon-wrap"><span class="icon"></span></span>

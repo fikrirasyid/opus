@@ -523,6 +523,11 @@ body.admin-bar #top-nav .top-nav-container ul {
 #content article .entry-content.entry-caption p:last-child {
   margin-bottom: 0;
 }
+#content article .entry-tags {
+  font-size: .7em;
+  border: 1px solid #ebe7df;
+  padding: 10px 20px;
+}
 #content article .entry-footer {
   display: black;
   position: relative;
@@ -703,12 +708,14 @@ body.admin-bar #top-nav .top-nav-container ul {
   border: 1px solid #dfdfdf;
   background: #efefef;
 }
+.entry-content .gallery-caption,
 .entry-content .wp-caption-text {
   font-size: .7em;
   padding: 5px 10px 0;
   color: #afafaf;
   margin-bottom: 0;
   font-weight: 300;
+  line-height: 1.3;
 }
 .entry-content .aligncenter {
   margin: 0 auto 10px;
@@ -889,6 +896,7 @@ body.admin-bar #top-nav .top-nav-container ul {
 #comments .comment .comment-wrap .comment-avatar img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 #comments .pingback .comment-wrap .comment-content,
 #comments .comment .comment-wrap .comment-content {
@@ -941,6 +949,24 @@ body.admin-bar #top-nav .top-nav-container ul {
 #comments .comment .comment-wrap .comment-reply-link:active {
   background-position: 0 -54px;
 }
+#comments .pingback.bypostauthor > .comment-wrap .comment-author a,
+#comments .comment.bypostauthor > .comment-wrap .comment-author a {
+  position: relative;
+}
+#comments .pingback.bypostauthor > .comment-wrap .comment-author a:after,
+#comments .comment.bypostauthor > .comment-wrap .comment-author a:after {
+  content: 'AUTHOR';
+  font-size: .5em;
+  font-weight: 300;
+  background: #1f7f5c;
+  color: white;
+  padding: 3px 5px;
+  margin: 0 0 0 5px;
+  line-height: 1;
+  position: absolute;
+  top: 4px;
+  left: 100%;
+}
 #comments .pingback .comment-wrap .comment-content {
   padding-left: 10px;
 }
@@ -978,6 +1004,7 @@ body.admin-bar #top-nav .top-nav-container ul {
 #respond .submit-comment-avatar .left-info img {
   width: 60px;
   height: 60px;
+  border-radius: 50%;
 }
 #respond .submit-comment-avatar .right-info {
   font-size: .7em;

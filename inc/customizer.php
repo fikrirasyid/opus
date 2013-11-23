@@ -46,7 +46,10 @@ function opus_customize_css(){
 		#content article .entry-footer,
 		input[type="submit"],
 		button,
-		.button{
+		.button,
+		#comments .pingback.bypostauthor > .comment-wrap .comment-author a:after, 
+		#comments .comment.bypostauthor > .comment-wrap .comment-author a:after
+		{
 			background: <?php echo $site_color; ?>;
 		}
 

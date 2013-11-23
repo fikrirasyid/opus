@@ -189,6 +189,12 @@
 			}
 		}	
 
+		.entry-tags{
+			font-size: .7em;
+			border: 1px solid $crem;
+			padding: 10px 20px;
+		}
+
 		.entry-footer{
 			display: black;
 			position: relative;
@@ -422,13 +428,15 @@
 		border: 1px solid #dfdfdf;
 		background: #efefef;
 	}
-
+	
+	.gallery-caption,
 	.wp-caption-text{
 		font-size: .7em;
 		padding: 5px 10px 0;
 		color: #afafaf;
 		margin-bottom: 0;
 		font-weight: 300;
+		line-height: 1.3;
 	}
 	
 	.aligncenter{
@@ -623,6 +631,7 @@
 				img{
 					width: 100%;
 					height: 100%;
+					border-radius: 50%;
 				}
 			}
 
@@ -664,6 +673,29 @@
 				&:active{
 					@include sprites-sprite( comment-reply-active );
 				}
+			}
+		}
+
+		&.bypostauthor > .comment-wrap{
+			.comment-author{
+				a{
+					position: relative;
+					
+					&:after{
+						content: 'AUTHOR';
+						font-size: .5em;
+						font-weight: 300;
+						background: $green;
+						color: white;
+						padding: 3px 5px;
+						margin: 0 0 0 5px;
+						line-height: 1;
+
+						position: absolute;
+						top: 4px;
+						left: 100%;
+					}				
+				}				
 			}
 		}
 	}
@@ -711,6 +743,7 @@
 			img{
 				width: 60px;
 				height: 60px;
+				border-radius: 50%;
 			}
 		}
 
