@@ -53,11 +53,11 @@ function opus_get_the_human_time($post_time = 0){
 		$post_month = floor( ( $timestamp % $year ) / $month );
 
 		// Convert into text
-		$post_year_text = opus_plural_sensitive_noun('year', $post_year);
-		$post_month_text = opus_plural_sensitive_noun('month', $post_month);
+		$post_year_text = opus_plural_sensitive_noun( 'year', $post_year );
+		$post_month_text = opus_plural_sensitive_noun( 'month', $post_month );
 
 		// Set Time
-		$human_time = __(sprintf("%s and %s ago", $post_year_text, $post_month_text), 'opus');
+		$human_time = sprintf( __( '%s and %s ago', 'opus' ), $post_year_text, $post_month_text);
 	} elseif( ( $timestamp / $month ) >= 1 ) {
 		// Calculate time
 		$post_month = floor( $timestamp / $month );
@@ -66,7 +66,7 @@ function opus_get_the_human_time($post_time = 0){
 		$post_month_text = opus_plural_sensitive_noun('month', $post_month);
 
 		// Set Time
-		$human_time = __(sprintf("%s ago", $post_month_text), 'opus');
+		$human_time = sprintf( __( '%s ago', 'opus' ), $post_month_text );
 	} elseif( ( $timestamp / $week ) >= 1 ) {	
 		// Calculate time
 		$post_week = floor( $timestamp / $week );	
@@ -75,7 +75,7 @@ function opus_get_the_human_time($post_time = 0){
 		$post_week_text = opus_plural_sensitive_noun('week', $post_week);
 
 		// Set Time
-		$human_time = __(sprintf("%s ago", $post_week_text), 'opus');
+		$human_time = sprintf( __( '%s ago', 'opus' ), $post_week_text );
 	} elseif( ( $timestamp / $day ) >= 1 ) {
 		// Calculate time
 		$post_day = floor( $timestamp / $day );	
@@ -84,7 +84,7 @@ function opus_get_the_human_time($post_time = 0){
 		$post_day_text = opus_plural_sensitive_noun('day', $post_day);
 
 		// Set Time
-		$human_time = __(sprintf("%s ago", $post_day_text), 'opus');
+		$human_time = sprintf( __( '%s ago', 'opus' ), $post_day_text );
 	} elseif( ( $timestamp / $hour ) >= 1 ) {
 		// Calculate time
 		$post_hour = floor( $timestamp / $hour );	
@@ -93,7 +93,7 @@ function opus_get_the_human_time($post_time = 0){
 		$post_hour_text = opus_plural_sensitive_noun('hour', $post_hour);
 
 		// Set Time
-		$human_time = __(sprintf("%s ago", $post_hour_text), 'opus');
+		$human_time = sprintf( __( '%s ago', 'opus' ), $post_hour_text );
 	} else {
 		// Calculate time
 		$post_minute = floor( $timestamp / $minute );	
@@ -102,7 +102,7 @@ function opus_get_the_human_time($post_time = 0){
 		$post_minute_text = opus_plural_sensitive_noun('minute', $post_minute);
 
 		// Set Time
-		$human_time = __(sprintf("%s ago", $post_minute_text), 'opus');
+		$human_time = sprintf( __( '%s ago', 'opus' ), $post_minute_text );
 	}
 
 	return $human_time;
@@ -136,7 +136,7 @@ function opus_plural_sensitive_noun( $noun = 'apple', $number = 0){
 	} elseif($number == 1){
 		$word_number = $article;
 	} else{
-		$word_number = __('less then '.$article, 'opus');
+		$word_number = 'less then '.$article;
 	}
 
 	return $word_number . ' ' . $noun;
@@ -400,7 +400,7 @@ function opus_comment_form(){
 					<span class="comment-tail"></span>
 					<?php if ( is_user_logged_in() ) : ?>
 					<div class="comment-logged-in info left-info">
-						<?php echo get_avatar( wp_get_current_user()->ID, 82, get_bloginfo('template_directory') . '/images/default-avatar.jpg' ); ?>
+						<?php echo get_avatar( wp_get_current_user()->ID, 82, get_template_directory_uri() . '/images/default-avatar.jpg' ); ?>
 					</div>						
 					<div class="comment-logged-in info right-info">
 						<p class="logged-in-as"><span class="subtitle">Logged in as</span> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></p>	
