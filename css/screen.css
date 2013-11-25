@@ -134,6 +134,7 @@ textarea {
   font: 0.7em "Open Sans", sans-serif;
   border: 1px solid #e2dfd8;
   outline: none;
+  box-sizing: border-box;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -1008,6 +1009,7 @@ body.admin-bar #top-nav .top-nav-container ul {
 }
 #respond .submit-comment-avatar .right-info {
   font-size: .7em;
+  float: left;
 }
 #respond p {
   font-size: .8em;

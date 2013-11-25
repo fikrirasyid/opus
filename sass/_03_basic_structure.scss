@@ -34,6 +34,7 @@ textarea{
 	font: .7em $opensans;
 	border: 1px solid $crem_dark;
 	outline: none;
+	box-sizing: border-box;
 	
 	&:focus{
 		border-color: $crem_darkest;
