@@ -39,6 +39,16 @@ function opus_setup(){
 add_action( 'after_setup_theme', 'opus_setup' );
 
 /**
+ * Setup content width
+ * For the time being, most content adjustment is done through js
+ * However, theme check requires me to have this variable
+ * So here it is, for the time being, for the sake of theme check
+ * I have the value correct, tho
+ */
+if ( ! isset( $content_width ) )
+    $content_width = 520;
+
+/**
  * Enqueue scripts and styles
  */
 function opus_scripts(){
