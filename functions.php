@@ -54,6 +54,14 @@ function opus_scripts(){
 add_action( 'wp_enqueue_scripts', 'opus_scripts' );
 
 /**
+ * Content editor styling
+ */
+function opus_editor_style(){
+    add_editor_style( 'css/editor-style.css' );
+}
+add_action( 'init', 'opus_editor_style' );
+
+/**
  * Removing widht and height attribute from images
  */
 add_filter( 'post_thumbnail_html', 'opus_remove_width_attribute', 10 );
