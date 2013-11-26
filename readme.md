@@ -12,10 +12,12 @@ With these three main goals, I started designing and developing Opus Theme.
 For the initial main color scheme and design elements, I found Designmodo's Square UI kit to be suitable for the design direction. Its use of Montserrat inspired me with big bold fonts and spacious elements. Open sans feels matched with the overall concept too, so she is joining the Opus theme. Thanks for Google Webfonts for providing these great fonts for free.
 
 As much as my aspiration for great reading experience, great writing experience is important too. The editor's styling has been tweaked to display the content as similar as possible with how the content is displayed on the front page.
+
 ![Writing experience got some love too](http://fikrirasyid.com/wp-content/uploads/2013/11/Opus-Writing-Experience.png)
 
 ## Looks Great on Every Screen
 I often blog-walk using my iPhone and i found that many desktop oriented themes are not pleasurable to be read using mobile screen. Zooming in and out to read content is annoying. Hence, Opus theme is designed with mobile first approach. The default layout for Opus is a fluid layout which will be switched to fixed layout with spacious whitespace when it is opened on larger than 680 pixels. I neat javascript based trick is employed to adjust your image and embedded media to the layout displayed.
+
 ![Opus looks great on mobile screen](http://fikrirasyid.com/wp-content/uploads/2013/11/Opus-Mobile.png)
 
 ## Personality Matters
