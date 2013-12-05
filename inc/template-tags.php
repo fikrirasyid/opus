@@ -1,5 +1,28 @@
 <?php
 /**
+ * Prints blog name | blog description in wp_title on homepage
+ */
+function opus_home_wptitle( $title ){
+	global $paged, $page;
+
+	$blog_name = get_bloginfo( 'name' );
+	$blog_desc = get_bloginfo( 'description' );
+
+	if ( is_home() || is_front_page() ){
+		$title = $blog_name;
+
+		if( $paged >= 2 || $page >= 2 ){
+			$title .= ' | ' . sprintf( __( 'Page %s', 'opus' ), max( $paged, $page ) );
+		} else {
+			$title .= ' | ' . get_bloginfo( 'description' );
+		}
+	}
+
+	return $title;
+}
+add_filter( 'wp_title', 'opus_home_wptitle' );
+
+/**
  * Prints HTML of categories of current post
  */
 function opus_the_category(){
