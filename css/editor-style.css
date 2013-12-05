@@ -68,11 +68,11 @@ body label {
 }
 body ul li {
   list-style: disc;
-  margin-left: 20px;
+  margin-left: 22px;
 }
 body ol li {
   list-style: decimal;
-  margin-left: 20px;
+  margin-left: 27px;
 }
 body q,
 body blockquote {

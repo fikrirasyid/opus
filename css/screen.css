@@ -618,11 +618,11 @@ body.admin-bar #top-nav .top-nav-container ul {
 }
 .entry-content ul li {
   list-style: disc;
-  margin-left: 20px;
+  margin-left: 22px;
 }
 .entry-content ol li {
   list-style: decimal;
-  margin-left: 20px;
+  margin-left: 27px;
 }
 .entry-content q,
 .entry-content blockquote {
