@@ -26,6 +26,11 @@ function opus_setup(){
 	register_nav_menus( array(
 		'top_nav' => __( 'Top Navigation', 'opus' )
 	) );
+
+    /**
+     * Content editor styling
+     */
+    add_editor_style( 'css/editor-style.css' );
 }
 add_action( 'after_setup_theme', 'opus_setup' );
 
@@ -65,14 +70,6 @@ function opus_scripts(){
     }    
 }
 add_action( 'wp_enqueue_scripts', 'opus_scripts' );
-
-/**
- * Content editor styling
- */
-function opus_editor_style(){
-    add_editor_style( 'css/editor-style.css' );
-}
-add_action( 'init', 'opus_editor_style' );
 
 /**
  * Removing widht and height attribute from images
