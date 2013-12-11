@@ -11,7 +11,8 @@ function opus_customizer_register( $wp_customize ){
 	$wp_customize->add_setting( 
 		'site_color',
 		array(
-			'default' => '#1f7f5c'
+			'default' => '#1f7f5c',
+			'sanitize_callback' => 'sanitize_hex_color'
 		)
 	);
 
