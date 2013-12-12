@@ -1256,6 +1256,8 @@ body.admin-bar #top-nav .top-nav-container ul {
   padding: 30px 40px;
   border: 1px solid #dfdfdf;
   background: #efefef;
+  overflow-x: scroll;
+  word-wrap: normal;
 }
 .entry-content .gallery-caption,
 .entry-content .wp-caption-text {

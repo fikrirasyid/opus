@@ -158,6 +158,8 @@ body pre {
   padding: 30px 40px;
   border: 1px solid #dfdfdf;
   background: #efefef;
+  overflow-x: scroll;
+  word-wrap: normal;
 }
 body .gallery-caption,
 body .wp-caption-text {
