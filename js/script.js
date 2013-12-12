@@ -1,3 +1,7 @@
+/*
+ * Copyright 2013, Fikri Rasyid - http://fikrirasyid.com
+ * License: Distributed under the terms of GNU General Public License
+*/
 jQuery(document).ready(function($) { 
 	// Normalizing entry-content items' width
 	function opus_normalize_media(){
