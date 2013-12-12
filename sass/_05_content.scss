@@ -80,7 +80,7 @@
 			.entry-original-link{
 				a{
 					display: block;
-					padding: 10px 20px 10px 40px;
+					padding: 10px 20px 10px 36px;
 					font: .8em $montserrat;
 					text-transform: lowercase;
 					border-bottom: 1px solid $crem;
@@ -93,7 +93,7 @@
 						color: white;
 
 						&:before{
-							@include sprites-sprite( entry-original-link-icon-hover );
+							color: #fff;
 						}
 					}
 
@@ -102,14 +102,13 @@
 					}
 
 					&:before{
-						content: '';
-						text-indent: -99999em;
-						width: 15px;
-						height: 15px;
-						@include sprites-sprite( entry-original-link-icon );
+						@include genericon;
+						content: '\f442';
+						color: #242A23;
 						position: absolute;
-						top: 12px;
-						left: 20px;
+						// font-size: 32px;
+						top: 11px;
+						left: 16px;
 					}
 				}
 			}
@@ -294,16 +293,21 @@
 
 		&:after{
 			position: absolute;
-			top: 8px;
+			top: 3px;
+			@include genericon;
+				font-size: 32px;
+				width: 32px;
+				height: 32px;
 		}
 	}
 
 	.nav-next{	
 		a{
-			padding-left: 30px;
+			padding-left: 45px;
 
 			&:after{
-				@include sprite_replace_text( nav-below-prev, 11, 20 );
+				content: '\f430';
+				color: white;
 				left: 10px;
 			}
 
@@ -321,10 +325,10 @@
 		border-left: 1px solid #2e2e2e;
 
 		a{
-			padding-right: 30px;
+			padding-right: 45px;
 
 			&:after{
-				@include sprite_replace_text( nav-below-next, 11, 20 );
+				content: '\f429';
 				right: 10px;
 			}
 
@@ -447,15 +451,28 @@
 
 			.comment-reply-link{
 				float: left;
-				@include sprite_replace_text( comment-reply, 16, 12 );
+				@include genericon;
 				margin: 10px 12px;
 
+				.label{
+					display: none;
+				}
+
+				&:before{
+					content: '\f467';
+					color: #232323;
+				}
+
 				&:hover{
-					@include sprites-sprite( comment-reply-hover );
+					&:before{
+						color: #888888;						
+					}
 				}
 
 				&:active{
-					@include sprites-sprite( comment-reply-active );
+					&:before{
+						color: #000000;						
+					}
 				}
 			}
 		}

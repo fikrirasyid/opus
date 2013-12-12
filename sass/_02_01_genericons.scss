@@ -42,6 +42,25 @@
 	vertical-align: top;
 }
 
+@mixin genericon{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	line-height: 1;
+	font-family: 'Genericons';
+	text-decoration: inherit;
+	font-weight: normal;
+	font-style: normal;
+	vertical-align: top;	
+	
+	// IE7 & IE6 hacks
+	*overflow: auto;
+	*zoom: 1;
+	*display: inline;	
+}
+
 /**
  * IE7 and IE6 hacks
  */

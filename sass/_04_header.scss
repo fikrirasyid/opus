@@ -106,8 +106,20 @@
 
 	#top-nav-toggle{
 		float: right;
-		@include sprite_replace_text( top-nav-toggle-open, 22, 15 );
 		cursor: pointer;
+		margin-top: 3px;
+
+		.label{
+			display: none;
+		}
+
+		.genericon{
+			float: left;
+		}
+
+		.genericon-close-alt{
+			display: none;
+		}
 
 		&:hover{
 			opacity: .7;
@@ -118,7 +130,7 @@
 		display: none;
 		background: white;
 		position: fixed;
-		top: 35px;
+		top: 40px;
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -188,9 +200,14 @@ body{
 				overflow-y: auto;
 			}
 
-			#top-nav-toggle{
-				@include sprite_replace_text( top-nav-toggle-close, 11, 11 );
-				margin: 3px 2px 1px;
+			#top-nav-toggle{				
+				.genericon-menu{
+					display: none;
+				}
+
+				.genericon-close-alt{
+					display: inline-block;
+				}
 			}
 		}		
 	}

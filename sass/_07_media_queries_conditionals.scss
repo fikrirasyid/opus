@@ -74,7 +74,7 @@
 		}
 
 		#top-nav-toggle{
-			margin-top: 20px;
+			margin-top: 15px;
 		}
 
 		.top-nav-container{
@@ -124,6 +124,18 @@
 					font-size: 1.3em;
 					line-height: 1.2;
 				}				
+
+				.entry-original-link{
+					a{
+						padding-left: 113px;
+
+						&:before{
+							left: 75px;
+							top: 7px;
+							font-size: 32px;
+						}
+					}
+				}
 			}
 
 			.entry-content{
@@ -151,21 +163,21 @@
 			padding-bottom: 20px;
 
 			&:after{
-				top: 19px;
+				top: 14px;
 			}			
 		}
 
 		.nav-previous{
 			a{
 				padding-left: 30px;
-				padding-right: 40px;
+				padding-right: 50px;
 			}
 		}
 		
 		.nav-next{
 			a{
 				padding-right: 30px;
-				padding-left: 40px;
+				padding-left: 50px;
 			}
 		}
 	}

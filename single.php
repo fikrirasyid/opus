@@ -91,7 +91,7 @@
 						if( get_post_format() == 'link' && isset( $entry_custom_meta['_format_link_url'] ) ):
 					?>
 					<h1 class="entry-original-link">
-						<?php printf( __( '<a href="%1$s" rel="bookmark">A link to %2$s</a>', 'opus' ), $entry_custom_meta['_format_link_url'][0], opus_get_domain_name( $entry_custom_meta['_format_link_url'][0] ) ); ?>
+						<?php printf( __( '<a href="%1$s" rel="bookmark">link to %2$s</a>', 'opus' ), $entry_custom_meta['_format_link_url'][0], opus_get_domain_name( $entry_custom_meta['_format_link_url'][0] ) ); ?>
 					</h1>
 					<?php endif; ?>					
 				</header> 
