@@ -291,6 +291,19 @@
 	}
 }
 
+// Smaller screens need content optimization
+@media all and (max-width: 410px){
+	.entry-content{
+		font-size: .66em;
+	}
+
+	.comment{
+		.entry-content{
+			font-size: .75em;
+		}
+	}
+}
+
 /** 
  * 7.1.4
  * Logged in user

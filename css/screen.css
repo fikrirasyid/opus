@@ -638,7 +638,7 @@ body {
   font: 20px "Open Sans", sans-serif;
   line-height: 1.6;
   background: #ebe7df;
-  color: #666666;
+  color: #444444;
 }
 
 a {
@@ -1905,6 +1905,15 @@ body.admin-bar #top-nav .top-nav-container ul {
   .gallery.gallery-columns-4 .gallery-item img {
     width: 50px;
     height: 50px;
+  }
+}
+@media all and (max-width: 410px) {
+  .entry-content {
+    font-size: .66em;
+  }
+
+  .comment .entry-content {
+    font-size: .75em;
   }
 }
 /** 
