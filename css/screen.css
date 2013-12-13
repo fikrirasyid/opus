@@ -671,6 +671,8 @@ textarea {
   border: 1px solid #e2dfd8;
   outline: none;
   box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -689,6 +691,8 @@ button,
   padding: 7px 10px;
   border-bottom: 3px solid #19664a;
   cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 input[type="submit"]:active,
 button:active,
@@ -1679,7 +1683,7 @@ body.admin-bar #top-nav .top-nav-container ul {
  * Widget Search
  */
 .widget_search input[type="text"] {
-  width: 80%;
+  width: 75%;
   display: inline-block;
   border-color: #888888;
   padding-top: 6px;

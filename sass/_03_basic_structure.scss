@@ -35,6 +35,8 @@ textarea{
 	border: 1px solid $crem_dark;
 	outline: none;
 	box-sizing: border-box;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
 	
 	&:focus{
 		border-color: $crem_darkest;
@@ -51,6 +53,8 @@ button,
 	padding: 7px 10px;
 	border-bottom: 3px solid $green_dark;
 	cursor: pointer;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
 
 	&:active{
 		background: $green_dark;
