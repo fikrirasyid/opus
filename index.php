@@ -12,7 +12,8 @@
 							get_template_part( 'content', get_post_format() );
 						endwhile;
 
-						opus_content_nav( 'nav-below' ); 
+						if( !current_theme_supports('infinite-scroll') )
+							opus_content_nav( 'nav-below' ); 
 
 					} else {
 						get_template_part( 'content', 'none' );

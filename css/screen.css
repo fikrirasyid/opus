@@ -1605,6 +1605,16 @@ body.admin-bar #top-nav .top-nav-container ul {
   color: #232323;
 }
 
+/**
+ * Jetpack Infinite Scroll Integration
+ */
+.infinite-loader {
+  padding-bottom: 30px;
+}
+.infinite-loader .spinner {
+  left: 49% !important;
+}
+
 /** 
  * 6.1
  * Footer

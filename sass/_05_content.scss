@@ -565,3 +565,14 @@
 	margin: 0 0 10px 0;
 	color: $black;
 }
+
+/**
+ * Jetpack Infinite Scroll Integration
+ */
+.infinite-loader{
+	padding-bottom: 30px;
+
+	.spinner{
+		left: 49% !important;
+	}
+}

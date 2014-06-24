@@ -19,6 +19,10 @@ function opus_setup(){
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
     add_theme_support( 'custom-header', $default_custom_header );
+    add_theme_support( 'infinite-scroll', array(
+        'container' => 'content',
+        'footer'    => 'page',
+    ) );
 
 	/**
 	 * Register menu location

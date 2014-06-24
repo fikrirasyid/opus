@@ -16,8 +16,38 @@ jQuery(document).ready(function($) {
 			}
 		}
 	}	
-	$('.entry-content img, .entry-content .wp-caption, .entry-content iframe, .entry-content embed').each(opus_normalize_media);
-	$('.entry-content .attachment img').removeAttr('width').removeAttr('height').css({ 'width' : '100%' });
+
+	// On-load interface enhancement
+	function opus_page_load(){
+		// Normalizing interface
+		$('.entry-content img, .entry-content .wp-caption, .entry-content iframe, .entry-content embed').each(opus_normalize_media);
+		$('.entry-content .attachment img').removeAttr('width').removeAttr('height').css({ 'width' : '100%' });
+
+		// For Posts which have more than one category
+		$('.entry-category').each(function(){
+			var cat = $(this);
+			if( cat.find('li').size() > 1 ){
+				cat.find('sup').remove();
+				cat.find('li:first a').append('<sup>+</sup>');
+				cat.find('li:gt(0)').hide();
+
+				cat.hover(
+					function(){
+						cat.find('li:gt(0)').show();
+					},
+					function(){
+						cat.find('li:gt(0)').hide();
+					}
+				);
+			}
+		});
+	}
+	opus_page_load();
+
+	// Trigger on-load event when new contents are appended by Jetpack
+	$( document.body ).on( 'post-load', function() {
+		opus_page_load();
+    } );	
 
 	/**
 	 * Top Navigation Mechanism
@@ -60,29 +90,7 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	/**
-	 * For Posts which have more than one category
-	 */
-	$('.entry-category').each(function(){
-		var cat = $(this);
-		if( cat.find('li').size() > 1 ){
-			cat.find('li:first a').append('<sup>+</sup>');
-			cat.find('li:gt(0)').hide();
-
-			cat.hover(
-				function(){
-					cat.find('li:gt(0)').show();
-				},
-				function(){
-					cat.find('li:gt(0)').hide();
-				}
-			);
-		}
-	});
-
-	/**
-	 * For Post Formated by Quote and Having Featured Image
-	 */
+	// For Post Formated by Quote and Having Featured Image
 	if( $('body').is('.single-format-quote') && $('#page-cover img').length > 0 ){
 		var body_height = $('body').outerHeight();
 
@@ -107,17 +115,14 @@ jQuery(document).ready(function($) {
 		});
 	}
 
-	/**
-	 * Show conventional time when user hovering .entry-date
-	 */
-	$('.entry-meta').hover(
-		function(){
-			$(this).find('.human-time').hide();
-			$(this).find('.conventional-time').show();
-		}, 
-		function(){
-			$(this).find('.human-time').show();
-			$(this).find('.conventional-time').hide();			
-		}
-	);
+	// Show conventional time when user hovering .entry-date
+	$('#content').on( 'mouseenter', '.entry-meta', function(){
+		$(this).find('.human-time').hide();
+		$(this).find('.conventional-time').show();
+	});
+
+	$('#content').on( 'mouseleave', '.entry-meta', function(){
+		$(this).find('.human-time').show();
+		$(this).find('.conventional-time').hide();			
+	});
 });
