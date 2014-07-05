@@ -1619,6 +1619,13 @@ body.admin-bar #top-nav .top-nav-container ul {
   left: 49% !important;
 }
 
+/**
+ * WP-IG Integration
+ */
+article.instagram .entry-title {
+  display: none;
+}
+
 /** 
  * 6.1
  * Footer

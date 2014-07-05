@@ -582,3 +582,12 @@
 		left: 49% !important;
 	}
 }
+
+/**
+ * WP-IG Integration
+ */
+ article.instagram{
+ 	.entry-title{
+ 		display: none;
+ 	}
+ }
