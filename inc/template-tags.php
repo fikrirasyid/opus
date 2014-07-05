@@ -1,29 +1,8 @@
 <?php
 /**
- * Prints blog name | blog description in wp_title on homepage
- */
-function opus_home_wptitle( $title ){
-	global $paged, $page;
-
-	$blog_name = get_bloginfo( 'name' );
-	$blog_desc = get_bloginfo( 'description' );
-
-	if ( is_home() || is_front_page() ){
-		$title = $blog_name;
-
-		if( $paged >= 2 || $page >= 2 ){
-			$title .= ' | ' . sprintf( __( 'Page %s', 'opus' ), max( $paged, $page ) );
-		} else {
-			$title .= ' | ' . get_bloginfo( 'description' );
-		}
-	}
-
-	return $title;
-}
-add_filter( 'wp_title', 'opus_home_wptitle' );
-
-/**
  * Prints HTML of categories of current post
+ * 
+ * @return void
  */
 function opus_the_category(){
 	echo '<ul class="entry-category"><li>';
@@ -33,6 +12,8 @@ function opus_the_category(){
 
 /**
  * Prints HTML with meta information for the current post-date/time and author.
+ * 
+ * @return void
  */
 function opus_posted_on() {
 	if( is_page() ){
@@ -80,6 +61,10 @@ function opus_posted_on() {
 
 /**
  * Returns human readable time
+ * 
+ * @param int post timestamp
+ * 
+ * @return string human time
  */
 function opus_get_the_human_time($post_time = 0){
 	$timestamp = current_time( 'timestamp' ) - $post_time;
@@ -155,6 +140,11 @@ function opus_get_the_human_time($post_time = 0){
 
 /**
  * Returns time sensitive noun
+ * 
+ * @param string noun
+ * @param int number
+ * 
+ * @return string modified noun
  */
 function opus_plural_sensitive_noun( $noun = 'apple', $number = 0){
 	$first_char 		= substr( $noun, 0, 1 );
@@ -187,9 +177,13 @@ function opus_plural_sensitive_noun( $noun = 'apple', $number = 0){
 	return $word_number . ' ' . $noun;
 }
 
-/*
+/**
  * Translate number into words by Karl Rixon
  * Source: http://www.karlrixon.co.uk/writing/convert-numbers-to-words-with-php/
+ * 
+ * @param int number
+ *
+ * @return string number
  */
 function opus_convert_number_to_words($number) {
     
@@ -305,6 +299,10 @@ function opus_convert_number_to_words($number) {
 
 /**
  * Returns domain name of given URL
+ * 
+ * @param string url
+ * 
+ * @return string domain name
  */
 function opus_get_domain_name( $url ){
 	$parsed_url = parse_url( $url );
@@ -318,6 +316,8 @@ function opus_get_domain_name( $url ){
 
 /**
  * Prints HTML for comments popup link section. For the sake of DRY
+ * 
+ * @return void
  */
 function opus_comments_popup_link(){
 	comments_popup_link( __( 'No Response Yet. <strong>Add Yours</strong>', '_s' ), __( '1 Response Shared. <strong>Add Yours</strong>', '_s' ), __( '% Responses Shared. <strong>Add Yours</strong>', '_s' ) );
@@ -325,6 +325,10 @@ function opus_comments_popup_link(){
 
 /**
  * Display navigation to next/previous pages when applicable
+ * 
+ * @param string navid
+ * 
+ * @return void
  */
 function opus_content_nav( $nav_id ) {
 	global $wp_query, $post;
@@ -370,7 +374,9 @@ function opus_content_nav( $nav_id ) {
 }
 
 /**
- * Display the comments section
+ * Display the comment item
+ * 
+ * @return void
  */
 function opus_comment($comment, $args, $depth) {
 	$GLOBALS['comment'] = $comment; ?>
@@ -410,6 +416,8 @@ function opus_comment($comment, $args, $depth) {
 
 /**
  * Display the comment form
+ * 
+ * @return void
  */
 function opus_comment_form(){
 	global $user_identity, $id;
@@ -472,4 +480,54 @@ function opus_comment_form(){
 		<?php endif; // If registration required and not logged in ?>
 	</div>
 	<?php endif;
+}
+
+/**
+ * Determine if a background image needs light or dark text
+ * get average luminance, by sampling $num_samples times in both x,y directions
+ * 
+ * @link http://stackoverflow.com/questions/5842440/background-image-dark-or-light
+ * 
+ * @param string filename
+ * @param int divider
+ * 
+ * @return int luminance
+ */
+function opus_get_avg_luminance($filename, $num_samples=10) {
+    $img = imagecreatefromjpeg($filename);
+
+    $width = imagesx($img);
+    $height = imagesy($img);
+
+    $x_step = intval($width/$num_samples);
+    $y_step = intval($height/$num_samples);
+
+    $total_lum = 0;
+
+    $sample_no = 1;
+
+    for ($x=0; $x<$width; $x+=$x_step) {
+        for ($y=0; $y<$height; $y+=$y_step) {
+
+            $rgb = imagecolorat($img, $x, $y);
+            $r = ($rgb >> 16) & 0xFF;
+            $g = ($rgb >> 8) & 0xFF;
+            $b = $rgb & 0xFF;
+
+            // choose a simple luminance formula from here
+            // http://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color
+            $lum = ($r+$r+$b+$g+$g+$g)/6;
+
+            $total_lum += $lum;
+
+            // debugging code
+ //           echo "$sample_no - XY: $x,$y = $r, $g, $b = $lum<br />";
+            $sample_no++;
+        }
+    }
+
+    // work out the average
+    $avg_lum  = $total_lum/$sample_no;
+
+    return $avg_lum;
 }
