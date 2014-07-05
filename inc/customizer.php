@@ -1,4 +1,10 @@
 <?php
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+/**
+ * Customizer related adjustment
+ */
 class Opus_Customizer{
 	function __construct(){
 		add_action( 'customize_register', array( $this, 'register_customizer' ) );
