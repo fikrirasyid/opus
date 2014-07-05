@@ -140,7 +140,7 @@ jQuery(document).ready(function($) {
 		} else {
 			$('body').css('overflow', 'hidden' );
 			$('#colophon').show();
-			$('#colophon').animate({ 'top' : '40%'} );
+			$('#colophon').animate({ 'top' : '25%' });
 		}
 	} );	
 });

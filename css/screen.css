@@ -1672,7 +1672,7 @@ article.instagram .entry-title {
   bottom: -1px;
   left: 50%;
   width: 120px;
-  margin: 0 0 0 -60px;
+  margin: 0 0 0 -80px;
   background: white;
   padding: 3px 20px 8px;
   border: 1px solid #e2dfd8;
@@ -1772,6 +1772,9 @@ body.infinite-scroll #colophon {
   overflow: auto;
   display: none;
   box-shadow: -2px 0 5px #888888;
+}
+body.infinite-scroll #colophon .site-info .wrap {
+  padding-bottom: 60px;
 }
 body.infinite-scroll #colophon-toggle {
   display: block;

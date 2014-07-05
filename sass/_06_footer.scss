@@ -51,7 +51,7 @@
 	bottom: -1px;
 	left: 50%;
 	width: 120px;
-	margin: 0 0 0 -60px;
+	margin: 0 0 0 -80px;
 	background: white;
 	padding: 3px 20px 8px;
 	border: 1px solid $crem_dark;
@@ -179,6 +179,12 @@ body.infinite-scroll{
 		overflow: auto;
 		display: none;
 		box-shadow: -2px 0 5px $crem_darkest;
+
+		.site-info{
+			.wrap{
+				padding-bottom: 60px;
+			}
+		}
 	}
 
 	#colophon-toggle{
