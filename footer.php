@@ -1,3 +1,8 @@
+	<a href="#" id="colophon-toggle">
+		<span class="label"><?php _e( 'Footer', 'opus' ); ?></span>
+		<span class="genericon genericon-collapse"></span>
+		<span class="genericon genericon-expand"></span>
+	</a>
 	<footer id="colophon" class="site-footer wrap-outer" role="contentinfo">
 		<div id="secondary" class="widget-area" role="complementary">
 			<div class="wrap">

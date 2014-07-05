@@ -59,7 +59,7 @@ class Opus{
         add_theme_support( 'custom-header', $default_custom_header );
         add_theme_support( 'infinite-scroll', array(
             'container' => 'content',
-            'footer'    => 'page',
+            'footer'    => false,
         ) );
 
         /**

@@ -125,4 +125,22 @@ jQuery(document).ready(function($) {
 		$(this).find('.human-time').show();
 		$(this).find('.conventional-time').hide();			
 	});
+
+	// Toggle footer
+	$('#colophon-toggle').click( function(e){
+		e.preventDefault();
+
+		$(this).toggleClass( 'active' );
+
+		if( $('#colophon').is(':visible') ){
+			$('body').css('overflow', 'auto' );
+			$('#colophon').animate({ 'top' : '99%'}, 400, function(){
+				$('#colophon').hide();
+			} );
+		} else {
+			$('body').css('overflow', 'hidden' );
+			$('#colophon').show();
+			$('#colophon').animate({ 'top' : '40%'} );
+		}
+	} );	
 });

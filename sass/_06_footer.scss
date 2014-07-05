@@ -46,6 +46,52 @@
 	}
 }
 
+#colophon-toggle{
+	position: fixed;
+	bottom: -1px;
+	left: 50%;
+	width: 120px;
+	margin: 0 0 0 -60px;
+	background: white;
+	padding: 3px 20px 8px;
+	border: 1px solid $crem_dark;
+	z-index: 1000;
+	line-height: 1;
+	text-align: center;
+	box-shadow: 0 -2px 0 $crem_dark;
+	display: none;
+
+	span{
+		vertical-align: middle;
+	}
+
+	.label{
+		font-size: .6em;
+		text-transform: uppercase;
+		@include montserrat;
+	}
+
+	.genericon{
+		font-size: 24px;
+		line-height: .7;
+		margin-left: 5px;
+	}
+
+	.genericon-expand{
+		display: none;
+	}
+
+	&.active{
+		.genericon-collapse{
+			display: none;
+		}
+
+		.genericon-expand{
+			display: inline-block;
+		}
+	}
+}
+
 /** 
  * 6.2
  * Widgets
@@ -116,5 +162,26 @@
 
 	input{
 		vertical-align: middle;
+	}
+}
+
+/**
+ * 6.3
+ * Footer on infinite-scroll circumstance
+ */
+body.infinite-scroll{
+	#colophon{
+		position: fixed;
+		top: 99%;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		overflow: auto;
+		display: none;
+		box-shadow: -2px 0 5px $crem_darkest;
+	}
+
+	#colophon-toggle{
+		display: block;
 	}
 }
