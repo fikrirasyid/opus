@@ -1015,6 +1015,9 @@ body.admin-bar #top-nav .top-nav-container ul {
   top: 11px;
   left: 16px;
 }
+#content article .entry-header video {
+  width: 100%;
+}
 #content article .entry-meta {
   display: block;
   padding: 10px 10px;
