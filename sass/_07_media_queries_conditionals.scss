@@ -44,7 +44,7 @@ body{
 
 	#content,
 	.wrap{
-		width: 680px;
+		width: 580px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -80,8 +80,6 @@ body{
 	
 	body.expanded #top-nav,
 	#top-nav{
-		background: $green;
-
 		#home{
 			opacity: 1;
 			padding-top: 1px;
@@ -163,7 +161,7 @@ body{
 			}
 
 			.entry-content{
-				padding: 60px 80px;
+				padding: 40px 60px;
 			}
 
 			.entry-footer{
