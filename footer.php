@@ -1,5 +1,5 @@
 	<a href="#" id="colophon-toggle">
-		<span class="label"><?php _e( 'Footer', 'opus' ); ?></span>
+		<span class="label"><?php _e( 'More', 'opus' ); ?></span>
 		<span class="genericon genericon-collapse"></span>
 		<span class="genericon genericon-expand"></span>
 	</a>
