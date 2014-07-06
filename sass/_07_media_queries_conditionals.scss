@@ -41,6 +41,26 @@ body{
 			}
 		}
 	}
+	
+	#top-nav{
+		#home{
+			float: left;
+			opacity: 0;
+			display: block;
+
+			img{
+				float: left;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				margin: 0;
+			}
+		}	
+
+		#home-name{
+			margin-left: 10px;
+		}		
+	}
 
 	#content,
 	.wrap{
@@ -283,16 +303,6 @@ body{
 			#top-nav{
 				.top-nav-container{
 					top: 86px;
-				}
-			}
-		}
-
-		#top-nav{
-			&.scrolled{
-				top: 0;
-
-				.top-nav-container{
-					top: 40px;
 				}
 			}
 		}

@@ -190,4 +190,31 @@ body.infinite-scroll{
 	#colophon-toggle{
 		display: block;
 	}
+
+	&.scroll-down{
+		#colophon-toggle{	
+			display: block;
+			opacity: .95;
+			-webkit-animation-name: fadeInDown;
+			animation-name: fadeInDown;
+			-webkit-animation-duration: .3s;
+			animation-duration: .3s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;		
+		}
+	}
+
+	&.top-of-page,
+	&.scroll-up{
+		#colophon-toggle{	
+			display: block;
+			opacity: 0;
+			-webkit-animation-name: fadeOutUp;
+			animation-name: fadeOutUp;
+			-webkit-animation-duration: .3s;
+			animation-duration: .3s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;			
+		}	
+	}
 }

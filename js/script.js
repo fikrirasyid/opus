@@ -52,13 +52,27 @@ jQuery(document).ready(function($) {
 	/**
 	 * Top Navigation Mechanism
 	 */
-	$(window).scroll(function(){
-		var window_offset = $(window).scrollTop();
-		if( window_offset > 0 ){
-			$('#top-nav').addClass('scrolled');
+	var scroll_init = 0;
+	var header_height = $('#header').height();
+
+	$(window).scroll(function(event){
+		var scroll_ofset = $(this).scrollTop();
+
+		// Determine the status of this: scroll up or down?
+		if( scroll_ofset > scroll_init ){
+			$('body').addClass('scroll-down').removeClass('scroll-up');
 		} else {
-			$('#top-nav').removeClass('scrolled');
+			$('body').addClass('scroll-up').removeClass('scroll-down');
 		}
+
+		// Ignore scroll status if we're on the top of the page
+		if( scroll_ofset < header_height ){
+			$('body').addClass('top-of-page');
+		} else {
+			$('body').removeClass('top-of-page');			
+		}
+
+		scroll_init = scroll_ofset;
 	});
 
 	var top_nav_container_top_raw = $('.top-nav-container').css('top');

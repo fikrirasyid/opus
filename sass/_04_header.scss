@@ -58,23 +58,16 @@
  * Navigation
  */
 #top-nav{
+	background: $green;
 	display: block;
 	position: fixed;
 	z-index: 200;
 	color: white;
 	opacity: .95;
+	top: 0;
 
 	#home{
-		float: left;
-		opacity: 0;
-
-		img{
-			float: left;
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-			margin: 0;
-		}
+		display: none;
 	}
 
 	#home-name{
@@ -82,20 +75,10 @@
 		color: white;
 		font: 300 .7em $montserrat;
 		text-transform: uppercase;
-		margin: 1px 0 0 10px;
-		opacity: 0;
+		margin: 1px 0 0 0;
 
 		&:hover{
 			color: $crem;
-		}
-	}
-
-	&.scrolled{
-		background: $green;		
-		
-		#home-name,
-		#home{
-			opacity: 1;
 		}
 	}
 
@@ -130,7 +113,7 @@
 		display: none;
 		background: white;
 		position: fixed;
-		top: 40px;
+		top: 39px;
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -187,13 +170,48 @@
 	}
 }
 
+// Adjust upon page scroll
+body{
+	&.scroll-down{
+		#top-nav{
+			display: block;
+			opacity: 0;
+			-webkit-animation-name: fadeOutUp;
+			animation-name: fadeOutUp;
+			-webkit-animation-duration: .3s;
+			animation-duration: .3s;
+			// -webkit-animation-fill-mode: both;
+			// animation-fill-mode: both;			
+		}
+	}
+
+	&.top-of-page,
+	&.scroll-up{
+		#top-nav{
+			display: block;
+			opacity: .95;
+			-webkit-animation-name: fadeInDown;
+			animation-name: fadeInDown;
+			-webkit-animation-duration: .3s;
+			animation-duration: .3s;
+			// -webkit-animation-fill-mode: both;
+			// animation-fill-mode: both;				
+		}	
+	}
+}
+
+// Adjustment when admin-bar is also displayed
+.admin-bar{
+	#top-nav{
+		top: 32px;
+	}
+}
+
 body{
 	&.expanded{
 		overflow: hidden;
 
 		#top-nav{
-			background: $green;
-
 			display: block;
 			
 			.top-nav-container{
