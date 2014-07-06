@@ -50,29 +50,49 @@ jQuery(document).ready(function($) {
     } );	
 
 	/**
-	 * Top Navigation Mechanism
+	 * Top Navigation and Parallax Mechanism
 	 */
+	// Top & Toggle mechanism
 	var scroll_init = 0;
 	var header_height = $('#header').height();
 
+	// Parallax Cover
+	if( $('#page-cover').length > 0 ){
+		var page_cover_height = $('#page-cover').height();
+		var page_cover_top = 0 - ( page_cover_height / 10 );
+		$('#page-cover').css({ 'position' : 'fixed' });
+		$('#page-cover img').css({ 'margin-top' : page_cover_top });
+	}
+
 	$(window).scroll(function(event){
-		var scroll_ofset = $(this).scrollTop();
+		var scroll_offset = $(this).scrollTop();
 
 		// Determine the status of this: scroll up or down?
-		if( scroll_ofset > scroll_init ){
+		if( scroll_offset > scroll_init ){
 			$('body').addClass('scroll-down').removeClass('scroll-up');
 		} else {
 			$('body').addClass('scroll-up').removeClass('scroll-down');
 		}
 
 		// Ignore scroll status if we're on the top of the page
-		if( scroll_ofset < header_height ){
+		if( scroll_offset < header_height ){
 			$('body').addClass('top-of-page');
 		} else {
 			$('body').removeClass('top-of-page');			
 		}
 
-		scroll_init = scroll_ofset;
+		// Parallaxing
+		if( $('#page-cover').length > 0 ){
+			var cover_height = page_cover_height - scroll_offset;
+			var cover_image_bottom = ( scroll_offset / 10 ) + page_cover_top;
+			$('#page-cover').css({ 'height' : cover_height } );
+			if( cover_height > 0 && cover_height <= page_cover_height ){
+				$('#page-cover').css({ 'height' : cover_height } ); 	
+				$('#page-cover img').css({ 'margin-top' : cover_image_bottom });		
+			}		
+		}
+
+		scroll_init = scroll_offset;
 	});
 
 	var top_nav_container_top_raw = $('.top-nav-container').css('top');
