@@ -81,6 +81,12 @@ jQuery(document).ready(function($) {
 			$('body').removeClass('top-of-page');			
 		}
 
+		if( 40 > scroll_offset ){
+			$('body').addClass('top-most-of-page');
+		} else {
+			$('body').removeClass('top-most-of-page');			
+		}
+
 		// Parallaxing
 		if( $('#page-cover').length > 0 ){
 			var cover_height = page_cover_height - scroll_offset;

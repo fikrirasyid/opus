@@ -295,14 +295,39 @@ body{
 
 /**
  * 7.3
- * Mobile (below 600px)
+ * Mobile (below 783px)
  */
-@media all and (max-width: 600px){
+@media all and (max-width: 783px){
 	body{
 		&.admin-bar{
 			#top-nav{
+				top: 46px;
+
 				.top-nav-container{
-					top: 86px;
+					top: 85px;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 601px){
+	body{
+		&.admin-bar{
+			&.scroll-down,
+			&.scroll-up{
+				#top-nav{
+					top: 0;
+
+					.top-nav-container{
+						top: 39px;
+					}
+				}
+			}
+
+			&.top-most-of-page{
+				#top-nav{
+					top: 46px;
 				}
 			}
 		}

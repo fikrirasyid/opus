@@ -2095,11 +2095,25 @@ body.logged-in #respond .submit-comment-avatar {
 }
 /**
  * 7.3
- * Mobile (below 600px)
+ * Mobile (below 783px)
  */
-@media all and (max-width: 600px) {
+@media all and (max-width: 783px) {
+  body.admin-bar #top-nav {
+    top: 46px;
+  }
   body.admin-bar #top-nav .top-nav-container {
-    top: 86px;
+    top: 85px;
+  }
+}
+@media all and (max-width: 601px) {
+  body.admin-bar.scroll-down #top-nav, body.admin-bar.scroll-up #top-nav {
+    top: 0;
+  }
+  body.admin-bar.scroll-down #top-nav .top-nav-container, body.admin-bar.scroll-up #top-nav .top-nav-container {
+    top: 39px;
+  }
+  body.admin-bar.top-most-of-page #top-nav {
+    top: 46px;
   }
 }
 /** 
