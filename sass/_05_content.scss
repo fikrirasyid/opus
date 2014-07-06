@@ -178,7 +178,6 @@
 		.entry-content{
 			position: relative;
 			z-index: 50;
-
 			padding: 20px;
 
 			&.entry-caption{
@@ -238,7 +237,7 @@
  * Content Styling
  */
 .entry-content{
-	font-size: .8em;
+	font-size: .7em;
 	@include content_styling;
 }
 
@@ -437,6 +436,10 @@
 				display: block;
 				padding: 5px 10px 10px 60px;
 				font-size: .8em;
+
+				.entry-content{
+					font-size: .8em;
+				}
 			}
 
 			.comment-action{

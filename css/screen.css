@@ -699,7 +699,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  font: 20px "Open Sans", sans-serif;
+  font: 20px "Roboto", sans-serif;
   line-height: 1.6;
   background: #ebe7df;
   color: #444444;
@@ -731,7 +731,7 @@ textarea {
   border: none;
   width: 100%;
   padding: 6px 10px;
-  font: 0.7em "Open Sans", sans-serif;
+  font: 0.7em "Roboto", sans-serif;
   border: 1px solid #e2dfd8;
   outline: none;
   box-sizing: border-box;
@@ -809,7 +809,7 @@ button:active,
 }
 
 .page-theme-description {
-  font: 300 italic 13px "Open Sans", sans-serif;
+  font: 300 italic 13px "Roboto", sans-serif;
   margin-left: 10px;
 }
 .page-theme-description strong {
@@ -1189,7 +1189,7 @@ body.admin-bar #top-nav .top-nav-container ul {
  * Content Styling
  */
 .entry-content {
-  font-size: .8em;
+  font-size: .7em;
   line-height: 1.9;
   word-wrap: break-word;
 }
@@ -1266,7 +1266,7 @@ body.admin-bar #top-nav .top-nav-container ul {
   margin-top: 10px;
 }
 .entry-content small {
-  font-size: .6em;
+  font-size: .78em;
 }
 .entry-content em, .entry-content i {
   font-style: italic;
@@ -1289,7 +1289,7 @@ body.admin-bar #top-nav .top-nav-container ul {
   background: #cfcfcf;
 }
 .entry-content table thead tr th {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   padding: 5px 10px;
 }
@@ -1547,6 +1547,10 @@ body.admin-bar #top-nav .top-nav-container ul {
   padding: 5px 10px 10px 60px;
   font-size: .8em;
 }
+#comments .pingback .comment-wrap .comment-content .entry-content,
+#comments .comment .comment-wrap .comment-content .entry-content {
+  font-size: .8em;
+}
 #comments .pingback .comment-wrap .comment-action,
 #comments .comment .comment-wrap .comment-action {
   font-size: .8em;
@@ -1706,7 +1710,7 @@ article.instagram .entry-title {
   background: #e2dfd8;
   text-align: center;
   font-size: .7em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   z-index: 60;
 }
@@ -1757,7 +1761,7 @@ article.instagram .entry-title {
 #colophon-toggle .label {
   font-size: .6em;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 #colophon-toggle .genericon {
   font-size: 24px;
@@ -1801,7 +1805,7 @@ article.instagram .entry-title {
   font-weight: bold;
 }
 #wp-calendar tbody {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 #wp-calendar tbody tr td {
   text-align: center;
