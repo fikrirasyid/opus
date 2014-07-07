@@ -20,6 +20,7 @@ jQuery(document).ready(function($) {
 	// On-load interface enhancement
 	function opus_page_load(){
 		// Normalizing interface
+		$('.entry-header iframe').attr({ 'width' : '100%' });
 		$('.entry-content img, .entry-content .wp-caption, .entry-content iframe, .entry-content embed').each(opus_normalize_media);
 		$('.entry-content .attachment img').removeAttr('width').removeAttr('height').css({ 'width' : '100%' });
 

@@ -7,9 +7,9 @@
 		</div>					
 		<?php 
 			$video = get_post_meta( get_the_ID(), '_format_video_embed', true );
-			if( $video ):
-				echo "<video controls><source src='$video'></source></video>";
-			endif; 
+			if( $video ){
+				opus_get_video_embed_code( $video );
+			}
 		?>
 	</header>
 	<div class="entry-content">

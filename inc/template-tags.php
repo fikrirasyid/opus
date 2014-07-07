@@ -534,3 +534,28 @@ function opus_get_avg_luminance($filename, $num_samples=10) {
 
     return $avg_lum;
 }
+
+/**
+ * Get embed code based on string (path to file, embed code, oEmbed supported video link)
+ * 
+ * @param string path to file || embed code || oEmbed-supported video link
+ * 
+ * @return void
+ */
+function opus_get_video_embed_code( $video ){
+	$video_extensions = array( 'mp4', 'ogg' );
+	$video_info = pathinfo( $video );
+
+	// Check if this should be displayed using video tag
+	if( isset( $video_info['extension'] ) && in_array( $video_info['extension'], $video_extensions) ){
+
+		echo "<video controls><source src='$video'></source></video>";
+
+	} elseif( strpos( $video, '<iframe' ) !== false ){
+		// If this is embed code
+		echo $video;
+	} else {
+		// Otherwise, assume that this is oEmbed link and get the content using built-in oEmbed mechanism
+		echo wp_oembed_get( $video );
+	}
+}
