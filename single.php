@@ -97,7 +97,21 @@
 				</header> 
 				<div class="entry-content">
 					<?php 
+						// Consciously Prepend video for post video format
+						$post_format = get_post_format( get_the_ID() );
+
+						if( 'video' == $post_format ){
+							$video  = get_post_meta( get_the_ID(), '_format_video_embed', true );
+
+							if( $video ){
+								opus_get_video_embed_code( $video );
+							}
+						}
+
+						// Display content
 						the_content(); 
+
+						// Display page link
 						wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'opus' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); 
 					?>
 
