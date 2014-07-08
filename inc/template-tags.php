@@ -14,6 +14,20 @@ function opus_the_category(){
 }
 
 /**
+ * Prints HTML of tags of current post
+ * 
+ * @return string
+ */
+function opus_the_tags(){
+	$tags = get_the_tag_list( __( 'Tags: ', 'opus' ), ', ', '' );
+	if( $tags ){
+		echo '<div class="entry-tags">';
+		echo $tags;
+		echo '</div>';
+	}
+}
+
+/**
  * Prints HTML with meta information for the current post-date/time and author.
  * 
  * @return void
