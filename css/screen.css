@@ -828,7 +828,6 @@ button:active,
   color: white;
   opacity: .95;
   top: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 #top-nav #home {
   display: none;
