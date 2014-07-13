@@ -65,6 +65,7 @@
 	color: white;
 	opacity: .95;
 	top: 0;
+	box-shadow: 0 2px 5px rgba(0,0,0,.26);
 
 	#home{
 		display: none;
@@ -256,6 +257,17 @@ body{
 	height: 210px;
 	overflow: hidden;
 	z-index: 40;
+
+	&:after{
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		margin-bottom: -1px;
+		box-shadow: 0 -1px 15px #222;
+	}
 
 	img{
 		width: 100%;

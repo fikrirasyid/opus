@@ -12,6 +12,7 @@
 		margin: 0 0 15px;
 		position: relative;
 		z-index: 40;
+		box-shadow: 0 1px 3px #afafaf;	
 
 		&.sticky{
 			box-shadow: 5px 5px 0 $green_dark;
@@ -283,6 +284,7 @@
 
 	div{
 		float: right;
+		box-shadow: 0 1px 2px #afafaf;
 	}
 
 	a{
@@ -407,6 +409,7 @@
 		.comment-wrap{
 			position: relative;
 			background: white;
+			box-shadow: 0 1px 2px #afafaf;
 
 			.comment-meta{
 				.comment-author{

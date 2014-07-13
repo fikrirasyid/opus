@@ -828,6 +828,7 @@ button:active,
   color: white;
   opacity: .95;
   top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 #top-nav #home {
   display: none;
@@ -973,6 +974,16 @@ body.admin-bar #top-nav .top-nav-container ul {
   overflow: hidden;
   z-index: 40;
 }
+#page-cover:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  margin-bottom: -1px;
+  box-shadow: 0 -1px 15px #222;
+}
 #page-cover img {
   width: 100%;
 }
@@ -991,6 +1002,7 @@ body.admin-bar #top-nav .top-nav-container ul {
   margin: 0 0 15px;
   position: relative;
   z-index: 40;
+  box-shadow: 0 1px 3px #afafaf;
 }
 #content article.sticky {
   box-shadow: 5px 5px 0 #19664a;
@@ -1401,6 +1413,7 @@ body.admin-bar #top-nav .top-nav-container ul {
 }
 #nav-below div {
   float: right;
+  box-shadow: 0 1px 2px #afafaf;
 }
 #nav-below a {
   font: 300 0.7em "Montserrat", sans-serif;
@@ -1522,6 +1535,7 @@ body.admin-bar #top-nav .top-nav-container ul {
 #comments .comment .comment-wrap {
   position: relative;
   background: white;
+  box-shadow: 0 1px 2px #afafaf;
 }
 #comments .pingback .comment-wrap .comment-meta .comment-author a:hover,
 #comments .comment .comment-wrap .comment-meta .comment-author a:hover {
