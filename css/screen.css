@@ -965,7 +965,8 @@ body.admin-bar #top-nav .top-nav-container ul {
  * Page Cover
  */
 #page-cover {
-  position: absolute;
+  position: relative;
+  margin-top: -210px;
   top: 0;
   left: 0;
   width: 100%;
@@ -2006,6 +2007,10 @@ body.logged-in #respond .submit-comment-avatar {
   #header,
   #page-cover {
     height: 600px;
+  }
+
+  #page-cover {
+    margin-top: -600px;
   }
 
   body.expanded #top-nav #home,

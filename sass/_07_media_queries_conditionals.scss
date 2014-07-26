@@ -97,6 +97,10 @@ body{
 	#page-cover{
 		height: 600px;
 	}
+
+	#page-cover{
+		margin-top: -600px;
+	}
 	
 	body.expanded #top-nav,
 	#top-nav{

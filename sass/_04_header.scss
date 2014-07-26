@@ -249,7 +249,8 @@ body{
  * Page Cover
  */
 #page-cover{
-	position: absolute;
+	position: relative;
+	margin-top: -210px;
 	top: 0;
 	left:0;
 	width: 100%;

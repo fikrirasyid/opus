@@ -58,10 +58,10 @@ jQuery(document).ready(function($) {
 	var header_height = $('#header').height();
 
 	// Parallax Cover
-	if( $('#page-cover').length > 0 ){
+ 	if( $('#page-cover').length > 0  && !is_touch_device() ){
 		var page_cover_height = $('#page-cover').height();
 		var page_cover_top = 0 - ( page_cover_height / 10 );
-		$('#page-cover').css({ 'position' : 'fixed' });
+		$('#page-cover').css({ 'position' : 'fixed', 'margin-top' : 0 });
 		$('#page-cover img').css({ 'margin-top' : page_cover_top });
 	}
 
@@ -89,7 +89,7 @@ jQuery(document).ready(function($) {
 		}
 
 		// Parallaxing
-		if( $('#page-cover').length > 0 ){
+ 	if( $('#page-cover').length > 0  && !is_touch_device() ){
 			var cover_height = page_cover_height - scroll_offset;
 			var cover_image_bottom = ( scroll_offset / 10 ) + page_cover_top;
 			$('#page-cover').css({ 'height' : cover_height } );
@@ -185,3 +185,8 @@ jQuery(document).ready(function($) {
 		}
 	} );	
 });
+
+function is_touch_device() {
+	return 'ontouchstart' in window // works on most browsers 
+		|| 'onmsgesturechange' in window; // works on ie10
+};
