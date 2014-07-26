@@ -1,3 +1,5 @@
+<?php get_template_part( 'article', 'day' ); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if( has_post_thumbnail() ); ?>
 	<header class="entry-header">

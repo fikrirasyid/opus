@@ -217,6 +217,23 @@ body{
 				padding: 20px 20px 20px 55px;
 			}
 		}
+
+		.article-day{
+			padding: 12px 0 70px 0;
+			font-size: 14px;
+		
+			.label{
+				background: $crem;
+				position: relative;
+				z-index: 20;
+				padding: 0 10px 0 10px;
+				margin-left: 10px;
+			}
+
+			.border{
+				top: 23px;
+			}
+		}
 	}
 
 	.entry-content{

@@ -262,6 +262,36 @@
 			}
 		}
 	}
+
+	.article-day{
+		@include montserrat;
+		text-transform: uppercase;
+		font-size: 13px;
+		display: block;
+		padding: 16px 0 30px 0;
+		position: relative;
+
+		.label{
+			background: $crem;
+			position: relative;
+			z-index: 20;
+			padding: 0 7px 0 6px;
+			margin-left: 10px;
+		}
+
+		.border{
+			display: block;
+			content: '';
+			position: absolute;
+			background: #BFBFBF;
+			box-shadow: 0 1px 1px white;
+			height: 1px;
+			top: 25px;
+			left: 0;
+			right: 0;
+			z-index: 10;		
+		}
+	}
 }
 
 // Handling single article post

@@ -42,10 +42,25 @@ jQuery(document).ready(function($) {
 				);
 			}
 		});
+
+		// Article day's UI
+		var content_width 		= $('#content').outerWidth();
+		var window_width 		= $(window).width();
+		var article_day_margin	= 0 - ( ( window_width - content_width ) / 2 );
+		$('.article-day .border').css({ 'left' : article_day_margin, 'right' : article_day_margin });
+
+		if( $('article.sticky').length < 1 ){
+			$('.article-day:first').hide();			
+		}
 	}
 
 	// Perform page adjustment after all assets have been loaded
 	$(window).load(function(){
+		opus_page_load();
+	});
+
+	// Adjust page on window resize
+	$(window).resize(function(){
 		opus_page_load();
 	});
 
