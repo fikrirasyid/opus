@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 		$('.article-day .border').css({ 'left' : article_day_margin, 'right' : article_day_margin });
 
 		if( $('article.sticky').length < 1 ){
-			$('.article-day:first').hide();			
+			$('.article-day:first').addClass( 'on-page-cover' );			
 		}
 	}
 

@@ -291,6 +291,21 @@
 			right: 0;
 			z-index: 10;		
 		}
+
+		&.on-page-cover{
+			padding: 0 0 15px 0;
+
+			.label{
+				color: white;
+				background: transparent;
+				margin-left: 0;
+				padding-left: 10px;
+			}
+
+			.border{
+				display: none;
+			}
+		}
 	}
 }
 

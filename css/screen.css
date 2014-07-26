@@ -1260,6 +1260,18 @@ body.admin-bar #top-nav .top-nav-container ul {
   right: 0;
   z-index: 10;
 }
+#content .article-day.on-page-cover {
+  padding: 0 0 15px 0;
+}
+#content .article-day.on-page-cover .label {
+  color: white;
+  background: transparent;
+  margin-left: 0;
+  padding-left: 10px;
+}
+#content .article-day.on-page-cover .border {
+  display: none;
+}
 
 .page #content article .entry-header .entry-meta .entry-posted-on,
 .single #content article .entry-header .entry-meta .entry-posted-on {
