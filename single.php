@@ -11,9 +11,9 @@
 
 		// Check the luminance of featured image
 		if( isset( $featured_image ) && $featured_image != '' ){
-			$mime_type = end( explode( '.', $featured_image[0] ) );
+			$featured_image_pathinfo = pathinfo( $featured_image[0] );
 
-			if( in_array( $mime_type, array( 'jpg', 'jpeg' ) ) ){
+			if( isset( $featured_image_pathinfo['extension'] ) && in_array( $featured_image_pathinfo['extension'], array( 'jpg', 'jpeg' ) ) ){
 				$luminance = opus_get_avg_luminance( $featured_image[0] );				
 			} else {
 				$luminance = 200;
