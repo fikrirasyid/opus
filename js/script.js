@@ -43,7 +43,11 @@ jQuery(document).ready(function($) {
 			}
 		});
 	}
-	opus_page_load();
+
+	// Perform page adjustment after all assets have been loaded
+	$(window).load(function(){
+		opus_page_load();
+	});
 
 	// Trigger on-load event when new contents are appended by Jetpack
 	$( document.body ).on( 'post-load', function() {
