@@ -2230,3 +2230,51 @@ body.logged-in #respond .submit-comment-avatar {
     font-size: .75em;
   }
 }
+/**
+ * WP-IG Suport
+ */
+#content article.instagram {
+  background: #f9f8f5;
+}
+#content article.instagram .entry-meta {
+  position: relative;
+}
+#content article.instagram .entry-meta:before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Genericons';
+  text-decoration: inherit;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+  content: '\f215';
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  margin: -7px 0 0 0;
+  color: #517fa4;
+  color: #1f7f5c;
+  color: #232323;
+  color: #999;
+}
+#content article.instagram .entry-meta .entry-category {
+  margin-left: 18px;
+}
+
+@media all and (min-width: 783px) {
+  #content article.instagram .entry-meta:before {
+    font-size: 32px;
+    left: 10px;
+    margin: -14px 0 0 0;
+  }
+  #content article.instagram .entry-meta .entry-category {
+    margin-left: 30px;
+  }
+}
