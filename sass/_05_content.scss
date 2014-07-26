@@ -15,7 +15,27 @@
 		box-shadow: 0 1px 3px #afafaf;	
 
 		&.sticky{
-			box-shadow: 5px 5px 0 $green_dark;
+			background: #f9f8f5;
+
+			.entry-header{
+				.entry-meta{
+					position: relative;
+					
+					&:before{
+						@include genericon;
+						content: '\f408';
+						position: absolute;
+						top: 50%;
+						left: 5px;
+						margin: -8px 0 0 0;
+						color: #E6AF17;
+					}
+
+					.entry-category{
+						margin-left: 15px;
+					}
+				}
+			}
 		}
 
 		.entry-header{

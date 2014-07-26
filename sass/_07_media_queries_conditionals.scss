@@ -151,6 +151,22 @@ body{
 		article{
 			margin-bottom: 60px;
 
+			&.sticky{
+				.entry-header{
+					.entry-meta{
+						&:before{
+							font-size: 32px;
+							left: 5px;
+							margin: -16px 0 0 0;
+						}
+
+						.entry-category{
+							margin-left: 20px;
+						}
+					}
+				}
+			}			
+
 			.entry-header{
 				.entry-meta{
 					padding: 20px;
