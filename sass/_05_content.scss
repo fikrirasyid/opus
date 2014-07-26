@@ -43,6 +43,7 @@
 			.entry-meta{
 				border-top: none;				
 				border-bottom: 1px solid $crem;				
+				// min-height: 16px;
 			}			
 			
 			.entry-featured-image{
@@ -153,6 +154,9 @@
 				text-transform: uppercase;
 				float: left;
 				height: 16px;
+				position: relative;
+				z-index: 20; // higher than .entry-posted-on
+				padding-right: 10px;
 
 				a{
 					color: $black;
@@ -173,6 +177,13 @@
 				color: $gray;
 				font-size: .6em;
 				padding: 3px 0;
+				position: absolute;
+				top: 9px;
+				right: 10px;
+				width: 55%;
+				height: 13px;
+				overflow: hidden;
+				text-align: right;
 
 				.conventional-time{
 					display: none;
@@ -248,6 +259,26 @@
 				font-style: italic;
 				font-weight: 300;
 				font-size: .7em;
+			}
+		}
+	}
+}
+
+// Handling single article post
+.page,
+.single{
+	#content{
+		article{
+			.entry-header{
+				.entry-meta{
+					.entry-posted-on{
+						position: relative;
+						width: 100%;
+						right: 0;
+						top: 0;
+						text-align: center;
+					}
+				}
 			}
 		}
 	}

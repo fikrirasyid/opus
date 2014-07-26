@@ -174,7 +174,16 @@ body{
 					.entry-author,
 					.entry-author-action{
 						display: inline-block;
-					}					
+					}			
+
+					.entry-category{
+						line-height: 1;
+					}		
+
+					.entry-posted-on{
+						top: 18px;
+						right: 20px;
+					}
 				}
 
 				.entry-title{
