@@ -1989,9 +1989,9 @@ body.logged-in #respond .submit-comment-avatar {
 
 /** 
  * 7.2
- * Tablet & Desktop (Above 783px)
+ * Tablet & Desktop (Above 836px)
  */
-@media all and (min-width: 783px) {
+@media all and (min-width: 836px) {
   body {
     font-size: 25px;
   }
@@ -2254,6 +2254,14 @@ body.logged-in #respond .submit-comment-avatar {
  * Phablet / Big Phones ( 501px - 679px)
  * Gallery requires specific styling for mobile view
  */
+@media all and (min-width: 600px) and (max-width: 836px) {
+  body #content,
+  body .wrap {
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media all and (min-width: 501px) and (max-width: 679px) {
   .gallery .gallery-item img {
     width: 120px;

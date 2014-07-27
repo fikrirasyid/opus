@@ -48,9 +48,9 @@ class Opus{
             'uploads' => true,
             'default-image' => get_template_directory_uri() . '/images/default/three-men.jpg',
             'flex-width' => true,
-            'width' => 960,
+            'width' => 1140,
             'flex-height' => true,
-            'height' => 720
+            'height' => 900
         );
 
         add_theme_support( 'automatic-feed-links' );
