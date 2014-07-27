@@ -52,6 +52,14 @@ jQuery(document).ready(function($) {
 		if( $('article.sticky').length < 1 ){
 			$('.article-day:first').addClass( 'on-page-cover' );			
 		}
+
+		// Parallax Cover
+	 	if( $('#page-cover').length > 0  && !is_touch_device() ){
+			var page_cover_height = $('#header').height();
+			var page_cover_top = 0 - ( page_cover_height / 10 );
+			$('#page-cover').css({ 'position' : 'fixed', 'margin-top' : 0, 'height' : page_cover_height });
+			$('#page-cover img').css({ 'margin-top' : page_cover_top });
+		}				
 	}
 
 	// Perform page adjustment after all assets have been loaded
@@ -75,14 +83,6 @@ jQuery(document).ready(function($) {
 	// Top & Toggle mechanism
 	var scroll_init = 0;
 	var header_height = $('#header').height();
-
-	// Parallax Cover
- 	if( $('#page-cover').length > 0  && !is_touch_device() ){
-		var page_cover_height = $('#page-cover').height();
-		var page_cover_top = 0 - ( page_cover_height / 10 );
-		$('#page-cover').css({ 'position' : 'fixed', 'margin-top' : 0 });
-		$('#page-cover img').css({ 'margin-top' : page_cover_top });
-	}
 
 	$(window).scroll(function(event){
 		var scroll_offset = $(this).scrollTop();
@@ -108,7 +108,9 @@ jQuery(document).ready(function($) {
 		}
 
 		// Parallaxing
- 	if( $('#page-cover').length > 0  && !is_touch_device() ){
+	 	if( $('#page-cover').length > 0  && !is_touch_device() ){
+			var page_cover_height = $('#header').height();
+			var page_cover_top = 0 - ( page_cover_height / 10 );
 			var cover_height = page_cover_height - scroll_offset;
 			var cover_image_bottom = ( scroll_offset / 10 ) + page_cover_top;
 			$('#page-cover').css({ 'height' : cover_height } );
