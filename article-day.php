@@ -1,5 +1,9 @@
 <?php
 	// Update the date in given condition
+	if( isset( $GLOBALS['wp_query'] ) && is_sticky() ){
+		$GLOBALS['wp_query']->has_sticky = true;
+	}
+
 	if( isset( $GLOBALS['wp_query'] ) && !is_sticky() ){	
 		
 		if( !isset( $GLOBALS['wp_query']->opus_date ) ){		
@@ -14,7 +18,14 @@
 
 		if( $date_index != $date ){
 
-			echo '<h4 class="article-day"><span class="label">' . date( 'l, d F Y', $timestamp ) . '</span><span class="border"></span></h4>';
+			if( !isset( $GLOBALS['wp_query']->query['paged'] ) && !isset( $GLOBALS['wp_query']->has_sticky ) && $date_index == 0 ){
+				echo '<h4 class="article-day on-page-cover"><span class="label">' . date( 'l, d F Y', $timestamp ) . '</span><span class="border"></span></h4>';
+			} else if( isset( $GLOBALS['wp_query']->query['paged'] ) && !isset( $GLOBALS['wp_query']->has_sticky ) && $date_index == 0 && !isset( $GLOBALS['wp_query']->query['nopaging'] ) ){
+				echo '<h4 class="article-day on-page-cover"><span class="label">' . date( 'l, d F Y', $timestamp ) . '</span><span class="border"></span></h4>';
+			} else {
+				echo '<h4 class="article-day"><span class="label">' . date( 'l, d F Y', $timestamp ) . '</span><span class="border"></span></h4>';				
+			}
+
 
 		}
 
