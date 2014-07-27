@@ -38,7 +38,7 @@
 					</div>
 
 					<a href="<?php $attachment_src = wp_get_attachment_image_src( get_the_ID(), 'fullsize' ); echo $attachment_src[0]; ?>" class="entry-featured-image" rel="bookmark">
-						<?php echo opus_remove_width_attribute( wp_get_attachment_image( get_the_ID(), 'large' ) ); ?>
+						<?php echo opus_remove_width_attribute( wp_get_attachment_image( get_the_ID(), 'featured' ) ); ?>
 					</a>
 				</header> 
 				<div class="entry-content">					

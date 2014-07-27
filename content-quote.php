@@ -11,7 +11,7 @@
 		<?php if( has_post_thumbnail() ): ?>
 		<div class="entry-background">
 			<div class="shadow"></div>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'featured' ); ?>
 		</div>
 		<?php endif; ?>
 	</header> 

@@ -73,6 +73,12 @@ class Opus{
          * Content editor styling
          */
         add_editor_style( 'css/editor-style.css' );        
+
+        /**
+         * Register image sizes
+         */
+        add_image_size( 'page-cover', 1140, 900  );
+        add_image_size( 'featured', 580, 0  );
     }
 
     /**

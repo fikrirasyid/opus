@@ -10,7 +10,7 @@
 
 		<?php if( has_post_thumbnail() ): ?>
 		<a href="<?php the_permalink(); ?>" class="entry-featured-image" rel="bookmark">
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'featured' ); ?>
 		</a>
 		<?php endif; ?>
 		

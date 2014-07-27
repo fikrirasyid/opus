@@ -7,7 +7,7 @@
 
 	// Get the featured image
 	if( has_post_thumbnail() ){		
-		$featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID()), $size = 'large' );
+		$featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID()), $size = 'page-cover' );
 
 		// Check the luminance of featured image
 		if( isset( $featured_image ) && $featured_image != '' ){
