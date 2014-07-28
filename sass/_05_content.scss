@@ -263,6 +263,16 @@
 		}
 	}
 
+	.article-month{
+		@include montserrat;
+		font-size: 20px;
+		text-transform: uppercase;
+		display: block;
+		padding: 100px 0 20px 16px;
+		color: $green_dark;
+		text-shadow: 0 1px 1px #fbfbfb;
+	}
+
 	.article-day{
 		@include montserrat;
 		text-transform: uppercase;
