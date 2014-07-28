@@ -113,7 +113,15 @@ jQuery(document).ready(function($) {
 			var page_cover_top = 0 - ( page_cover_height / 10 );
 			var cover_height = page_cover_height - scroll_offset;
 			var cover_image_bottom = ( scroll_offset / 10 ) + page_cover_top;
-			$('#page-cover').css({ 'height' : cover_height } );
+
+			if( scroll_offset > page_cover_height ){
+				var cover_opacity = 0;
+			} else {
+				var cover_opacity = ( page_cover_height - scroll_offset ) / page_cover_height;
+			}
+
+			$('#page-cover').css({ 'height' : cover_height, 'opacity' : cover_opacity } );
+
 			if( cover_height > 0 && cover_height <= page_cover_height ){
 				$('#page-cover').css({ 'height' : cover_height } ); 	
 				$('#page-cover img').css({ 'margin-top' : cover_image_bottom });		
