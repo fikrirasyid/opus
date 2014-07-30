@@ -1,4 +1,4 @@
-<?php get_template_part( 'article', 'day' ); ?>
+<?php get_template_part( 'article', 'time' ); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
