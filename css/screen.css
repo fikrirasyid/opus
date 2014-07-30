@@ -1233,6 +1233,15 @@ body.admin-bar #top-nav .top-nav-container ul {
   font-weight: 300;
   font-size: .7em;
 }
+#content .article-year {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  display: block;
+  padding: 140px 0 40px 16px;
+  color: #19664a;
+  text-shadow: 0 1px 1px #fbfbfb;
+}
 #content .article-month {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -2150,6 +2159,11 @@ body.logged-in #respond .submit-comment-avatar {
   }
   #content .article-month {
     font-size: 30px;
+    padding-top: 150px;
+    padding-left: 20px;
+  }
+  #content .article-year {
+    font-size: 55px;
     padding-top: 150px;
     padding-left: 20px;
   }

@@ -75,7 +75,56 @@ jQuery(document).ready(function($) {
 	// Trigger on-load event when new contents are appended by Jetpack
 	$( document.body ).on( 'post-load', function() {
 		opus_page_load();
-    } );	
+
+		// Adjust article-day, month, and year for every first article of Jetpack-powered articles load
+		var new_articles_wrap 			= $('.infinite-wrap:last');
+		var first_article_marker 		= new_articles_wrap.find('.article-marker:first');
+		var first_article_marker_date 	= first_article_marker.attr( 'data-date' );
+		var first_article_marker_month 	= first_article_marker.attr( 'data-month' );		
+		var first_article_marker_year 	= first_article_marker.attr( 'data-year' );
+
+		var last_article_marker 		= new_articles_wrap.find('.article-marker:last');
+		var last_article_marker_date 	= last_article_marker.attr( 'data-date' );
+		var last_article_marker_month 	= last_article_marker.attr( 'data-month' );		
+		var last_article_marker_year 	= last_article_marker.attr( 'data-year' );
+
+		// If current article equals to latest' post, hide em
+		if( $('.article-day[data-date="'+ first_article_marker_date +'"]').size() > 1 ){
+			new_articles_wrap.find('.article-day:first').hide();
+		}
+
+		// If the first article of the loaded post is new month, display article-month
+		if( first_article_marker_month != $('body').attr('data-month') ){
+			new_articles_wrap.prepend('<h3 class="article-month">' + first_article_marker_month + ' ' + first_article_marker_year + '</h3>');
+		}
+
+		// If the first article of the loaded post is new year, display article-month
+		if( first_article_marker_year != $('body').attr('data-year') ){
+			new_articles_wrap.prepend('<h3 class="article-year">' + first_article_marker_year +'</h3>');						
+		}
+
+		// Update the body data
+    	$('body').attr({
+    		'data-year' 	: last_article_marker_year,
+    		'data-month' 	: last_article_marker_month,
+    		'data-date' 	: last_article_marker_date
+    	});
+    } );
+
+    // Jetpack adjustment for article-day / month / year on page-load
+    if( $('body').is('.infinite-scroll') ){
+    	var last_marker = $('.article-marker:last');
+    	var last_year 	= last_marker.attr( 'data-year' );
+    	var last_month 	= last_marker.attr( 'data-month' );
+    	var last_date 	= last_marker.attr( 'data-date' );
+
+    	// Attach the date
+    	$('body').attr({
+    		'data-year' 	: last_year,
+    		'data-month' 	: last_month,
+    		'data-date' 	: last_date
+    	});
+    }	
 
 	/**
 	 * Top Navigation and Parallax Mechanism

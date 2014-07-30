@@ -89,7 +89,8 @@ class Opus_Customizer{
 			#top-nav .top-nav-container ul li a:hover,
 			.entry-content a:hover,
 			#comments .navigation-comment a:active,
-			#content .article-month{
+			#content .article-month,
+			#content .article-year{
 				color: <?php echo $site_color_darker; ?>;
 			}
 
