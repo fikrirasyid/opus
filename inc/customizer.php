@@ -74,7 +74,8 @@ class Opus_Customizer{
 			.entry-content h2,
 			.entry-content a,
 			#colophon a:hover,
-			#wp-calendar tbody tr td a{
+			#wp-calendar tbody tr td a,
+			#content article .entry-meta .entry-category a:hover{
 				color: <?php echo $site_color; ?>;			
 			}
 

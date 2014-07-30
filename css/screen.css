@@ -1154,6 +1154,9 @@ body.admin-bar #top-nav .top-nav-container ul {
 #content article .entry-meta .entry-category a {
   color: #232323;
 }
+#content article .entry-meta .entry-category a:hover {
+  color: #1f7f5c;
+}
 #content article .entry-meta .entry-author {
   font-weight: bold;
 }
