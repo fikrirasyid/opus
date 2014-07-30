@@ -1174,7 +1174,7 @@ body.admin-bar #top-nav .top-nav-container ul {
   overflow: hidden;
   text-align: right;
 }
-#content article .entry-meta .entry-posted-on .conventional-time {
+#content article .entry-meta .entry-posted-on .on-hover {
   display: none;
 }
 #content article .entry-meta .entry-posted-on a {

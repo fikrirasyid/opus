@@ -40,8 +40,8 @@ function opus_posted_on() {
 					<span class="entry-author author vcard"><a href="%1$s" class="url fn n" title="%2$s" rel="author">%3$s</a> </span> 
 					<span class="entry-author-action">updated this</span> 
 					<a href="%4$s" title="%5$s" class="entry-date">
-						<span class="human-time">%6$s</span>
-						<span class="conventional-time">%7$s</span>
+						<span class="human-time on-load">%6$s</span>
+						<span class="conventional-time on-hover">in %7$s</span>
 					</a>
 				</div>
 			', 'opus' ),
@@ -53,15 +53,15 @@ function opus_posted_on() {
 			esc_html( opus_get_the_human_time( strtotime( get_the_modified_date('c') ) ) ),
 			esc_html( get_the_modified_date() )
 		);
-	} else {
+	} elseif( is_single() ) {
 		printf(
 			__( '
 				<div class="entry-posted-on">
 					<span class="entry-author author vcard"><a href="%1$s" class="url fn n" title="%2$s" rel="author">%3$s</a> </span> 
 					<span class="entry-author-action">published this</span> 
 					<a href="%4$s" title="%5$s" class="entry-date">
-						<span class="human-time">%6$s</span>
-						<span class="conventional-time">%7$s</span>
+						<span class="human-time on-load">%6$s</span>
+						<span class="conventional-time on-hover">in %7$s</span>
 					</a>
 				</div>
 			', 'opus' ),
@@ -72,6 +72,24 @@ function opus_posted_on() {
 			sanitize_text_field( get_the_title() ),
 			esc_html( opus_get_the_human_time( strtotime( get_the_date('c') ) ) ),
 			esc_html( get_the_date() )
+		);
+	} else {
+		printf(
+			__( '
+				<div class="entry-posted-on">
+					<a href="%1$s" title="%2$s" class="entry-date">
+						<span class="on-load">%3$s</span>
+						<span class="on-hover">
+							%4$s by <strong>%5$s</strong>
+						</span>
+					</a>
+				</div>
+			', 'opus' ),
+			esc_url( get_permalink() ),
+			sanitize_text_field( get_the_title() ),
+			esc_html( get_the_date( 'H:i' ) ),
+			esc_html( get_the_date( 'F j, Y H:i' ) ),
+			get_the_author()
 		);
 	}
 }

@@ -236,13 +236,13 @@ jQuery(document).ready(function($) {
 
 	// Show conventional time when user hovering .entry-date
 	$('#content').on( 'mouseenter', '.entry-meta', function(){
-		$(this).find('.human-time').hide();
-		$(this).find('.conventional-time').show();
+		$(this).find('.on-load').hide();
+		$(this).find('.on-hover').show();
 	});
 
 	$('#content').on( 'mouseleave', '.entry-meta', function(){
-		$(this).find('.human-time').show();
-		$(this).find('.conventional-time').hide();			
+		$(this).find('.on-load').show();
+		$(this).find('.on-hover').hide();			
 	});
 
 	// Toggle footer
