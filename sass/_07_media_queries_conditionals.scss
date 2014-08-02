@@ -23,9 +23,9 @@ body{
 
 /** 
  * 7.2
- * Tablet & Desktop (Above 836px)
+ * Tablet & Desktop (Above $tablet_and_desktop_width)
  */
-@media all and (min-width: 836px){
+@media all and (min-width: $tablet_and_desktop_width){
 	body{
 		font-size: 25px;
 
@@ -397,7 +397,7 @@ body{
  * Phablet / Big Phones ( 501px - 679px)
  * Gallery requires specific styling for mobile view
  */
-@media all and ( min-width: 600px ) and ( max-width: 836px ){
+@media all and ( min-width: 600px ) and ( max-width: $tablet_and_desktop_width ){
 	body{
 		#content,
 		.wrap{

@@ -2010,7 +2010,7 @@ body.logged-in #respond .submit-comment-avatar {
 
 /** 
  * 7.2
- * Tablet & Desktop (Above 836px)
+ * Tablet & Desktop (Above $tablet_and_desktop_width)
  */
 @media all and (min-width: 836px) {
   body {
@@ -2357,7 +2357,7 @@ body.logged-in #respond .submit-comment-avatar {
   margin-left: 18px;
 }
 
-@media all and (min-width: 783px) {
+@media all and (min-width: 836px) {
   #content article.instagram .entry-meta:before {
     font-size: 32px;
     left: 10px;

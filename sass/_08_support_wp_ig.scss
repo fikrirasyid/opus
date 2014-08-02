@@ -31,7 +31,7 @@
 }
 
 // Desktop / Tablet above
-@media all and (min-width: 783px){
+@media all and (min-width: $tablet_and_desktop_width){
 	#content{
 		article{
 			&.instagram{
