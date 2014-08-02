@@ -2367,3 +2367,37 @@ body.logged-in #respond .submit-comment-avatar {
     margin-left: 30px;
   }
 }
+/**
+ * Civil Footnotes Support
+ */
+.entry-content hr.footnotes {
+  display: none;
+}
+.entry-content ol.footnotes {
+  position: relative;
+  font-size: .85em;
+  padding-top: 25px;
+  margin-top: 27px;
+  display: block;
+  color: #999;
+}
+.entry-content ol.footnotes:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 70%;
+  height: 1px;
+  background: #dfdfdf;
+}
+.entry-content ol.footnotes li p {
+  margin-bottom: 0;
+}
+
+@media all and (min-width: 836px) {
+  .entry-content ol.footnotes {
+    margin-top: 75px;
+    padding-top: 20px;
+  }
+}

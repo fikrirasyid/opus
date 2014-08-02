@@ -1,0 +1,45 @@
+/**
+ * Civil Footnotes Support
+ */
+
+.entry-content{
+	hr.footnotes{
+		display: none;
+	}
+
+	ol.footnotes{
+		position: relative;
+		font-size: .85em;
+		padding-top: 25px;
+		margin-top: 27px;
+		display: block;
+		color: #999;
+
+		&:before{
+			display: block;
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 70%;
+			height: 1px;
+			background: #dfdfdf;
+		}
+
+		li{
+			p{
+				margin-bottom: 0;
+			}
+		}
+	}			
+}
+
+// Tablet & Desktop Adjustment
+@media all and (min-width: $tablet_and_desktop_width){
+	.entry-content{
+		ol.footnotes{
+			margin-top: 75px;
+			padding-top: 20px;
+		}
+	}
+}
