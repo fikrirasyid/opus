@@ -1197,6 +1197,10 @@ body.admin-bar #top-nav .top-nav-container ul {
   z-index: 50;
   padding: 20px;
 }
+#content article .entry-content sup a {
+  text-decoration: none;
+  font-weight: bold;
+}
 #content article .entry-content.entry-caption {
   padding: 10px;
   font-size: .7em;
@@ -2393,6 +2397,9 @@ body.logged-in #respond .submit-comment-avatar {
 }
 .entry-content ol.footnotes li p {
   margin-bottom: 0;
+}
+.entry-content ol.footnotes li p a.backlink {
+  text-decoration: none;
 }
 
 @media all and (min-width: 836px) {
