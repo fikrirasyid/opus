@@ -234,6 +234,17 @@ jQuery(document).ready(function($) {
 		});
 	}
 
+	// Footnote Support: Slide the window instead of jumping it
+	$('a[rel="footnote"], a.backlink').click(function(e){
+		e.preventDefault();
+		var target_id = $(this).attr('href');
+		var respond_offset = $(target_id).offset();
+
+		$('html, body').animate({
+			scrollTop : respond_offset.top - 90
+		});
+	});	
+
 	// Show conventional time when user hovering .entry-date
 	$('#content').on( 'mouseenter', '.entry-meta', function(){
 		$(this).find('.on-load').hide();
