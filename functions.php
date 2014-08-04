@@ -153,8 +153,7 @@ class Opus{
      * @return modified string of html sent to editor
      */
     function remove_width_attribute( $html ) {
-       $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
-       return $html;
+        return opus_remove_width_attribute( $html );
     }    
 }
 new Opus;

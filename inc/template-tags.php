@@ -608,3 +608,11 @@ function opus_get_current_tax( $taxonomy_name ){
 		return false;
 	}
 }
+
+/**
+ * Removing widht and height attribute from images
+ */
+function opus_remove_width_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+   return $html;
+}
