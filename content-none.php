@@ -17,7 +17,7 @@
 		<?php if( is_search() ): ?>
 			<?php printf( __( 'There is no article that relates with keyword <strong>%s</strong>', 'opus' ), $s ); ?>
 		<?php else: ?>
-			<p><?php _e( 'We are sorry, the page you are looking for does not exist', 'opus' ); ?></p>
+			<p><?php _e( 'We are sorry, the content you are looking for does not exist', 'opus' ); ?></p>
 		<?php endif; ?>
 
 		<p style="margin-top: 20px; font-size: .85em;"><?php printf( __( 'We suggest you to check the <a href="%1$s" title="Back to homepage">homepage</a> or try to search what you\'re looking for using this search box below:', 'opus' ), home_url() ); ?></p>
