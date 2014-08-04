@@ -591,3 +591,20 @@ function opus_get_video_embed_code( $video ){
 		echo wp_oembed_get( $video );
 	}
 }
+
+/**
+ * Get current page's mention
+ * 
+ * @param string taxonomy name
+ * 
+ * @return bool|string taxonomy term
+ */
+function opus_get_current_tax( $taxonomy_name ){
+	global $wp_query;
+
+	if( isset( $wp_query->query[$taxonomy_name] ) ){
+		return $wp_query->query[$taxonomy_name];
+	} else {
+		return false;
+	}
+}

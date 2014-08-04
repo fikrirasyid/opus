@@ -31,6 +31,12 @@
 	} elseif( is_tax( 'post_format', 'post-format-link' ) ){
 		$page_theme = __( 'Links', 'opus' );
 		$page_theme_desc = sprintf( __( 'Links shared on %1$s', 'opus' ), get_bloginfo('name') );
+	} elseif( is_tax( 'mention' ) ){
+		$page_theme = __( 'Mention', 'opus' );
+		$page_theme_desc = sprintf( __( 'Posts mentioning %1$s', 'opus' ), opus_get_current_tax( 'mention' ) );		
+	} else {
+		$page_theme = __( 'Archive', 'opus' );		
+		$page_theme_desc = '';
 	}
 ?>
 	<header id="header" class="wrap-outer">
