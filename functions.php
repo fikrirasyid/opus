@@ -17,6 +17,7 @@ class Opus{
         add_action( 'after_setup_theme', array( $this, 'theme_setup' ) );
         add_action( 'widgets_init', array( $this, 'widget_setup' ) ); 
         add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts_styles' ) );   
+        add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts_styles' ) );   
         add_filter( 'post_thumbnail_html', array( $this, 'remove_width_attribute' ), 10 );
         add_filter( 'image_send_to_editor', array( $this, 'remove_width_attribute'), 10 );
         add_filter( 'wp_title', array( $this, 'title_tag' ) );
@@ -117,6 +118,25 @@ class Opus{
         
         }   
     }
+
+    /**
+     * Enqueue scripts and styles on admin page
+     * 
+     * @return void
+     */
+    function enqueue_admin_scripts_styles(){
+        global $pagenow;
+
+        // Add custom stylesheet for edit header screen
+        if( 'themes.php' == $pagenow && isset( $_GET['page'] ) && 'custom-header' == $_GET['page'] ){
+
+            wp_enqueue_style( 'opus_google_fonts', 'http://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700' );
+
+            wp_enqueue_style( 'opus_dashboard_header', get_template_directory_uri() . '/css/dashboard-header.css' );
+
+        }
+    }
+
 
     /**
      * Prints blog name | blog description in wp_title on homepage

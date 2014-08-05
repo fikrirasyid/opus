@@ -1,0 +1,30 @@
+#headimg{
+	max-height: 600px;
+	overflow: hidden;
+
+	h1{
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 3.6em;
+		font-weight: normal;
+		line-height: 1;
+		padding: 25% 20% 0;
+		margin: 0;
+
+		a{
+			color: white;
+			text-decoration: none;
+		}
+	}
+
+	#desc{
+		color: white;
+		font-size: 1.4em;
+		font-family: 'Roboto', sans-serif;
+		font-weight: lighter;
+		font-style: italic;
+		line-height: 1;
+		padding: 10px 20% 0;
+		margin: 0;
+	}
+}
