@@ -1,0 +1,21 @@
+/**
+ * Jetpack Infinite Scroll Integration
+ */
+.infinite-loader{
+	padding-bottom: 30px;
+
+	.spinner{
+		left: 49% !important;
+	}
+}
+
+/**
+ * Jetpack subscription Integration
+ */
+#respond{
+	.comment-subscription-form{
+		font-size: 14px;
+		color: #555;
+		margin-bottom: 8px;
+	}
+}

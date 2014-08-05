@@ -1813,21 +1813,8 @@ body.admin-bar #top-nav .top-nav-container ul {
   color: #232323;
 }
 
-/**
- * Jetpack Infinite Scroll Integration
- */
-.infinite-loader {
-  padding-bottom: 30px;
-}
-.infinite-loader .spinner {
-  left: 49% !important;
-}
-
-/**
- * WP-IG Integration
- */
-article.instagram .entry-title {
-  display: none;
+#submit-wrap {
+  margin-bottom: 40px;
 }
 
 /** 
@@ -2332,8 +2319,30 @@ body.logged-in #respond .submit-comment-avatar {
   }
 }
 /**
+ * Jetpack Infinite Scroll Integration
+ */
+.infinite-loader {
+  padding-bottom: 30px;
+}
+.infinite-loader .spinner {
+  left: 49% !important;
+}
+
+/**
+ * Jetpack subscription Integration
+ */
+#respond .comment-subscription-form {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/**
  * WP-IG Suport
  */
+#content article.instagram .entry-title {
+  display: none;
+}
 #content article.instagram .entry-meta {
   position: relative;
 }

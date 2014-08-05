@@ -6,6 +6,10 @@
 #content{
 	article{
 		&.instagram{
+		 	.entry-title{
+		 		display: none;
+		 	}
+
 			.entry-meta{
 				position: relative;
 				

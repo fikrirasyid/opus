@@ -712,22 +712,6 @@
 	color: $black;
 }
 
-/**
- * Jetpack Infinite Scroll Integration
- */
-.infinite-loader{
-	padding-bottom: 30px;
-
-	.spinner{
-		left: 49% !important;
-	}
+#submit-wrap{
+	margin-bottom: 40px;
 }
-
-/**
- * WP-IG Integration
- */
- article.instagram{
- 	.entry-title{
- 		display: none;
- 	}
- }
