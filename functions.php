@@ -105,8 +105,7 @@ class Opus{
      * @return void
      */
     function enqueue_scripts_styles(){
-        // wp_enqueue_style( 'opus_google_fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:300,400,700' );
-        wp_enqueue_style( 'opus_roboto_fonts', 'http://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700' );
+        wp_enqueue_style( 'opus_google_fonts', 'http://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700' );
         
         wp_enqueue_style( 'opus_style', get_template_directory_uri() . '/css/screen.css' );
 
