@@ -1778,6 +1778,9 @@ body.admin-bar #top-nav .top-nav-container ul {
   resize: none;
   height: 150px;
   margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #444;
 }
 #respond .submit-comment-avatar:after {
   content: ".";
@@ -2252,6 +2255,8 @@ body.logged-in #respond .submit-comment-avatar {
   }
   #respond textarea {
     margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.9;
   }
   #respond input[type="submit"] {
     padding: 15px 20px 13px;
