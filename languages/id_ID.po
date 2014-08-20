@@ -1,0 +1,339 @@
+# Copyright (C) 2014 Fikri Rasyid
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Opus 1.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/opus\n"
+"POT-Creation-Date: 2014-08-19 23:58:22+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-08-20 07:45+0700\n"
+"Last-Translator: \n"
+"Language-Team: Fikri Rasyid <fikrirasyid@gmail.com>\n"
+"X-Generator: Poedit 1.6.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: id_ID\n"
+
+#: archive.php:15
+msgid "Posts published at %1$s"
+msgstr "Tulisan yang dipublikasikan pada %1$s\t"
+
+#: archive.php:18
+msgid "Posts published on %1$s"
+msgstr "Tulisan-tulisan yang dipublikasikan pada %1$s"
+
+#: archive.php:21
+msgid "Posts published on the year %1$s"
+msgstr "Tulisan-tulisan yang dipublikasikan pada tahun %1$s"
+
+#: archive.php:23
+msgid "Photos"
+msgstr "Foto"
+
+#: archive.php:24
+msgid "Photos published on %1$s"
+msgstr "Foto-foto yang dipublikasikan pada %1$s"
+
+#: archive.php:26
+msgid "Videos"
+msgstr "Video"
+
+#: archive.php:27
+msgid "Videos published on %1$s"
+msgstr "Video-video yang dipublikasikan pada %1$s"
+
+#: archive.php:29
+msgid "Quotes"
+msgstr "Kutipan"
+
+#: archive.php:30
+msgid "Quotes quoted on %1$s"
+msgstr "Kutipan-kutipan yang dikutip pada %1$s"
+
+#: archive.php:32
+msgid "Links"
+msgstr "Tautan"
+
+#: archive.php:33
+msgid "Links shared on %1$s"
+msgstr "Tautan-tautan yang dibagikan pada %1$s"
+
+#: archive.php:35
+msgid "Mention"
+msgstr "Penyebutan"
+
+#: archive.php:36
+msgid "Posts mentioning %1$s"
+msgstr "Tulisan-tulisan yang menyebutkan"
+
+#: archive.php:38
+msgid "Archive"
+msgstr "Arsip"
+
+#: attachment.php:19 single.php:51
+msgid "Attachment"
+msgstr "Lampiran"
+
+#: attachment.php:20 single.php:52
+msgid "&larr; Back to post"
+msgstr "&larr; Kembali ke tulisan"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s pemikiran mengenai &ldquo;%2$s&rdquo;"
+
+#: comments.php:36 comments.php:56
+msgid "Comment navigation"
+msgstr "Navigasi komentar"
+
+#: comments.php:37 comments.php:57
+msgid "&larr; Older Comments"
+msgstr "&larr; Komentar Sebelumnya"
+
+#: comments.php:38 comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr "Komentar Baru &rarr;"
+
+#: content-aside.php:18 content-link.php:20 content-photo.php:13
+#: content-quote.php:19 content-video.php:18 content.php:22
+msgid "Continue Reading &rarr;"
+msgstr "Lanjutkan Membaca &rarr;"
+
+#: content-link.php:15 inc/feed.php:39 single.php:94
+msgid "<a href=\"%1$s\" rel=\"bookmark\">link to %2$s</a>"
+msgstr "<a href=\"%1$s\" rel=\"bookmark\">tautan ke %2$s</a>"
+
+#: content-none.php:5
+msgid "Not Found"
+msgstr "Tidak ditemukan"
+
+#: content-none.php:18
+msgid "There is no article that relates with keyword <strong>%s</strong>"
+msgstr "Tidak ada artikel yang berkaitan dengan kata kunci <strong>%s</strong>"
+
+#: content-none.php:20
+msgid "We are sorry, the content you are looking for does not exist"
+msgstr "Maaf, konten yang anda cari tidak ada"
+
+#: content-none.php:23
+msgid ""
+"We suggest you to check the <a href=\"%1$s\" title=\"Back to homepage"
+"\">homepage</a> or try to search what you're looking for using this search "
+"box below:"
+msgstr ""
+"Kami menyarankan anda untuk mengecek <a href=\"%1$s\" title=\"Kembali ke "
+"beranda\">beranda</a>atau mencari apa yang anda cari menggunakan kotak "
+"pencarian di bawah:"
+
+#: content-none.php:27
+msgid "Type keywords and hit enter"
+msgstr "Tulis kata kunci dan klik enter"
+
+#: content-none.php:34
+msgid "Commentless"
+msgstr "Tidak ada komentar"
+
+#: footer.php:2
+msgid "More"
+msgstr "Selanjutnya"
+
+#: footer.php:21
+msgid "Powered by %1$s and %2$s"
+msgstr "Ditenagai oleh %1$s dan %2$s"
+
+#: functions.php:78
+msgid "Top Navigation"
+msgstr "Navigasi Atas"
+
+#: functions.php:103
+msgid "Footer Widgets"
+msgstr "Navigasi Bawah"
+
+#: functions.php:105
+msgid "Widgets in this area will be shown on Footer Area"
+msgstr "Widget pada area ini akan dimunculkan di area footer"
+
+#: functions.php:164
+msgid "Page %s"
+msgstr "Halaman %s"
+
+#: header.php:15
+msgid "Back to %1$s"
+msgstr "Kembali ke %1$s"
+
+#: header.php:16
+msgid "Welcome To %1$s"
+msgstr "Selamat Datang di %1$s"
+
+#: inc/customizer.php:38
+msgid "Site Color"
+msgstr "Warna Situs"
+
+#: inc/template-tags.php:22
+msgid "Tags: "
+msgstr "Tag:"
+
+#: inc/template-tags.php:38
+msgid ""
+"\n"
+"\t\t\t\t<div class=\"entry-posted-on\">\n"
+"\t\t\t\t\t<span class=\"entry-author author vcard\"><a href=\"%1$s\" class="
+"\"url fn n\" title=\"%2$s\" rel=\"author\">%3$s</a> </span> \n"
+"\t\t\t\t\t<span class=\"entry-author-action\">updated this</span> \n"
+"\t\t\t\t\t<a href=\"%4$s\" title=\"%5$s\" class=\"entry-date\">\n"
+"\t\t\t\t\t\t<span class=\"human-time on-load\">%6$s</span>\n"
+"\t\t\t\t\t\t<span class=\"conventional-time on-hover\">in %7$s</span>\n"
+"\t\t\t\t\t</a>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+"\n"
+"\t\t\t\t<div class=\"entry-posted-on\">\n"
+"\t\t\t\t\t<span class=\"entry-author author vcard\"><a href=\"%1$s\" class="
+"\"url fn n\" title=\"%2$s\" rel=\"author\">%3$s</a> </span> \n"
+"\t\t\t\t\t<span class=\"entry-author-action\">memperbaharui ini</span> \n"
+"\t\t\t\t\t<a href=\"%4$s\" title=\"%5$s\" class=\"entry-date\">\n"
+"\t\t\t\t\t\t<span class=\"human-time on-load\">%6$s</span>\n"
+"\t\t\t\t\t\t<span class=\"conventional-time on-hover\">pada %7$s</span>\n"
+"\t\t\t\t\t</a>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+
+#: inc/template-tags.php:58
+msgid ""
+"\n"
+"\t\t\t\t<div class=\"entry-posted-on\">\n"
+"\t\t\t\t\t<span class=\"entry-author author vcard\"><a href=\"%1$s\" class="
+"\"url fn n\" title=\"%2$s\" rel=\"author\">%3$s</a> </span> \n"
+"\t\t\t\t\t<span class=\"entry-author-action\">published this</span> \n"
+"\t\t\t\t\t<a href=\"%4$s\" title=\"%5$s\" class=\"entry-date\">\n"
+"\t\t\t\t\t\t<span class=\"human-time on-load\">%6$s</span>\n"
+"\t\t\t\t\t\t<span class=\"conventional-time on-hover\">in %7$s</span>\n"
+"\t\t\t\t\t</a>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+"\n"
+"\t\t\t\t<div class=\"entry-posted-on\">\n"
+"\t\t\t\t\t<span class=\"entry-author author vcard\"><a href=\"%1$s\" class="
+"\"url fn n\" title=\"%2$s\" rel=\"author\">%3$s</a> </span> \n"
+"\t\t\t\t\t<span class=\"entry-author-action\">mempublikasikan ini</span> \n"
+"\t\t\t\t\t<a href=\"%4$s\" title=\"%5$s\" class=\"entry-date\">\n"
+"\t\t\t\t\t\t<span class=\"human-time on-load\">%6$s</span>\n"
+"\t\t\t\t\t\t<span class=\"conventional-time on-hover\">pada %7$s</span>\n"
+"\t\t\t\t\t</a>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+
+#: inc/template-tags.php:78
+msgid ""
+"\n"
+"\t\t\t\t<div class=\"entry-posted-on\">\n"
+"\t\t\t\t\t<a href=\"%1$s\" title=\"%2$s\" class=\"entry-date\">\n"
+"\t\t\t\t\t\t<span class=\"on-load\">%3$s</span>\n"
+"\t\t\t\t\t\t<span class=\"on-hover\">\n"
+"\t\t\t\t\t\t\t%4$s by <strong>%5$s</strong>\n"
+"\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t</a>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+"\n"
+"\t\t\t\t<div class=\"entry-posted-on\">\n"
+"\t\t\t\t\t<a href=\"%1$s\" title=\"%2$s\" class=\"entry-date\">\n"
+"\t\t\t\t\t\t<span class=\"on-load\">%3$s</span>\n"
+"\t\t\t\t\t\t<span class=\"on-hover\">\n"
+"\t\t\t\t\t\t\t%4$s oleh <strong>%5$s</strong>\n"
+"\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t</a>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+
+#: inc/template-tags.php:112
+msgid "%s ago"
+msgstr "%s lalu"
+
+#: inc/template-tags.php:115
+msgid "%s from now"
+msgstr "%s dari sekarang"
+
+#: inc/template-tags.php:144
+msgid "No Response Yet. <strong>Add Yours</strong>"
+msgstr "Belum Ada Komentar. <strong>Berikan Komentarmu</strong>"
+
+#: inc/template-tags.php:144
+msgid "1 Response Shared. <strong>Add Yours</strong>"
+msgstr "1 Komentar Telah Diberikan. <strong>Berikan Komentarmu</strong>"
+
+#: inc/template-tags.php:144
+msgid "% Responses Shared. <strong>Add Yours</strong>"
+msgstr "% Komentar Telah Diberikan. <strong>Berikan Komentarmu</strong>"
+
+#: inc/template-tags.php:174
+msgid "Post navigation"
+msgstr "Navigasi Artikel"
+
+#: inc/template-tags.php:184
+msgid "<span class=\"meta-nav\"></span> Older"
+msgstr "<span class=\"meta-nav\"></span> Sebelumnya"
+
+#: inc/template-tags.php:188
+msgid "Newer <span class=\"meta-nav\"></span>"
+msgstr "Selanjutnya <span class=\"meta-nav\"></span>"
+
+#: inc/template-tags.php:220
+msgid "comment will appear after being approved by admin."
+msgstr "Komentar akan ditampilkan setelah disetujui oleh admin."
+
+#: inc/template-tags.php:226
+msgid "<span class=\"label\">Reply</span>"
+msgstr "<span class=\"label\">Balas</span>"
+
+#: inc/template-tags.php:249
+msgid "Comment is closed."
+msgstr "Area komentar ditutup"
+
+#: inc/template-tags.php:251
+msgid "Contact us if you have something important to say about this topic."
+msgstr ""
+"Hubungi kami jika kamu memiliki hal yag ingin disampaikan mengenai topik ini"
+
+#: inc/template-tags.php:258
+msgid "What Do You Think?"
+msgstr "Bagaimana Menurutmu?"
+
+#: search.php:4
+msgid "Search Results"
+msgstr "Hasil Pencarian"
+
+#: single.php:60
+msgid "View all %1$s Posts"
+msgstr "Lihat semua tulisan %1$s"
+
+#: single.php:115
+msgid "Pages:"
+msgstr "Halaman:"
+
+#. Theme Name of the plugin/theme
+msgid "Opus"
+msgstr "Opus"
+
+#. Theme URI of the plugin/theme
+msgid "http://fikrirasyid.com/wordpress-themes/opus/"
+msgstr "http://fikrirasyid.com/wordpress-themes/opus/"
+
+#. Description of the plugin/theme
+msgid "A theme with personality for those who have stories to be told."
+msgstr ""
+"Tema WordPress berkarakter untuk kamu yang memiliki kisah untuk diceritakan."
+
+#. Author of the plugin/theme
+msgid "Fikri Rasyid"
+msgstr "Fikri Rasyid"
+
+#. Author URI of the plugin/theme
+msgid "http://fikrirasyid.com/"
+msgstr "http://fikrirasyid.com/"

@@ -45,6 +45,12 @@ class Opus{
     function theme_setup(){
 
         /**
+         * Make the theme available for translation
+         * The translation is available at /languages/ directory.
+         */
+        load_theme_textdomain( 'opus', get_template_directory() . '/languages' );
+
+        /**
          * Add theme supports
          */
         $default_custom_header = array(

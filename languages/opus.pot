@@ -1,0 +1,294 @@
+# Copyright (C) 2014 Fikri Rasyid
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Opus 1.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/opus\n"
+"POT-Creation-Date: 2014-08-19 23:58:22+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: archive.php:15
+msgid "Posts published at %1$s"
+msgstr ""
+
+#: archive.php:18
+msgid "Posts published on %1$s"
+msgstr ""
+
+#: archive.php:21
+msgid "Posts published on the year %1$s"
+msgstr ""
+
+#: archive.php:23
+msgid "Photos"
+msgstr ""
+
+#: archive.php:24
+msgid "Photos published on %1$s"
+msgstr ""
+
+#: archive.php:26
+msgid "Videos"
+msgstr ""
+
+#: archive.php:27
+msgid "Videos published on %1$s"
+msgstr ""
+
+#: archive.php:29
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:30
+msgid "Quotes quoted on %1$s"
+msgstr ""
+
+#: archive.php:32
+msgid "Links"
+msgstr ""
+
+#: archive.php:33
+msgid "Links shared on %1$s"
+msgstr ""
+
+#: archive.php:35
+msgid "Mention"
+msgstr ""
+
+#: archive.php:36
+msgid "Posts mentioning %1$s"
+msgstr ""
+
+#: archive.php:38
+msgid "Archive"
+msgstr ""
+
+#: attachment.php:19 single.php:51
+msgid "Attachment"
+msgstr ""
+
+#: attachment.php:20 single.php:52
+msgid "&larr; Back to post"
+msgstr ""
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:36 comments.php:56
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:37 comments.php:57
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:38 comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: content-aside.php:18 content-link.php:20 content-photo.php:13
+#: content-quote.php:19 content-video.php:18 content.php:22
+msgid "Continue Reading &rarr;"
+msgstr ""
+
+#: content-link.php:15 inc/feed.php:39 single.php:94
+msgid "<a href=\"%1$s\" rel=\"bookmark\">link to %2$s</a>"
+msgstr ""
+
+#: content-none.php:5
+msgid "Not Found"
+msgstr ""
+
+#: content-none.php:18
+msgid "There is no article that relates with keyword <strong>%s</strong>"
+msgstr ""
+
+#: content-none.php:20
+msgid "We are sorry, the content you are looking for does not exist"
+msgstr ""
+
+#: content-none.php:23
+msgid "We suggest you to check the <a href=\"%1$s\" title=\"Back to homepage\">homepage</a> or try to search what you're looking for using this search box below:"
+msgstr ""
+
+#: content-none.php:27
+msgid "Type keywords and hit enter"
+msgstr ""
+
+#: content-none.php:34
+msgid "Commentless"
+msgstr ""
+
+#: footer.php:2
+msgid "More"
+msgstr ""
+
+#: footer.php:21
+msgid "Powered by %1$s and %2$s"
+msgstr ""
+
+#: functions.php:78
+msgid "Top Navigation"
+msgstr ""
+
+#: functions.php:103
+msgid "Footer Widgets"
+msgstr ""
+
+#: functions.php:105
+msgid "Widgets in this area will be shown on Footer Area"
+msgstr ""
+
+#: functions.php:164
+msgid "Page %s"
+msgstr ""
+
+#: header.php:15
+msgid "Back to %1$s"
+msgstr ""
+
+#: header.php:16
+msgid "Welcome To %1$s"
+msgstr ""
+
+#: inc/customizer.php:38
+msgid "Site Color"
+msgstr ""
+
+#: inc/template-tags.php:22
+msgid "Tags: "
+msgstr ""
+
+#: inc/template-tags.php:38
+msgid ""
+"\n"
+"\t\t\t\t<div class=\"entry-posted-on\">\n"
+"\t\t\t\t\t<span class=\"entry-author author vcard\"><a href=\"%1$s\" class=\"url fn n\" title=\"%2$s\" rel=\"author\">%3$s</a> </span> \n"
+"\t\t\t\t\t<span class=\"entry-author-action\">updated this</span> \n"
+"\t\t\t\t\t<a href=\"%4$s\" title=\"%5$s\" class=\"entry-date\">\n"
+"\t\t\t\t\t\t<span class=\"human-time on-load\">%6$s</span>\n"
+"\t\t\t\t\t\t<span class=\"conventional-time on-hover\">in %7$s</span>\n"
+"\t\t\t\t\t</a>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+
+#: inc/template-tags.php:58
+msgid ""
+"\n"
+"\t\t\t\t<div class=\"entry-posted-on\">\n"
+"\t\t\t\t\t<span class=\"entry-author author vcard\"><a href=\"%1$s\" class=\"url fn n\" title=\"%2$s\" rel=\"author\">%3$s</a> </span> \n"
+"\t\t\t\t\t<span class=\"entry-author-action\">published this</span> \n"
+"\t\t\t\t\t<a href=\"%4$s\" title=\"%5$s\" class=\"entry-date\">\n"
+"\t\t\t\t\t\t<span class=\"human-time on-load\">%6$s</span>\n"
+"\t\t\t\t\t\t<span class=\"conventional-time on-hover\">in %7$s</span>\n"
+"\t\t\t\t\t</a>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+
+#: inc/template-tags.php:78
+msgid ""
+"\n"
+"\t\t\t\t<div class=\"entry-posted-on\">\n"
+"\t\t\t\t\t<a href=\"%1$s\" title=\"%2$s\" class=\"entry-date\">\n"
+"\t\t\t\t\t\t<span class=\"on-load\">%3$s</span>\n"
+"\t\t\t\t\t\t<span class=\"on-hover\">\n"
+"\t\t\t\t\t\t\t%4$s by <strong>%5$s</strong>\n"
+"\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t</a>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t"
+msgstr ""
+
+#: inc/template-tags.php:112
+msgid "%s ago"
+msgstr ""
+
+#: inc/template-tags.php:115
+msgid "%s from now"
+msgstr ""
+
+#: inc/template-tags.php:144
+msgid "No Response Yet. <strong>Add Yours</strong>"
+msgstr ""
+
+#: inc/template-tags.php:144
+msgid "1 Response Shared. <strong>Add Yours</strong>"
+msgstr ""
+
+#: inc/template-tags.php:144
+msgid "% Responses Shared. <strong>Add Yours</strong>"
+msgstr ""
+
+#: inc/template-tags.php:174
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:184
+msgid "<span class=\"meta-nav\"></span> Older"
+msgstr ""
+
+#: inc/template-tags.php:188
+msgid "Newer <span class=\"meta-nav\"></span>"
+msgstr ""
+
+#: inc/template-tags.php:220
+msgid "comment will appear after being approved by admin."
+msgstr ""
+
+#: inc/template-tags.php:226
+msgid "<span class=\"label\">Reply</span>"
+msgstr ""
+
+#: inc/template-tags.php:249
+msgid "Comment is closed."
+msgstr ""
+
+#: inc/template-tags.php:251
+msgid "Contact us if you have something important to say about this topic."
+msgstr ""
+
+#: inc/template-tags.php:258
+msgid "What Do You Think?"
+msgstr ""
+
+#: search.php:4
+msgid "Search Results"
+msgstr ""
+
+#: single.php:60
+msgid "View all %1$s Posts"
+msgstr ""
+
+#: single.php:115
+msgid "Pages:"
+msgstr ""
+#. Theme Name of the plugin/theme
+msgid "Opus"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://fikrirasyid.com/wordpress-themes/opus/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A theme with personality for those who have stories to be told."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Fikri Rasyid"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://fikrirasyid.com/"
+msgstr ""

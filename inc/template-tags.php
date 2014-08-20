@@ -141,7 +141,7 @@ function opus_get_domain_name( $url ){
  * @return void
  */
 function opus_comments_popup_link(){
-	comments_popup_link( __( 'No Response Yet. <strong>Add Yours</strong>', '_s' ), __( '1 Response Shared. <strong>Add Yours</strong>', '_s' ), __( '% Responses Shared. <strong>Add Yours</strong>', '_s' ) );
+	comments_popup_link( __( 'No Response Yet. <strong>Add Yours</strong>', 'opus' ), __( '1 Response Shared. <strong>Add Yours</strong>', 'opus' ), __( '% Responses Shared. <strong>Add Yours</strong>', 'opus' ) );
 }
 
 /**
