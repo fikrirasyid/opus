@@ -175,8 +175,8 @@ function opus_content_nav( $nav_id ) {
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 	
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '', 'Previous post link', 'opus' ) . '</span> <span class="label">Older</span>' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '<span class="label">Newer</span> <span class="meta-nav">' . _x( '', 'Next post link', 'opus' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="nav-previous"><span class="label">%link</span></div>', __( 'Older', 'opus' ) ); ?>
+		<?php next_post_link( '<div class="nav-next"><span class="label">%link</span></div>', __( 'Newer', 'opus' ) ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
@@ -248,7 +248,7 @@ function opus_comment_form(){
 		<header id="respond-header">
 			<h2 id="respond-title"><?php _e( 'Comment is closed.', 'opus' ); ?></h2>
 		</header>
-		<p><?php _e('Contact us if you have something important to say about this topic.', "opus"); ?></p>
+		<p><?php _e( 'Contact us if you have something important to say about this topic.', "opus"); ?></p>
 	</div>
 	<?php elseif (comments_open()) : ?>
 
@@ -264,7 +264,7 @@ function opus_comment_form(){
 
 		<?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 			<p class="comment-loggedin">
-				You have to be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>">logged in</a> to be able to comment.
+				<?php printf( __( 'You have to be <a href="%s">logged in</a> to be able to comment.', 'opus' ), home_url( 'wp-login.php?redirect_to=' . urlencode( get_permalink() ) ) ); ?>
 			</p>
 		<?php else : ?>
 			<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="comment-form">
@@ -277,20 +277,20 @@ function opus_comment_form(){
 						<?php echo get_avatar( wp_get_current_user()->ID, 82, get_template_directory_uri() . '/images/default-avatar.jpg' ); ?>
 					</div>						
 					<div class="comment-logged-in info right-info">
-						<p class="logged-in-as"><span class="subtitle">Logged in as</span> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></p>	
-						<p><a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out</a></p>
+						<p class="logged-in-as"><span class="subtitle"><?php _e( 'Logged in as', 'opus' ); ?></span> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></p>	
+						<p><a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e( 'Log out of this account', 'opus' ); ?>"><?php _e( 'Log out', 'opus' ); ?></a></p>
 					</div>
 					<?php else : ?>
-					<input type="text" name="author" class="comment-input author info left-info" placeholder="Name" id="author" size="22" tabindex="1" <?php if (isset($req)) echo "aria-required='true'"; ?> />
-					<input type="text" name="email"  class="comment-input email info right-info" placeholder="Email" id="email" size="22" tabindex="2" <?php if (isset($req)) echo "aria-required='true'"; ?> />
-					<input type="text" name="url"  class="comment-input url info right-info" placeholder="URL" id="url" size="22" tabindex="2" <?php if (isset($req)) echo "aria-required='true'"; ?> />
+					<input type="text" name="author" class="comment-input author info left-info" placeholder="<?php _e( 'Name', 'opus' ); ?>" id="author" size="22" tabindex="1" <?php if (isset($req)) echo "aria-required='true'"; ?> />
+					<input type="text" name="email"  class="comment-input email info right-info" placeholder="<?php _e( 'Email', 'opus' ); ?>" id="email" size="22" tabindex="2" <?php if (isset($req)) echo "aria-required='true'"; ?> />
+					<input type="text" name="url"  class="comment-input url info right-info" placeholder="<?php _e( 'URL', 'opus' ); ?>" id="url" size="22" tabindex="2" <?php if (isset($req)) echo "aria-required='true'"; ?> />
 					<?php endif; ?>						
 				</div>
 				<div class="submit-comment-content clearfix">
-					<textarea name="comment" id="comment" rows="10" tabindex="4" placeholder="Type your comment here..." class="the-content"></textarea>
+					<textarea name="comment" id="comment" rows="10" tabindex="4" placeholder="<?php _e( 'Type your comment here...', 'opus' ); ?>" class="the-content"></textarea>
 					<div id="submit-wrap">
 							<span class="icon"></span>
-							<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+							<input name="submit" type="submit" id="submit" tabindex="5" value="<?php _e( 'Submit Comment', 'opus' ); ?>" />
 					</div>						
 					<?php comment_id_fields(); ?>
 					<?php do_action('comment_form', isset($post->ID)); ?>							
