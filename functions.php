@@ -81,7 +81,10 @@ class Opus{
         /**
          * Content editor styling
          */
-        add_editor_style( 'css/editor-style.css' );        
+        add_editor_style( array(
+            'http://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700',
+            'css/editor-style.css'
+        ) );        
 
         /**
          * Register image sizes
