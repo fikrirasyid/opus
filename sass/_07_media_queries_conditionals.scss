@@ -194,6 +194,12 @@ body{
 					padding: 40px 80px;
 					font-size: 1.3em;
 					line-height: 1.2;
+
+					// Subtitles support
+					.entry-subtitle{
+						padding-top: 8px;
+						font-size: 0.53333333333333em;
+					}
 				}				
 
 				.entry-original-link{

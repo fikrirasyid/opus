@@ -48,6 +48,7 @@
 			
 			.entry-featured-image{
 				display: block;
+				line-height: 1;
 
 				img{
 					width: 100%;
@@ -96,6 +97,17 @@
 					&:hover{
 						color: $green;
 					}
+				}
+
+				// Subtitles support
+				.entry-subtitle{
+					padding-bottom: 8px;
+					text-transform: none;
+					@include roboto;
+					font-size: .7em;
+					font-weight: lighter;
+					color: lighten( $black, 40% );
+					line-height: 1.4;
 				}
 			}
 
