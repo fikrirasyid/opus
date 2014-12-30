@@ -57,6 +57,9 @@ Developed by [yours trully](http://fikrirasyid.com), WP-IG imports and syncs you
 ### [Civil Footnotes](https://wordpress.org/plugins/civil-footnotes/)
 Developed by [Austin Sweeney](https://defomicron.net/), Civil Footnotes makes adding footnotes easy with its Markdown-Like writing pattern. Very worth to use. Opus displays Civil Footnotes-generated footnotes beautifully.
 
+### [Subtitles](https://wordpress.org/plugins/subtitles/)
+Developed by [Phillip Arthur Moore](https://philiparthurmoore.com/), Subtitles enables you to add "subtitle" (doh) on your post. Opus adjusts the appearance of the subtitle so it'll look awesome on your blog.
+
 ***
 
 Ready to make your blog more awesome? **[Download Opus on WordPress Theme Repository for FREE now](wordpress.org/themes/opus)**
