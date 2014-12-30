@@ -82,7 +82,7 @@ class Opus{
          * Content editor styling
          */
         add_editor_style( array(
-            'http://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700',
+            '//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700',
             'css/editor-style.css'
         ) );        
 
@@ -115,7 +115,7 @@ class Opus{
      * @return void
      */
     function enqueue_scripts_styles(){
-        wp_enqueue_style( 'opus_google_fonts', 'http://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700' );
+        wp_enqueue_style( 'opus_google_fonts', '//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700' );
         
         wp_enqueue_style( 'opus_style', get_template_directory_uri() . '/css/screen.css' );
 
@@ -139,7 +139,7 @@ class Opus{
         // Add custom stylesheet for edit header screen
         if( 'themes.php' == $pagenow && isset( $_GET['page'] ) && 'custom-header' == $_GET['page'] ){
 
-            wp_enqueue_style( 'opus_google_fonts', 'http://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700' );
+            wp_enqueue_style( 'opus_google_fonts', '//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700' );
 
             wp_enqueue_style( 'opus_dashboard_header', get_template_directory_uri() . '/css/dashboard-header.css' );
 
