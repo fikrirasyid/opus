@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 	function opus_page_load(){
 		// Normalizing interface
 		$('.entry-header iframe').attr({ 'width' : '100%' });
-		$('.entry-content img, .entry-content .wp-caption, .entry-content iframe, .entry-content embed').each(opus_normalize_media);
+		$('.entry-content img, .entry-content .wp-caption, .entry-content iframe, .entry-content embed, .widget img, .widget select').each(opus_normalize_media);
 		$('.entry-content .attachment img').removeAttr('width').removeAttr('height').css({ 'width' : '100%' });
 
 		// For Posts which have more than one category
