@@ -75,6 +75,7 @@ class Opus{
         add_theme_support( 'post-thumbnails' );
         add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
         add_theme_support( 'custom-header', $default_custom_header );
+        add_theme_support( 'custom-background' );
 
         /**
          * Register menu location
