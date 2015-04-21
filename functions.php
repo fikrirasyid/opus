@@ -38,6 +38,7 @@ class Opus{
      */
     function import(){
         require_once get_template_directory() . '/inc/template-tags.php';
+        require_once get_template_directory() . '/inc/jetpack.php';
         require_once get_template_directory() . '/inc/customizer.php';  
         require_once get_template_directory() . '/inc/feed.php';  
 
@@ -74,10 +75,6 @@ class Opus{
         add_theme_support( 'post-thumbnails' );
         add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
         add_theme_support( 'custom-header', $default_custom_header );
-        add_theme_support( 'infinite-scroll', array(
-            'container' => 'content',
-            'footer'    => false,
-        ) );
 
         /**
          * Register menu location

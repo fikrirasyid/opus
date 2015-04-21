@@ -19,3 +19,38 @@
 		margin-bottom: 8px;
 	}
 }
+
+/**
+ * Jetpack site-logo Integration
+ */
+.has-site-logo{
+	&.home{
+		#header{
+			.page-theme{
+				display: none;
+			}
+
+			.site-logo-link{
+				margin-left: 10px;
+			}			
+		}
+	}
+
+	#top-nav{
+		#home-name{
+			display: none;
+		}
+
+		.site-logo-link{
+			height: 26px;
+			float: left;
+			margin: 2px 0 0 15px;
+			line-height: 1;
+
+			img{
+				height: 26px;
+				width: auto;
+			}
+		}
+	}
+}

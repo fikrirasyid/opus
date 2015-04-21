@@ -2342,6 +2342,29 @@ body.logged-in #respond .submit-comment-avatar {
 }
 
 /**
+ * Jetpack site-logo Integration
+ */
+.has-site-logo.home #header .page-theme {
+  display: none;
+}
+.has-site-logo.home #header .site-logo-link {
+  margin-left: 10px;
+}
+.has-site-logo #top-nav #home-name {
+  display: none;
+}
+.has-site-logo #top-nav .site-logo-link {
+  height: 26px;
+  float: left;
+  margin: 2px 0 0 15px;
+  line-height: 1;
+}
+.has-site-logo #top-nav .site-logo-link img {
+  height: 26px;
+  width: auto;
+}
+
+/**
  * WP-IG Suport
  */
 #content article.instagram .entry-title {
