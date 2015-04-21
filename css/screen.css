@@ -2092,7 +2092,7 @@ body.logged-in #respond .submit-comment-avatar {
   }
   body.expanded #top-nav .top-nav-container ul,
   #top-nav .top-nav-container ul {
-    width: 680px;
+    width: 580px;
     margin: 0 auto 51px;
   }
   body.expanded #top-nav .top-nav-container .sub-menu,
