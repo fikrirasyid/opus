@@ -21,6 +21,14 @@ class Opus{
         add_filter( 'post_thumbnail_html', array( $this, 'remove_width_attribute' ), 10 );
         add_filter( 'image_send_to_editor', array( $this, 'remove_width_attribute'), 10 );
         add_filter( 'wp_title', array( $this, 'title_tag' ) );
+
+        /**
+         * Fallback for WordPress version lower than 4.1
+         */
+        if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ){
+            add_filter( 'wp_title',     array( $this, 'wp_title'), 10, 2 );
+            add_action( 'wp_head',      array( $this, 'render_title' ) );            
+        }
     }
 
     /**
@@ -91,6 +99,14 @@ class Opus{
          */
         add_image_size( 'page-cover', 1140, 900  );
         add_image_size( 'featured', 580, 0  );
+
+        /*
+         * Let WordPress manage the document title.
+         * By adding theme support, we declare that this theme does not use a
+         * hard-coded <title> tag in the document head, and expect WordPress to
+         * provide it for us.
+         */
+        add_theme_support( 'title-tag' );
     }
 
     /**
@@ -182,6 +198,49 @@ class Opus{
      */
     function remove_width_attribute( $html ) {
         return opus_remove_width_attribute( $html );
+    }    
+
+    /**
+     * Filters wp_title to print a neat <title> tag based on what is being viewed.
+     * 
+     * @param string $title Default title text for current view.
+     * @param string $sep Optional separator.
+     * @return string The filtered title.
+     */
+    public function wp_title( $title, $sep ) {
+        if ( is_feed() ) {
+            return $title;
+        }
+
+        global $page, $paged;
+
+        // Add the blog name
+        $title .= get_bloginfo( 'name', 'display' );
+
+        // Add the blog description for the home/front page.
+        $site_description = get_bloginfo( 'description', 'display' );
+        if ( $site_description && ( is_home() || is_front_page() ) ) {
+            $title .= " $sep $site_description";
+        }
+
+        // Add a page number if necessary:
+        if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
+            $title .= " $sep " . sprintf( __( 'Page %s', 'opus' ), max( $paged, $page ) );
+        }
+
+        return $title;
+    }    
+
+    /**
+     * Title shim for sites older than WordPress 4.1.
+     *
+     * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
+     * @todo Remove this function when WordPress 4.3 is released.
+     */
+    function render_title() {
+        ?>
+        <title><?php wp_title( '|', true, 'right' ); ?></title>
+        <?php
     }    
 }
 new Opus;
