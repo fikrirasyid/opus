@@ -14,13 +14,13 @@ class Opus{
     function __construct(){
         $this->import();
 
-        add_action( 'after_setup_theme', array( $this, 'theme_setup' ) );
-        add_action( 'widgets_init', array( $this, 'widget_setup' ) ); 
-        add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts_styles' ) );   
-        add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts_styles' ) );   
-        add_filter( 'post_thumbnail_html', array( $this, 'remove_width_attribute' ), 10 );
-        add_filter( 'image_send_to_editor', array( $this, 'remove_width_attribute'), 10 );
-        add_filter( 'wp_title', array( $this, 'title_tag' ) );
+        add_action( 'after_setup_theme',        array( $this, 'theme_setup' ) );
+        add_action( 'widgets_init',             array( $this, 'widget_setup' ) ); 
+        add_action( 'wp_enqueue_scripts',       array( $this, 'enqueue_scripts_styles' ) );   
+        add_action( 'admin_enqueue_scripts',    array( $this, 'enqueue_admin_scripts_styles' ) );   
+        add_filter( 'post_thumbnail_html',      array( $this, 'remove_width_attribute' ), 10 );
+        add_filter( 'image_send_to_editor',     array( $this, 'remove_width_attribute'), 10 );
+        add_filter( 'wp_title',                 array( $this, 'title_tag' ) );
 
         /**
          * Fallback for WordPress version lower than 4.1
