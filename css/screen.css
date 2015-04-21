@@ -1694,7 +1694,7 @@ body.admin-bar #top-nav .top-nav-container ul {
 #comments .comment .comment-wrap .comment-action .comment-date {
   float: left;
   border-left: 1px solid #ebe7df;
-  padding: 10px 15px 8px;
+  padding: 11px 15px 10px;
   font: 0.7em "Montserrat", sans-serif;
   text-transform: uppercase;
 }
@@ -2362,6 +2362,11 @@ body.logged-in #respond .submit-comment-avatar {
 .has-site-logo #top-nav .site-logo-link img {
   height: 26px;
   width: auto;
+}
+.has-site-logo.rtl #top-nav .site-logo-link {
+  float: right;
+  margin-right: 15px;
+  margin-left: 0;
 }
 
 /**

@@ -133,6 +133,13 @@ class Opus{
         
         wp_enqueue_style( 'opus_style', get_template_directory_uri() . '/css/screen.css' );
 
+        // Adding RTL style
+        if( is_rtl() ){
+            
+            wp_enqueue_style( 'opus_style_rtl', get_template_directory_uri() . '/css/rtl.css', array( 'opus_style' ) );
+
+        }
+
         wp_enqueue_script( 'opus_script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20131106', true );
 
         if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

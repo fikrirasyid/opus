@@ -53,4 +53,14 @@
 			}
 		}
 	}
+
+	&.rtl{
+		#top-nav{
+			.site-logo-link{
+				float: right;
+				margin-right: 15px;
+				margin-left: 0;
+			}
+		}
+	}
 }
