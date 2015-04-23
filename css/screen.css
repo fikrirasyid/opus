@@ -2370,6 +2370,43 @@ body.logged-in #respond .submit-comment-avatar {
 }
 
 /**
+* Custom Widgets
+*/
+.widget-grofile .grofile-thumbnail {
+  width: 150px !important;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.widget-grofile p {
+  line-height: 1.6;
+}
+
+.widget_contact_info {
+  line-height: 1.4;
+}
+.widget_contact_info .contact-map {
+  margin-bottom: 10px;
+}
+
+.widget_jetpack_display_posts_widget .jetpack-display-remote-posts {
+  padding-top: .3em;
+}
+.widget_jetpack_display_posts_widget .jetpack-display-remote-posts h4 {
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+.widget-gallery {
+  text-align: center;
+}
+.widget-gallery .gallery-row {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/**
  * WP-IG Suport
  */
 #content article.instagram .entry-title {
