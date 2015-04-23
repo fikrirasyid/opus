@@ -110,6 +110,20 @@ Improvements added:
 - Using protocol relative URL for fonts
 - Adding Phillip Arthur Moore's Subtitles plugin support
 
+#### April 23th, 2015 - v1.4.0
+
+Improvements added:
+
+- Adding grunt task for creating .zip build
+- Adding WordPress 4.1 title-tag support (and its fallback)
+- Adding Jetpack site-logo module support
+- Adding custom background support
+- Adding RTL support
+- Adding styling details for Jetpack custom widgets
+- Fixing top nav's width issue
+- Custom fonts are now pluggable by translation (useful if Roboto & Montserrat has no support on targetted language)
+- Changing color scheme mechanism using [Simple Color Adjuster](https://github.com/fikrirasyid/simple-color-adjuster) class
+
 ## Download
 
 #### [Download](http://wordpress.org/themes/opus) | [GitHub](https://github.com/fikrirasyid/opus) | [Demo](http://opus.fikrirasy.id/)
