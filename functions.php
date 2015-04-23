@@ -183,10 +183,28 @@ class Opus{
         }   
     }
 
+    /**
+     * Appending custom color scheme 
+     * 
+     * @todo remove transition in near future. see: https://github.com/fikrirasyid/opus/commit/6c63b2c129bb483d3a6f372c8c211ee12dd14b7b
+     */
     function color_scheme(){
         $name = 'site_color_scheme';
 
         $color_scheme = get_theme_mod( $name, false );
+
+        // Transition from 1.3 to 1.4: if site_color exist while no color scheme defined, generate and save color scheme once
+            $site_color = get_theme_mod( 'site_color');
+            
+            // Do this once
+            if( $site_color && ! $color_scheme ){
+                // Generate color scheme css
+                $color_scheme = opus_generate_color_scheme_css( $site_color, 'site_color' );
+
+                // Save the output
+                set_theme_mod( 'site_color_scheme', $color_scheme );
+            }
+        // Transition end
 
         if( $color_scheme ){
             wp_add_inline_style( 'opus-style', $color_scheme );
