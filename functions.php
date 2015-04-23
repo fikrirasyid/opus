@@ -17,6 +17,7 @@ class Opus{
         add_action( 'after_setup_theme',        array( $this, 'theme_setup' ) );
         add_action( 'widgets_init',             array( $this, 'widget_setup' ) ); 
         add_action( 'wp_enqueue_scripts',       array( $this, 'enqueue_scripts_styles' ) );   
+        add_action( 'wp_enqueue_scripts',       array( $this, 'color_scheme' ) );
         add_action( 'admin_enqueue_scripts',    array( $this, 'enqueue_admin_scripts_styles' ) );   
         add_filter( 'post_thumbnail_html',      array( $this, 'remove_width_attribute' ), 10 );
         add_filter( 'image_send_to_editor',     array( $this, 'remove_width_attribute'), 10 );
@@ -39,10 +40,10 @@ class Opus{
     function import(){
         require_once get_template_directory() . '/inc/template-tags.php';
         require_once get_template_directory() . '/inc/jetpack.php';
+        require_once get_template_directory() . '/inc/simple-color-adjuster.php';  
         require_once get_template_directory() . '/inc/customizer.php';  
         require_once get_template_directory() . '/inc/feed.php';  
 
-        new Opus_Customizer;      
         new Opus_Feed;
     }
 
@@ -164,12 +165,12 @@ class Opus{
     function enqueue_scripts_styles(){
         wp_enqueue_style( 'opus_google_fonts', $this->google_fonts_url() );
         
-        wp_enqueue_style( 'opus_style', get_template_directory_uri() . '/css/screen.css' );
+        wp_enqueue_style( 'opus-style', get_template_directory_uri() . '/css/screen.css' );
 
         // Adding RTL style
         if( is_rtl() ){
             
-            wp_enqueue_style( 'opus_style_rtl', get_template_directory_uri() . '/css/rtl.css', array( 'opus_style' ) );
+            wp_enqueue_style( 'opus-style-rtl', get_template_directory_uri() . '/css/rtl.css', array( 'opus-style' ) );
 
         }
 
@@ -181,6 +182,16 @@ class Opus{
         
         }   
     }
+
+    function color_scheme(){
+        $name = 'site_color_scheme';
+
+        $color_scheme = get_theme_mod( $name, false );
+
+        if( $color_scheme ){
+            wp_add_inline_style( 'opus-style', $color_scheme );
+        }
+    }    
 
     /**
      * Enqueue scripts and styles on admin page
@@ -199,7 +210,6 @@ class Opus{
 
         }
     }
-
 
     /**
      * Prints blog name | blog description in wp_title on homepage
