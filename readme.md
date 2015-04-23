@@ -1,65 +1,115 @@
-# [Opus](http://wordpress.org/themes/opus)
+#### Opus is WordPress theme which focuses on content.
+#### The rest is secondary.
 
-Opus is WordPress theme that is passionately crafted by [Fikri Rasyid](http://fikrirasyid.com) for you who have stories, ideas, experiences, and legacies to be beautifully told. Its main focus is making a remarkable reading experience for your blog's reader. The rest is secondary.
+## The Origin
 
-Here are the features that we thoughtfully added to Opus, in order to reach that goal:
+The development of Opus was started in 2013: I was looking for a (free) theme and all available options I could find are either too complicated or have particular edge case that I couldn't compromise. So I decided to make one on my own: a theme that focuses on content, incredible clean, and worthy to be released on WordPress Theme repository.
+
+Hence Opus was born. [Opus is my first theme on WordPress repository.](http://wordpress.org/themes/opus)
+
+## The Goals
+
+Opus is made with these goals in mind:
+
+1. **Opus should look great on mobile screen.**
+Traffic from mobile start to surpass desktop traffic. There's no question on this. Mobile UX deserves priority as much as desktop UX.
+2. **Opus should efortlessly work out of the box**
+Many themes requires you to configure stuff to make it looks like its demo. Once you install and activate Opus, it's already looks the way it looks on the demo page.
+3. **Opus should allow its user to express themselves**
+Everyone is unique. Opus allows you to express your preference by choosing color accents and header image.
+4. **Opus should work effortlessly**
+It really annoys me when the content I published looks misplaced due to technical issue. Opus is developed to detect your content's quirkiness and adjust it on the fly.
+5. **Opus is all about GREAT reading experience.**
+I've blogged since 2008. I've written a lot. I want those posts to be read effortlessly.
+
+## The Theme
+Here's how Opus looks like:
+
+![00 - Opus is developed using mobile first approach. It looks great on small screen and big screen](http://fikrirasy.id/wp-content/uploads/2014/12/00-Opus-is-developed-using-mobile-first-approach.-It-looks-great-on-small-screen-and-big-screen-1024x742.jpg)
+00 - Opus is developed using mobile first approach. It looks great on small screen and big screen
+
+![01 - Opus one column content-focused layout](http://fikrirasy.id/wp-content/uploads/2014/12/01-Opus-one-column-content-focused-layout-1024x742.jpg)
+01 - Opus one column content-focused layout
+
+![02 - Opus expanded menu](http://fikrirasy.id/wp-content/uploads/2014/12/02-Opus-expanded-menu-1024x742.jpg)
+02 - Opus expanded menu
+
+![03 - Opus focuses on content. It even hides the top-navigation as you scroll down the page and display it when you scroll up the page](http://fikrirasy.id/wp-content/uploads/2014/12/03-Opus-focuses-on-content.-It-even-hides-the-top-navigation-as-you-scroll-down-the-page-and-display-it-when-you-scroll-up-the-page-1024x742.jpg)
+03 - Opus focuses on content. It even hides the top-navigation as you scroll down the page and display it when you scroll up the page
+
+![04 - Opus supports civil footnotes plugin out of the box](http://fikrirasy.id/wp-content/uploads/2014/12/04-Opus-supports-civil-footnotes-plugin-out-of-the-box-1024x742.jpg)
+04 - Opus supports civil footnotes plugin out of the box
+
+![05 - Opus is about letting your content shines. Opus doesn't get in your way](http://fikrirasy.id/wp-content/uploads/2014/12/05-Opus-is-about-letting-your-content-shines.-Opus-doesnt-get-in-your-way-1024x742.jpg)
+05 - Opus is about letting your content shines. Opus doesn't get in your way
+
+![06 - If you're not into green, you can always change Opus' color](http://fikrirasy.id/wp-content/uploads/2014/12/06-If-youre-not-into-green-you-can-always-change-Opus-color-1024x742.jpg)
+06 - If you're not into green, you can always change Opus' color
+
+## Plugin Compatibilities
+
+Opus is made to be compatible with these plugins:
+
+1. [CF Post Format](https://github.com/crowdfavorite/wp-post-formats)
+Post Format tab UI on editor
+2. [Jetpack's Infinite Scroll](http://jetpack.me/support/infinite-scroll/)
+Jetpack's module for infinite scrolling functionality
+3. [WP-IG](http://wordpress.org/plugins/wp-ig)
+Instagram integration plugin: post your Instagram photo to WordPress
+4. [Civil Footnotes](https://wordpress.org/plugins/civil-footnotes/)
+Adding footnote in markdown like interface
 
 
-## WordPress' Native Features Support
+## Changelogs
 
-### Post Format Support
-(Aside, Video, Photo, Quote, and Link)
+#### December 14th, 2013 - Available at WordPress Theme Repository
 
-### Custom Header Support + Parallax
-Adjust your site's header with parallax animation.
+Opus has been approved by WordPress Theme Reviewer and it is [available on the WordPress Theme repository.](http://wordpress.org/themes/opus)
 
-### Customizer Support
-Customize your site easily using WordPress' native customizer.
+#### July 13th, 2014 - v1.1.0
 
-### Widget Support
-Customize your footer's content easily using WordPress' native widgets.
+Seven months after its inception to WordPress repository, there are some stuffs that I think need to be added, tweaked, and fixed. Hence the version 1.1:
 
-***
+- Hiding top navigation when the page user scrolls down the page. Display the top navigation when the user scrolls up the page. Saving screen space for more important focus: the content. Inspired by [this article](https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c)
+- Adding support for Infinite Scroll feature provided by Jetpack
+- Adding support for [WP-IG, the Instagram - WordPress integration plugin](https://github.com/fikrirasyid/wp-ig)
+- Displaying embed code, oEmbed-supported link, or url to video stored on post meta '_format_video_embed' as video on single page. Note: I recommend [Crowd Favorite's wp-post-format plugin for better UX for post format](https://github.com/crowdfavorite/wp-post-formats)
+- Subtle improvement on design: smaller content width to make featured image on post format image more digestable, changing typography from open sans to roboto (IMO it is more sharper especially when it is used on large font-size), adding parallax effect to page image cover, adding subtle shadow to give sense of depth to the layout, inspired by [Android Material Design](http://www.google.com/design/spec/material-design/introduction.html)
+- Hiding tag box if there's no tag to be displayed
+- Fixing top nav behavior on small screen
 
-## Opus Specific Features
+#### August 5th, 2014 - v1.2.0
 
-### Focused One Column Layout
-Focus on your content, not the other stuffs.
+Version 1.2 is here! This version is basically a visual enhancement and more support for third party plugins:
 
-### Mobile First, Responsive Design
-Opus is developed using mobile first approach. It is intentionally made to look great on any devices.
+- Fixing search form bug on 404 template
+- Adding better looking sticky post UI
+- Prevent entry category crashes with entry time
+- Fixing strict standard issue on PHP 5.4
+- Turn of parallax effect on touch device because jQuery's .scroll() doesn't play nice with touch
+- WP-IG support: adding Instagram icon if the post is Imported Instagram media
+- Enhanced UI: adding date, month, and year divider
+- Enhanced UI: adjust javascript based effect if the window is resized
+- Resizing featured image to optimize page load
+- Enhanced UI: changing default page cover photo
+- Enhanced UI: fading out page cover as a complement of parallax effect
+- [Civil Footnotes](https://wordpress.org/plugins/civil-footnotes/): Adding custom styling for civil footnotes-generated footnote.
+- Changing screenshot image to the better version
+- Jetpack support: tweaking styling for comment email subscription checkbox
+- Adding custom styling for dashboard header editing
 
-### Smart Color
-Select a color for your site through Customizer. Opus will apply it brilliantly to give your blog more personality.
+#### December 31th, 2014 - v1.3.0
 
-### Beautiful Typography
-Opus is made with readability in mind. Opus is all about great reading experience.
+Improvements added:
 
-### Contextual Time Divider
-Your blog represents your thoughts in timely manner. The presentation of your content in Opus is divided brilliantly per day, month, and year: giving correct sense of time for your reader.
+- Replacing custom time code with WordPress' human_time_diff
+- Adding pot file and loading textdomain for translation
+- More stuffs for translation
+- Better civil footnotes support. It'll still work on infinite scroll scenario now
+- Fixing editor styling
+- Using protocol relative URL for fonts
+- Adding Phillip Arthur Moore's Subtitles plugin support
 
-### Thoughtful UX
-We made every aspects on Opus as thoughtful as possible: infinite scroll support via Jetpack, media-width adjustment, [scroll up bar](http://usabilitypost.com/2014/05/24/the-scroll-up-bar/), and responsive design.
+## Download
 
-## Third Party Plugins Support
-
-Opus is made to be compatible and complimentary for these following plugins:
-
-### [CF Post Format](https://github.com/crowdfavorite/wp-post-formats)
-Developed by [Crowd Favorite](http://crowdfavorite.com/), CF Post Format is made to give WordPress' post format the UI it deserves. Any post meta-data stored for particular post format will be appropriately 	displayed in Opus.
-
-### [Jetpack](http://jetpack.me)'s Infinite Scroll 
-Developed by [Automattic](http://automattic.com), Jetpack has its own infinite scroll module to endlessly display posts on your homescreen. Just plug and activate Jetpack and its Infinite scroll module. The rest has been handled by Opus.
-
-### [WP-IG](http://wordpress.org/plugins/wp-ig)
-Developed by [yours trully](http://fikrirasyid.com), WP-IG imports and syncs your Instagram photo/video to your WordPress site. Opus displays these imported Instagram photo/video appropriately.
-
-### [Civil Footnotes](https://wordpress.org/plugins/civil-footnotes/)
-Developed by [Austin Sweeney](https://defomicron.net/), Civil Footnotes makes adding footnotes easy with its Markdown-Like writing pattern. Very worth to use. Opus displays Civil Footnotes-generated footnotes beautifully.
-
-### [Subtitles](https://wordpress.org/plugins/subtitles/)
-Developed by [Phillip Arthur Moore](https://philiparthurmoore.com/), Subtitles enables you to add "subtitle" (doh) on your post. Opus adjusts the appearance of the subtitle so it'll look awesome on your blog.
-
-***
-
-Ready to make your blog more awesome? **[Download Opus on WordPress Theme Repository for FREE now](wordpress.org/themes/opus)**
+#### [Download](http://wordpress.org/themes/opus) | [GitHub](https://github.com/fikrirasyid/opus) | [Demo](http://opus.fikrirasy.id/)
