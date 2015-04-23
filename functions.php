@@ -47,6 +47,39 @@ class Opus{
     }
 
     /**
+     * Get pluggable-by-translation Google Fonts' URL
+     */
+    function google_fonts_url(){
+        $fonts_url = '';
+ 
+        /* Translators: If there are characters in your language that are not
+        * supported by Lato, translate this to 'off'. Do not translate
+        * into your own language.
+        */
+        $roboto     = _x( 'on', 'Roboto font: on or off', 'opus' );
+        $montserrat = _x( 'on', 'Montserrat font: on or off', 'opus' );
+
+        $font_families = array();
+
+        if( 'off' != $roboto ){
+            $font_families[] = 'Roboto:regular,bold,italic,thin,thinitalic,bolditalic';
+        }
+
+        if( 'off' != $montserrat ){
+            $font_families[] = 'Montserrat:300,400,700';
+        }
+
+        $query_args = array(
+            'family' => urlencode( implode( '|', $font_families ) ),
+            'subset' => urlencode( 'latin,latin-ext' ),
+        );
+ 
+        $fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
+
+        return $fonts_url;        
+    }
+
+    /**
      * Setup theme
      * 
      * @return void
@@ -88,7 +121,7 @@ class Opus{
          * Content editor styling
          */
         add_editor_style( array(
-            '//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700',
+            $this->google_fonts_url(),
             'css/editor-style.css'
         ) );        
 
@@ -129,7 +162,7 @@ class Opus{
      * @return void
      */
     function enqueue_scripts_styles(){
-        wp_enqueue_style( 'opus_google_fonts', '//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,thinitalic,bolditalic|Montserrat:300,400,700' );
+        wp_enqueue_style( 'opus_google_fonts', $this->google_fonts_url() );
         
         wp_enqueue_style( 'opus_style', get_template_directory_uri() . '/css/screen.css' );
 
