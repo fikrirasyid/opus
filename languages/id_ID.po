@@ -3,16 +3,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Opus 1.2\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/opus\n"
-"POT-Creation-Date: 2014-08-20 01:04:17+00:00\n"
-"PO-Revision-Date: 2014-08-20 08:09+0700\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-04-23 12:56:22+00:00\n"
+"PO-Revision-Date: 2015-04-23 19:57+0700\n"
 "Last-Translator: Fikri Rasyid <fikrirasyid@gmail.com>\n"
 "Language-Team: Fikri Rasyid <fikrirasyid@gmail.com>\n"
 "Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.7\n"
+"X-Generator: Poedit 1.7.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: archive.php:15
@@ -79,12 +79,6 @@ msgstr "Lampiran"
 msgid "&larr; Back to post"
 msgstr "&larr; Kembali ke tulisan"
 
-#: comments.php:29
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s pemikiran mengenai &ldquo;%2$s&rdquo;"
-
 #: comments.php:36 comments.php:56
 msgid "Comment navigation"
 msgstr "Navigasi komentar"
@@ -144,33 +138,41 @@ msgstr "Selanjutnya"
 msgid "Powered by %1$s and %2$s"
 msgstr "Ditenagai oleh %1$s dan %2$s"
 
-#: functions.php:78
+#: functions.php:118
 msgid "Top Navigation"
 msgstr "Navigasi Atas"
 
-#: functions.php:103
+#: functions.php:154
 msgid "Footer Widgets"
 msgstr "Navigasi Bawah"
 
-#: functions.php:105
+#: functions.php:156
 msgid "Widgets in this area will be shown on Footer Area"
 msgstr "Widget pada area ini akan dimunculkan di area footer"
 
-#: functions.php:164
+#: functions.php:249 functions.php:294
 msgid "Page %s"
 msgstr "Halaman %s"
 
-#: header.php:15
+#: header.php:14
 msgid "Back to %1$s"
 msgstr "Kembali ke %1$s"
 
-#: header.php:16
+#: header.php:15
 msgid "Welcome To %1$s"
 msgstr "Selamat Datang di %1$s"
 
-#: inc/customizer.php:38
+#: inc/customizer.php:33
 msgid "Site Color"
 msgstr "Warna Situs"
+
+#: inc/customizer.php:51
+msgid "Error generating color scheme. Please try again."
+msgstr ""
+
+#: inc/customizer.php:58
+msgid "Color scheme cannot be generated. Please activate Opus theme first."
+msgstr ""
 
 #: inc/template-tags.php:22
 msgid "Tags: "
@@ -366,8 +368,8 @@ msgid "Opus"
 msgstr "Opus"
 
 #. Theme URI of the plugin/theme
-msgid "http://fikrirasyid.com/wordpress-themes/opus/"
-msgstr "http://fikrirasyid.com/wordpress-themes/opus/"
+msgid "http://fikrirasy.id/portfolio/opus/"
+msgstr "http://fikrirasy.id/portfolio/opus/"
 
 #. Description of the plugin/theme
 msgid "A theme with personality for those who have stories to be told."
@@ -379,5 +381,30 @@ msgid "Fikri Rasyid"
 msgstr "Fikri Rasyid"
 
 #. Author URI of the plugin/theme
-msgid "http://fikrirasyid.com/"
-msgstr "http://fikrirasyid.com/"
+msgid "http://fikrirasy.id/"
+msgstr "http://fikrirasy.id/"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s pemikiran mengenai &ldquo;%2$s&rdquo;"
+
+#. Translators: If there are characters in your language that are not
+#. * supported by Lato, translate this to 'off'. Do not translate
+#. * into your own language.
+#: functions.php:60
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:61
+msgctxt "Montserrat font: on or off"
+msgid "on"
+msgstr "on"
+
+#~ msgid "http://fikrirasyid.com/wordpress-themes/opus/"
+#~ msgstr "http://fikrirasyid.com/wordpress-themes/opus/"
+
+#~ msgid "http://fikrirasyid.com/"
+#~ msgstr "http://fikrirasyid.com/"

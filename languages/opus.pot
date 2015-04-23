@@ -1,16 +1,17 @@
-# Copyright (C) 2014 Fikri Rasyid
+# Copyright (C) 2015 Fikri Rasyid
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Opus 1.2\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/opus\n"
-"POT-Creation-Date: 2014-08-20 01:04:17+00:00\n"
+"Project-Id-Version: Opus 1.4\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-04-23 12:56:22+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
 
 #: archive.php:15
 msgid "Posts published at %1$s"
@@ -76,13 +77,6 @@ msgstr ""
 msgid "&larr; Back to post"
 msgstr ""
 
-#: comments.php:29
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
 #: comments.php:36 comments.php:56
 msgid "Comment navigation"
 msgstr ""
@@ -117,7 +111,10 @@ msgid "We are sorry, the content you are looking for does not exist"
 msgstr ""
 
 #: content-none.php:23
-msgid "We suggest you to check the <a href=\"%1$s\" title=\"Back to homepage\">homepage</a> or try to search what you're looking for using this search box below:"
+msgid ""
+"We suggest you to check the <a href=\"%1$s\" title=\"Back to "
+"homepage\">homepage</a> or try to search what you're looking for using this "
+"search box below:"
 msgstr ""
 
 #: content-none.php:27
@@ -136,32 +133,40 @@ msgstr ""
 msgid "Powered by %1$s and %2$s"
 msgstr ""
 
-#: functions.php:78
+#: functions.php:118
 msgid "Top Navigation"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:154
 msgid "Footer Widgets"
 msgstr ""
 
-#: functions.php:105
+#: functions.php:156
 msgid "Widgets in this area will be shown on Footer Area"
 msgstr ""
 
-#: functions.php:164
+#: functions.php:249 functions.php:294
 msgid "Page %s"
 msgstr ""
 
-#: header.php:15
+#: header.php:14
 msgid "Back to %1$s"
 msgstr ""
 
-#: header.php:16
+#: header.php:15
 msgid "Welcome To %1$s"
 msgstr ""
 
-#: inc/customizer.php:38
+#: inc/customizer.php:33
 msgid "Site Color"
+msgstr ""
+
+#: inc/customizer.php:51
+msgid "Error generating color scheme. Please try again."
+msgstr ""
+
+#: inc/customizer.php:58
+msgid "Color scheme cannot be generated. Please activate Opus theme first."
 msgstr ""
 
 #: inc/template-tags.php:22
@@ -172,7 +177,8 @@ msgstr ""
 msgid ""
 "\n"
 "\t\t\t\t<div class=\"entry-posted-on\">\n"
-"\t\t\t\t\t<span class=\"entry-author author vcard\"><a href=\"%1$s\" class=\"url fn n\" title=\"%2$s\" rel=\"author\">%3$s</a> </span> \n"
+"\t\t\t\t\t<span class=\"entry-author author vcard\"><a href=\"%1$s\" "
+"class=\"url fn n\" title=\"%2$s\" rel=\"author\">%3$s</a> </span> \n"
 "\t\t\t\t\t<span class=\"entry-author-action\">updated this</span> \n"
 "\t\t\t\t\t<a href=\"%4$s\" title=\"%5$s\" class=\"entry-date\">\n"
 "\t\t\t\t\t\t<span class=\"human-time on-load\">%6$s</span>\n"
@@ -186,7 +192,8 @@ msgstr ""
 msgid ""
 "\n"
 "\t\t\t\t<div class=\"entry-posted-on\">\n"
-"\t\t\t\t\t<span class=\"entry-author author vcard\"><a href=\"%1$s\" class=\"url fn n\" title=\"%2$s\" rel=\"author\">%3$s</a> </span> \n"
+"\t\t\t\t\t<span class=\"entry-author author vcard\"><a href=\"%1$s\" "
+"class=\"url fn n\" title=\"%2$s\" rel=\"author\">%3$s</a> </span> \n"
 "\t\t\t\t\t<span class=\"entry-author-action\">published this</span> \n"
 "\t\t\t\t\t<a href=\"%4$s\" title=\"%5$s\" class=\"entry-date\">\n"
 "\t\t\t\t\t\t<span class=\"human-time on-load\">%6$s</span>\n"
@@ -317,12 +324,13 @@ msgstr ""
 #: single.php:115
 msgid "Pages:"
 msgstr ""
+
 #. Theme Name of the plugin/theme
 msgid "Opus"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://fikrirasyid.com/wordpress-themes/opus/"
+msgid "http://fikrirasy.id/portfolio/opus/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -334,5 +342,25 @@ msgid "Fikri Rasyid"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://fikrirasyid.com/"
+msgid "http://fikrirasy.id/"
+msgstr ""
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:60
+#. Translators: If there are characters in your language that are not
+#. * supported by Lato, translate this to 'off'. Do not translate
+#. * into your own language.
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:61
+msgctxt "Montserrat font: on or off"
+msgid "on"
 msgstr ""
